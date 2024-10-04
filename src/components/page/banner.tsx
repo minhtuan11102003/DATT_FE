@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { upperCase } from "lodash";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import '../../app/css/banner.css';
+import '../../css/banner.css';
 
 
 export default function BannerComponent() {
@@ -48,7 +48,7 @@ export default function BannerComponent() {
             <div className="w-full h-full">
                 <img src={`${mangImg[dem].img}`} alt="Lỗi ảnh" className={`chuyenDong ${isChuyenDong ? 'animate-in' : 'animate-out'} w-full h-full object-cover`} />
             </div>
-            <div className="w-[800px] h-[150px] absolute top-[200px] left-[190px]">
+            <div className="w-[800px] h-[150px] absolute top-[30%] left-[20%]">
                 <p className=" w-[755px] h-[40px] text-[42px] font-semibold mb-6">{mangImg[dem].title.toUpperCase()}</p>
                 <p className=" w-[755px] h-[40px] text-[42px] font-semibold mb-6">{mangImg[dem].title2.toUpperCase()}</p>
                 <div className="w-[196px] p-3 bg-[#f7c411] ">
