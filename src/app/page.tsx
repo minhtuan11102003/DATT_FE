@@ -15,8 +15,8 @@ export default function Home() {
 
 
   return (
-    <div className="w-full">
-      <div className="sectionDate w-[1519px] h-[570px] relative mt-6">
+    <div className="w-full flex justify-center">
+      <div className="sectionDate w-full h-[570px] relative mt-6">
         <div className="w-full h-full flex justify-center ">
           <div className="w-[1140px] h-[100px] py-[26px] px-[10px] absolute text-[#aab8ca] bg-[#313a45] z-10">
             <div className="w-[1120px] h-full flex items-end gap-8 pl-2 ">
