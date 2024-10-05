@@ -15,7 +15,7 @@ export default function Home() {
 
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full ">
       <div className="sectionDate w-full h-[570px] relative mt-6">
         <div className="w-full h-full flex justify-center ">
           <div className="w-[1140px] h-[100px] py-[26px] px-[10px] absolute text-[#aab8ca] bg-[#313a45] z-10">
@@ -76,7 +76,20 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-full">
-            <BannerComponent/>
+            <BannerComponent />
+          </div>
+        </div>
+      </div>
+      <div className="sectionNew w-full h-[442px] border flex justify-center">
+        <div className="w-[1140px] flex items-center">
+          <div className="w-1/4 h-[400px] border">
+
+          </div>
+          <div className="w-1/2 h-[400px] border">
+
+          </div>
+          <div className="w-1/4 h-[400px] border">
+
           </div>
         </div>
       </div>
