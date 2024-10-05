@@ -23,3 +23,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* .Playfair_Display_Normal{
+    font-family: var(--font-PlayfairDisplay);
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  .nice-title:after{
+    left: calc(50% - 51.5px);
+  }
+
+  .figure-hover:hover .bounch{
+    display: block;
+  }
+
+  
+}
