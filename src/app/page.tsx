@@ -15,7 +15,7 @@ export default function Home() {
 
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full ">
       <div className="sectionDate w-full h-[570px] relative mt-6">
         <div className="w-full h-full flex justify-center ">
           <div className="w-[1140px] h-[100px] py-[26px] px-[10px] absolute text-[#aab8ca] bg-[#313a45] z-10">
@@ -68,7 +68,7 @@ export default function Home() {
                 </Select>
               </div>
               <div className="w-[120px] ">
-                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">BOOK</Button>
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
             </div>
             <div className="relative w-[223px] h-[276px] top-[26px] left-[907px]">
@@ -76,7 +76,20 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-full">
-            <BannerComponent/>
+            <BannerComponent />
+          </div>
+        </div>
+      </div>
+      <div className="sectionNew w-full h-[442px] border flex justify-center">
+        <div className="w-[1140px] flex items-center">
+          <div className="w-1/4 h-[400px] border">
+
+          </div>
+          <div className="w-1/2 h-[400px] border">
+
+          </div>
+          <div className="w-1/4 h-[400px] border">
+
           </div>
         </div>
       </div>
