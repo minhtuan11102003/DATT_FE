@@ -3,7 +3,7 @@ import "./globals.css";
 import { Nunito, Roboto } from 'next/font/google'
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
-
+// import Newsection from "../components/page/newsection";
 const nunito = Nunito({
   subsets: ['latin'],
   display: 'swap',
@@ -26,6 +26,8 @@ export default function RootLayout({
         <div className="w-full">
           <HeaderComponent/>
             {children}
+            {/* <Newsection/> */}
+
           <FooterComponent/>
         </div>
       </body>
