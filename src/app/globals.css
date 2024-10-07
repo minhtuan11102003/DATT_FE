@@ -35,8 +35,21 @@ body {
     left: calc(50% - 51.5px);
   }
 
-  .figure-hover:hover .bounch{
+  /* .figure-hover{
+    display:
+  } */
+
+  .figure-hover:hover .bounch-hover{
     display: block;
+  }
+
+  .figure-hover:hover .btn-welcome{
+    color: #fff;
+    background-color: #63c2ea;
+  }
+
+  .animate-mode{
+    animation-fill-mode: both;
   }
 
   
