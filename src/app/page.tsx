@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 import { DatePickerDemo } from "@/components/ui/date-picker";
 import {
   Select,
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
+import Contact from "@/components/page/contact";
 
 export default function Home() {
   return (
@@ -70,9 +72,7 @@ export default function Home() {
                 </Select>
               </div>
               <div className="w-[120px] ">
-                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">
-                  BOOK
-                </Button>
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
             </div>
             <div className="relative w-[223px] h-[276px] top-[26px] left-[907px]">
@@ -94,6 +94,7 @@ export default function Home() {
             {/* <div> */}
             <div>
               <h3 className="inline-block text-[30px] text-[#131e2a] leading-[25px] relative pb-[33px] mb-[55px] uppercase font-PlayfairDisplay after:bg-[url('/images/icon-section/nice-title.png')] after:bg-no-repeat after:absolute after:w-[103px] after:h-[50%] after:-bottom-[30px] nice-title font-normal">
+              <h3 className="inline-block text-[30px] leading-6 relative pb-[33px] mb-[55px] uppercase font-PlayfairDisplay after:bg-[url('/images/icon-section/nice-title.png')] after:absolute after:w-[103px] after:h-[50%] after:-bottom-[30px] nice-title">
                 Welcome To Hotel
               </h3>
             </div>
@@ -148,6 +149,10 @@ export default function Home() {
                         <div className="flex justify-between">
                           <div className="left">
                             <p className="my-[15px] mt-[18px] text-[15px] font-Lora text-[#666666]">
+                            <h6 className="text-[#424c55] text-[18px] font-Lora">
+                              Deluxe Room
+                            </h6>
+                            <p className="my-[15px] text-[18px] font-Lora text-[#666666]">
                               $200/{" "}
                               <span className="text-[11px] text-[#666666]">
                                 night
@@ -263,6 +268,7 @@ export default function Home() {
                           lacinia.
                         </p>
                         <p className="text-[15px] mb-[10px]">
+
                         Phasellus accumsan urna vitae molestie interdum.
                         </p>
                         <div className="flex justify-between">
@@ -350,6 +356,7 @@ export default function Home() {
           <div className="w-1/2 h-[20px] "></div>
         </div>
       </div>
+
     </div>
   );
 }

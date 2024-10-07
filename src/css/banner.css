@@ -13,7 +13,12 @@
 @keyframes fadeIn {
     0% {
         opacity: 1;
-        transform: translateX(-50px);
+        transform: translateX(50px);
+    }
+
+    50%{
+        opacity: 1;
+        transform: translateX(100px)
     }
 
     100% {
@@ -31,6 +36,6 @@
 
     100% {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px);
     }
 }
