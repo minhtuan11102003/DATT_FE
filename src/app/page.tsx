@@ -345,14 +345,9 @@ export default function Home() {
                   </figure>
                 </div>
               </div>            
-             
-              
-              
             </div>
-            {/* </div> */}
           </div>
-          <div className="w-1/2 h-[400px] border"></div>
-          <div className="w-1/4 h-[400px] border"></div>
+          <div className="w-1/2 h-[20px] "></div>
         </div>
       </div>
     </div>
