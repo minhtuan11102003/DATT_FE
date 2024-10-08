@@ -11,10 +11,6 @@
 }
 
 
-table,tr,th,td {
-    border: 1px solid #dddddd;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 1;

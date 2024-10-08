@@ -66,9 +66,13 @@ const BookingPage = () => {
                             arrayTitle[isCheckId - 1].component
                         }
                     </div>
-                    <div className='section4 w-full h-[100px] border-t-[1px] border-[#cdcdcde3] mt-2 flex justify-between items-center'>
-                        <Button onClick={() => setIsCheckId((prevDem) => (isCheckId - 1))} className={`${isCheckId>1 ? 'block' : 'hidden' } w-[100px] h-[38px] py-[8px] px-[30px] text-[18px] text-white bg-[#6666] font-semibold hover:bg-[#3a3a3a] `}>Back</Button>
-                        <Button onClick={() => setIsCheckId((prevDem) => (isCheckId + 1))} className={`${isCheckId>3 ? 'hidden' : 'block' } w-[100px] h-[38px] py-[8px] px-[30px] text-[18px] text-white bg-[#fe5d5d] font-semibold hover:bg-white hover:text-red-600 hover:border border-[#fe5d5d]`}>Next</Button>
+                    <div className='section4 w-full h-[100px] border-t-[1px] border-[#cdcdcde3] mt-4 flex justify-between items-center '>
+                        <div className="w-1/2 h-full">
+                            <Button onClick={() => setIsCheckId((prevDem) => (isCheckId - 1))} className={`${isCheckId > 1 ? 'block' : 'hidden'} w-[100px] h-[38px] py-[8px] px-[30px] text-[18px] text-white bg-[#6666] font-semibold hover:bg-[#3a3a3a] `}>Back</Button>
+                        </div>
+                        <div className="w-1/2 h-full flex justify-end">
+                            <Button onClick={() => setIsCheckId((prevDem) => (isCheckId + 1))} className={`${isCheckId > 3 ? 'hidden' : 'block'} w-[100px] h-[38px] py-[8px] px-[30px] text-[18px] text-white bg-[#fe5d5d] font-semibold hover:bg-white hover:text-red-600 hover:border border-[#fe5d5d]`}>Next</Button>
+                        </div>
                     </div>
                 </div>
             </section>

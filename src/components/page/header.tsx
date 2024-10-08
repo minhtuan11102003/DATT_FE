@@ -38,7 +38,7 @@ const HeaderComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[110px] flex justify-center '>
+            <div className='w-full h-[110px] flex justify-center pb-4'>
                 <div className='flex gap-4 w-[1140px] h-full justify-around items-center'>
                     <div className='w-[150px] h-full flex items-center'>
                         <Link href="/"><img src="./images/site-logo.png" alt="site-logo" /> </Link>
@@ -52,8 +52,8 @@ const HeaderComponent = () => {
                                 <ChevronDownIcon />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
-                                <DropdownMenuItem className='hover:bg-white'><Link href="/Aboutus" className='hover:bg-white hover:text-black'>ABOUT US</Link></DropdownMenuItem>
-                                <DropdownMenuItem>BOOKING</DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/Aboutus" className='hover:text-blue-400'>ABOUT US</Link></DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/booking" className='hover:text-blue-400'>BOOKING</Link></DropdownMenuItem>
                                 <DropdownMenuItem>ROOM DETAILS</DropdownMenuItem>
                                 <DropdownMenuItem>OUR STAFF</DropdownMenuItem>
                                 <DropdownMenuItem>404 Page</DropdownMenuItem>
@@ -63,7 +63,7 @@ const HeaderComponent = () => {
                         <Link href="/Contacts" className='transition-colors duration-500 hover:text-[#16b4ef]'> CONTACTS </Link>
                         <div className='relative w-1/6'>
                             <p className='flex gap-3 bg-[#fe5d5d] text-white p-2.5' ><Phone />1234567890</p>
-                            <span className='absolute bg-[#fe5d5d] w-full h-[44px] top-0 left-[150px]'></span>
+                            <span className='absolute bg-[#fe5d5d] w-96 h-[44px] top-0 left-[150px]'></span>
                         </div>
                     </div>
                 </div>
