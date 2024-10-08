@@ -61,7 +61,7 @@ const config: Config = {
 			fontFamily: {
 				karla: ['var(--font-karla)', 'sans-serif'],
 				PlayfairDisplay: ['var(--font-PlayfairDisplay)', 'serif'],
-				Lora: ['var(--font-Lora)', 'serif']
+				Lora: ['var(--font-Lora)', 'serif'],
 			},
 			keyframes: {
 				bounceInDown: {

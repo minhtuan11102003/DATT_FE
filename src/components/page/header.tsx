@@ -13,7 +13,7 @@ import { Phone } from 'lucide-react';
 
 const HeaderComponent = () => {
     return (
-        <div className='w-full h-[132px]'>
+        <div className='w-full h-[142px]'>
             <div className='w-full h-[42px] bg-[#313a45] text-[#7a7e84] flex justify-center '>
                 <div className='w-[1140px] h-full py-2.5 flex justify-between'>
                     <div className='w-1/2 flex items-center'>
@@ -41,17 +41,10 @@ const HeaderComponent = () => {
             <div className='w-full h-[110px] flex justify-center '>
                 <div className='flex gap-4 w-[1140px] h-full justify-around items-center'>
                     <div className='w-[150px] h-full flex items-center'>
-                        <Link href="/Home"><img src="./images/site-logo.png" alt="site-logo" /> </Link>
+                        <Link href="/"><img src="./images/site-logo.png" alt="site-logo" /> </Link>
                     </div>
                     <div className='w-[990px] flex justify-around items-center'>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger className='flex gap-1 items-center transition-colors duration-500 hover:text-[#16b4ef]'>HOME
-                                <ChevronDownIcon />
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
-                                <DropdownMenuItem><Link href="/Home">Home</Link></DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link href="/" className='transition-colors duration-500 hover:text-[#16b4ef]'>HOME</Link>
                         <Link href="/Accomodation" className='transition-colors duration-500 hover:text-[#16b4ef] '> ACCOMMODATION </Link>
                         <Link href="/Gallery" className='transition-colors duration-500 hover:text-[#16b4ef]'> GALLERY </Link>
                         <DropdownMenu>
