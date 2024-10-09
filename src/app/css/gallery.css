@@ -1,0 +1,37 @@
+.animate-in {
+  animation: fadeIn 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate;
+}
+
+.animate-out {
+  animation: fadeOut 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
