@@ -3,7 +3,11 @@ import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
+
+import Contact_us from "@/components/page/contact_us";
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -56,6 +60,7 @@ export default function RootLayout({
         <div className="w-full">
           <HeaderComponent />
           {children}
+          <Contact_us/>
           <FooterComponent />
         </div>
       </body>
