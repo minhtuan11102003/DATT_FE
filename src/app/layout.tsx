@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Roboto } from 'next/font/google'
-import HeaderComponent from "../components/page/header";
-import FooterComponent from "../components/page/footer";
+// import HeaderComponent from "../components/page/header";
+// import FooterComponent from "../components/page/footer";
 // import Newsection from "../components/page/newsection";
 const nunito = Nunito({
   subsets: ['latin'],
@@ -24,11 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true} className={`${nunito.className} text-primary !scroll-smooth`}>
         <div className="w-full">
-          <HeaderComponent/>
+          {/* <HeaderComponent/>
             {children}
             {/* <Newsection/> */}
 
-          <FooterComponent/>
+          <FooterComponent/> */}
         </div>
       </body>
     </html>

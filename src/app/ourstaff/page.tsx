@@ -26,7 +26,7 @@ const staffMembers:{ name: string; img: string; position: string; description: s
                     </div>
                 </div>
             </div>
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-50  mb-[28px]">
         <div className="container mx-auto px-4 lg:px-24 xl:px-32 max-w-screen-xl">
           <h2 className="text-3xl font-bold mb-8">Our Staff</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -39,7 +39,7 @@ const staffMembers:{ name: string; img: string; position: string; description: s
                   src={staff.img}
                   alt={staff.name}
                   width={300}
-                  height={300}
+                  height={287 }
                   className="w-full h-full object-cover"
                 />
   
