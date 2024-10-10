@@ -15,7 +15,6 @@ import BannerComponent from "../components/page/banner";
 // import Contact from "@/components/page/contact";
 import { useState } from "react";
 
-<<<<<<< HEAD
 
   const images  = [
     "/images/cS-27.jpg",
@@ -33,15 +32,12 @@ import { useState } from "react";
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
-=======
 import Welcome_hotel from "@/app/Home/welcome_hotel";
 
 import Contact from "@/components/page/contact";
 import Facilities from "@/components/page/facilties";
 
 
-
->>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
 export default function Home() {
   return (
     <div className="w-full ">
@@ -165,14 +161,11 @@ export default function Home() {
                 <p className="text-xs text-gray-400">17 May 2014</p>
               </div>
             </div>
-<<<<<<< HEAD
-=======
+
             {/* </div> */}
 
->>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
           </div>
         </div>
-<<<<<<< HEAD
           </div>
          
           <div className="grid grid-cols-3 h-[400px]">
@@ -197,7 +190,6 @@ export default function Home() {
       >
         &gt;
       </button>
-=======
       </div>
       <div className="sectionContact w-full ">
         <div className="flex justify-center items-center">
@@ -253,22 +245,15 @@ export default function Home() {
       </div>
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
-
-
           <Welcome_hotel/>
-          <div className="w-1/2 h-[400px] border"></div>
-          <div className="w-1/4 h-[400px] border"></div>
-
           <div className="w-1/2 h-[20px] "></div>
-          
-          
         </div>
       </div>
       <div className="sectionFacilities w-full">
         <Facilities />
       </div>
 
->>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
+
     </div>
   </div>
 
