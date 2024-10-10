@@ -61,13 +61,13 @@ const config: Config = {
 			fontFamily: {
 				karla: ['var(--font-karla)', 'sans-serif'],
 				PlayfairDisplay: ['var(--font-PlayfairDisplay)', 'serif'],
-				Lora: ['var(--font-Lora)', 'serif']
+				Lora: ['var(--font-Lora)', 'serif'],
 			},
 			keyframes: {
 				bounceInDown: {
-					'0%': { transform: 'translate3d(0, -3000px, 0)' },
+					'0%': { transform: 'translate3d(0, -3000px, 0)', opacity: '0' },
 					'60%': {
-						transform: 'translate3d(0, 25px, 0)'
+						transform: 'translate3d(0, 25px, 0)', opacity: '1'
 					},
 					'75%': {
 						transform: 'translate3d(0, -10px, 0)'
@@ -76,16 +76,31 @@ const config: Config = {
 						transform: 'translate3d(0, 5px, 0)'
 					},
 					'100%': { transform: 'none' }
+				},
+				bounceInUp: {
+					'0%': { transform: 'translate3d(0, 3000px, 0)', opacity: '0' },
+					'60%': {
+						transform: 'translate3d(0, -20px, 0)', opacity: '1'
+					},
+					'75%': {
+						transform: 'translate3d(0, 10px, 0)'
+					},
+					'90%': {
+						transform: 'translate3d(0, -5px, 0)'
+					},
+					'100%': { transform: 'translate3d(0, 0, 0)' }
 				}
+				
 			},
 			animation: {
-				bounceInDown: 'bounceInDown cubic-bezier(0.22, 0.61, 0.36, 1)'
+				bounceInDown: 'bounceInDown cubic-bezier(0.215, 0.610, 0.355, 1.000)',
+				bounceInUp: 'bounceInUp cubic-bezier(0.215, 0.610, 0.355, 1.000)'
 			},
-
 			transitionTimingFunction: {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
-			}
+			},
+			
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

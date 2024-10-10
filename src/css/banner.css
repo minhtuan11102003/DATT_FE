@@ -10,13 +10,14 @@
     animation: fadeOut 1s ease-in-out forwards;
 }
 
+
 @keyframes fadeIn {
     0% {
         opacity: 1;
         transform: translateX(50px);
     }
 
-    50%{
+    50% {
         opacity: 1;
         transform: translateX(100px)
     }

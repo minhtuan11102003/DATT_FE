@@ -10,7 +10,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .w-content{
+
+  .w-content {
     @apply w-[1200px]
   }
 }
@@ -19,6 +20,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -31,13 +33,48 @@ body {
     font-style: normal;
   } */
 
-  .nice-title:after{
+  .nice-title:after {
     left: calc(50% - 51.5px);
   }
 
-  .figure-hover:hover .bounch{
+  /* .figure-hover{
+    display:
+  } */
+
+  .figure-hover:hover .bounch-hover {
     display: block;
   }
 
-  
+  .figure-hover:hover .btn-welcome {
+    color: #fff;
+    background-color: #63c2ea;
+  }
+
+  .animate-mode {
+    animation-fill-mode: both;
+  }
+
+
+  .bg-contact{
+    background-color: rgb(117 193 222);
+  }
+
+  .hotel_facilities::-webkit-scrollbar {
+    display: none;
+  }
+
+
+}
+
+
+@layer components {
+  .pagination__link {
+    @apply font-karla text-[18px] font-bold uppercase no-underline hover:text-[#fe6d6d] inline-flex items-center
+  }
+
+  .pagiantion__link--active {
+    @apply text-[#fe6d6d]
+  }
+
+
 }
