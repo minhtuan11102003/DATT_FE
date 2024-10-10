@@ -13,7 +13,7 @@ import { Phone } from 'lucide-react';
 
 const HeaderComponent = () => {
     return (
-        <div className='w-full h-[132px]'>
+        <div className='w-full h-[142px]'>
             <div className='w-full h-[42px] bg-[#313a45] text-[#7a7e84] flex justify-center '>
                 <div className='w-[1140px] h-full py-2.5 flex justify-between'>
                     <div className='w-1/2 flex items-center'>
@@ -38,20 +38,13 @@ const HeaderComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[110px] flex justify-center '>
+            <div className='w-full h-[110px] flex justify-center pb-4'>
                 <div className='flex gap-4 w-[1140px] h-full justify-around items-center'>
                     <div className='w-[150px] h-full flex items-center'>
-                        <Link href="/Home"><img src="./images/site-logo.png" alt="site-logo" /> </Link>
+                        <Link href="/"><img src="./images/site-logo.png" alt="site-logo" /> </Link>
                     </div>
                     <div className='w-[990px] flex justify-around items-center'>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger className='flex gap-1 items-center transition-colors duration-500 hover:text-[#16b4ef]'>HOME
-                                <ChevronDownIcon />
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
-                                <DropdownMenuItem><Link href="/Home">Home</Link></DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link href="/" className='transition-colors duration-500 hover:text-[#16b4ef]'>HOME</Link>
                         <Link href="/Accomodation" className='transition-colors duration-500 hover:text-[#16b4ef] '> ACCOMMODATION </Link>
                         <Link href="/Gallery" className='transition-colors duration-500 hover:text-[#16b4ef]'> GALLERY </Link>
                         <DropdownMenu>
@@ -61,6 +54,8 @@ const HeaderComponent = () => {
                             <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
                                 <DropdownMenuItem className='hover:bg-white'><Link href="/aboutus" className='hover:bg-white hover:text-black'>ABOUT US</Link></DropdownMenuItem>
                                 <DropdownMenuItem>BOOKING</DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/Aboutus" className='hover:text-blue-400'>ABOUT US</Link></DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/booking" className='hover:text-blue-400'>BOOKING</Link></DropdownMenuItem>
                                 <DropdownMenuItem>ROOM DETAILS</DropdownMenuItem>
                                 <DropdownMenuItem><Link href="/ourStaff" className='hover:bg-white hover:text-black'>OurStaff</Link></DropdownMenuItem>
                                 <DropdownMenuItem>404 Page</DropdownMenuItem>
@@ -68,13 +63,12 @@ const HeaderComponent = () => {
                         </DropdownMenu>
                         <Link href="/News" className='transition-colors duration-500 hover:text-[#16b4ef]'> NEWS </Link>
                         <Link href="/Contacts" className='transition-colors duration-500 hover:text-[#16b4ef]'> CONTACTS </Link>
-                        <div className='relative'>
+                        <div className='relative w-1/6'>
                             <p className='flex gap-3 bg-[#fe5d5d] text-white p-2.5' ><Phone />1234567890</p>
                             <span className='absolute bg-[#fe5d5d] w-96 h-[44px] top-0 left-[150px]'></span>
                         </div>
                     </div>
                 </div>
-                <div className='bg-red-500 absolute w-36' ></div>
             </div>
         </div>
     );

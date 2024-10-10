@@ -13,6 +13,13 @@ import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
 // import Contact from "@/components/page/contact";
 
+import Welcome_hotel from "@/app/Home/welcome_hotel";
+
+import Contact from "@/components/page/contact";
+import Facilities from "@/components/page/facilties";
+
+
+
 export default function Home() {
   return (
     <div className="w-full ">
@@ -75,6 +82,7 @@ export default function Home() {
                 <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">
                   BOOK
                 </Button>
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
             </div>
             <div className="relative w-[223px] h-[276px] top-[26px] left-[907px]">
@@ -363,6 +371,7 @@ export default function Home() {
               
             </div>
             {/* </div> */}
+
           </div>
           <div className="w-1/2 h-[400px] border"></div>
           <div className="w-1/4 h-[400px] border"></div>
@@ -419,6 +428,22 @@ export default function Home() {
             </div>
           </section>
         </div>
+      </div>
+      <div className="sectionNew w-full flex justify-center ">
+        <div className="w-[1140px] flex flex-col items-center gap-52">
+
+
+          <Welcome_hotel/>
+          <div className="w-1/2 h-[400px] border"></div>
+          <div className="w-1/4 h-[400px] border"></div>
+
+          <div className="w-1/2 h-[20px] "></div>
+          
+          
+        </div>
+      </div>
+      <div className="sectionFacilities w-full">
+        <Facilities />
       </div>
 
     </div>
