@@ -4,73 +4,83 @@ const ContactsPage = () => {
     return (
 
         <div>
-            {/* Banner */}
-            <section className="relative h-80 bg-cover bg-center" style={{ backgroundImage: 'url(./images/banner-section/bannerContacts.jpg)' }}>
-                <div className="pt-12 relative z-10 flex flex-col items-center justify-center h-full text-white">
-                    <h1 className="text-5xl font-serif uppercase">CONTACT US</h1>
-                    <div className="pb-5 mt-4" style={{ backgroundImage: 'url(./images/nice-title-breadcrumb.png)', width: '102px', height: '6px', backgroundSize: 'cover' }}></div>
+            {/* Banner SEction */}
+            <section className="relative h-80 mb-[80px] text-center overflow-hidden	" style={{ backgroundImage: 'url(./images/banner-section/bannerContacts.jpg)' }}>
+                <div className="px-[15px] mx-[auto] ">
+                    <div className="w-[100%]">
+                        <div className="pt-[170px] pb-[58px] relative  nice_title z-[2]">
+                            <h2 className="text-5xl font-serif uppercase block leading-[25px] text-[#fff] relative mb-[40px] pb-[40px] w-[100%] z-[150]">CONTACT US
+                                <div className="bottom-[-30%] h-[35%] w-[110px] absolute left-1/2 transform -translate-x-1/2" style={{ backgroundImage: 'url(./images/nice-title-breadcrumb.png)' }}></div>                            </h2>
+                        </div>
+                    </div>
                 </div>
-                <img src="./images/giamGia.png" alt="" className="absolute top-0 right-96" />
+                <div className="left-[0px] top-[0px] w-[100%] absolute">
+                    <div className=" w-[90%] px-[15px] mx-[auto] relative">
+                        <div className="absolute top-0 right-[220px]">
+                            <img src="./images/giamGia.png" alt=""  />
+                        </div>
+                    </div>
+                </div>
             </section>
 
             {/* Contact Section */}
-            <section className="contact_mail_area mb-24 mt-14 pl-96 pr-96">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap">
-                        <div className="w-full lg:w-1/2 md:w-1/2 sm:w-full">
-                            <div className="send_mail mb-10">
+            <section className="contact_mail_area mb-[94px] ">
+                <div className="w-[1170px] pr-[15px] pl-[15px] mx-auto">
+                    <div className="pr-[-15px] pl-[-15px] flex">
+                        <div className="w-[50%] relative min-h-[1px] px-[15px]">
+                            <div className="send_mail ">
                                 <div className="section_title mb-10">
-                                    <h4 className="text-xl uppercase font-serif">Send Us An Email</h4>
+                                    <h4 className="text-xl uppercase font-serif ">Send Us An Email</h4>
                                 </div>
+                                <form action="contact_process.php" method="post">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <input type="text" placeholder="First Name *" name="fname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Last Name *" name="lname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
+                                        </div>
+                                        <div>
+                                            <input type="email" placeholder="Your Email Id *" name="email" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="Phone Number *" name="phone" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
+                                        </div>
+                                        <div className="col-span-2">
+                                            <textarea name="message" placeholder="Message " required className="border border-gray-300 p-2 w-full h-24 pl-4 uppercase"></textarea>
+                                        </div>
+                                        <div className="mt-4">
+                                            <input
+                                                className="bg-red-400 text-white font-bold py-2 px-4 rounded border-2 border-transparent hover:bg-transparent hover:text-red-500 hover:border-red-400 transition duration-300"
+                                                type="submit"
+                                                name="submit"
+                                                value="Submit Now"
+                                            />
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <form action="contact_process.php" method="post">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <input type="text" placeholder="First Name *" name="fname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
-                                    </div>
-                                    <div>
-                                        <input type="text" placeholder="Last Name *" name="lname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
-                                    </div>
-                                    <div>
-                                        <input type="email" placeholder="Your Email Id *" name="email" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
-                                    </div>
-                                    <div>
-                                        <input type="text" placeholder="Phone Number *" name="phone" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
-                                    </div>
-                                    <div className="col-span-2">
-                                        <textarea name="message" placeholder="Message " required className="border border-gray-300 p-2 w-full h-24 pl-4 uppercase"></textarea>
-                                    </div>
-                                    <div className="mt-4">
-                                        <input
-                                            className="bg-red-400 text-white font-bold py-2 px-4 rounded border-2 border-transparent hover:bg-transparent hover:text-red-500 hover:border-red-400 transition duration-300"
-                                            type="submit"
-                                            name="submit"
-                                            value="Submit Now"
-                                        />
-                                    </div>
-                                </div>
-                            </form>
                         </div>
-                        <div className="w-full lg:w-1/2 md:w-1/2 sm:w-full mt-10 lg:mt-0 pl-6">
+                        <div className="w-[50%] relative min-h-[1px] px-[15px]">
                             <div className="contact_info mt-16">
                                 <div className="section_title mb-10">
                                     <h4 className="text-xl uppercase font-serif">Contact Info</h4>
                                 </div>
                                 <ul className="list-none">
-                                    <li className="flex mb-4">
+                                    <li className="flex mb-4 mb-[29px] leading-[25px] text-[16px]">
                                         <img className="w-5 h-5 mr-2" src="./images/icon-section/google-map.png" alt="Location" />
-                                        <span>St Amsterdam finland, <br /> United States of AKY16 8PN</span>
+                                        <span className='text-gray-500 '>St Amsterdam finland, <br /> United States of AKY16 8PN</span>
                                     </li>
-                                    <li className="flex items-center mb-4 pt-2">
+                                    <li className="flex mb-4 mb-[29px] leading-[25px] text-[16px]">
                                         <img src="./images/icon-section/icon-phone.png" alt="Phone" className="w-5 h-5 mr-2" />
-                                        <span>1234567890</span>
+                                        <span className='text-gray-500'>1234567890</span>
                                     </li>
-                                    <li className="flex items-center mb-4 pt-2">
+                                    <li className="flex mb-4 mb-[29px] leading-[25px] text-[16px]">
                                         <img src="./images/icon-section/envelope.png" alt="Email" className="w-5 h-5 mr-2" />
-                                        <span>info@hotelbooking.com</span>
+                                        <span className='text-gray-500'>info@hotelbooking.com</span>
                                     </li>
                                 </ul>
-                                <div className="flex space-x-4 mt-4 pt-2">
+                                <div className="flex space-x-4 mt-4">
                                     <a href="#" className="group">
                                         <img src="./images/icon-section/facebook.png" alt="Facebook" className="w-5 h-5 filter grayscale transition duration-300 group-hover:brightness-50 group-hover:scale-110" />
                                     </a>
