@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -18,11 +14,13 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border box-border;
   }
 
+
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-karla;
   }
 }
 
@@ -54,9 +52,28 @@ body {
     animation-fill-mode: both;
   }
 
+
+  .bg-contact{
+    background-color: rgb(117 193 222);
+  }
+
   .hotel_facilities::-webkit-scrollbar {
     display: none;
   }
+
+  .transform-slider{
+    transform: translate3d(-848px,0,0);
+  }
+
+
+  .special_offer_sub{
+    right: calc(50% - 117px);
+  }
+
+ 
+
+  
+
 
 }
 

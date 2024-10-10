@@ -18,6 +18,7 @@ import Contact from "@/components/page/contact";
 import Facilities from "@/components/page/facilties";
 
 
+
 export default function Home() {
   return (
     <div className="w-full ">
@@ -35,10 +36,10 @@ export default function Home() {
               </div>
               <span className="border h-[40px]"></span>
               <div className="w-[160px] ">
-                <DatePickerDemo />
+                <DatePickerDemo/>
               </div>
               <div className="w-[160px] ">
-                <DatePickerDemo />
+                <DatePickerDemo/>
               </div>
               <div className="w-[120px] ">
                 <Select>
@@ -95,9 +96,15 @@ export default function Home() {
       </div>
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel />
-          <div className="w-1/2 h-[20px] "></div>
 
+
+          <Welcome_hotel/>
+          <div className="w-1/2 h-[400px]"></div>
+          <div className="w-1/4 h-[400px]"></div>
+
+          <div className="w-1/2 h-[20px]"></div>
+          
+          
         </div>
       </div>
       <div className="sectionFacilities w-full">
