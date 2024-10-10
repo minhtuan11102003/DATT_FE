@@ -52,69 +52,180 @@ const GalleryPage = () => {
     }
   };
 
-  const [products, setProducts] = useState([
+  const arrTitle: { id: number; title: string }[] = [
+    { id: 2, title: 'DULUXE ROOM' },
+    { id: 3, title: 'SINGLE BEDROOM' },
+    { id: 4, title: 'DOUBLE BEDROOM' },
+    { id: 5, title: 'CLASSIC ROOM' },
+    { id: 6, title: 'EXE ROOM' },
+    { id: 7, title: 'ROYAL ROOM' },
+  ];
+
+  const arrProducts: {
+    id: number;
+    title: string;
+    categoryId: number;
+    img: string;
+  }[] = [
     {
       id: 1,
-      name: 'Room 1',
-      type: 'SINGLE BEDROOM,DULUXE ROOM,ROYAL ROOM,CLASSIC ROOM',
-      imgSrc: './images/Room/r1.jpg',
+      categoryId: 2,
+      title: 'SINGLE BEDROOM,DULUXE ROOM,ROYAL ROOM,CLASSIC ROOM',
+      img: './images/Room/r1.jpg',
     },
     {
       id: 2,
-      name: 'Room 2',
-      type: 'SINGLE BEDROOM,DULUXE ROOM,ROYAL ROOM',
-      imgSrc: './images/Room/r2.jpg',
+      categoryId: 3,
+      title: 'SINGLE BEDROOM,DULUXE ROOM,ROYAL ROOM',
+      img: './images/Room/r2.jpg',
     },
     {
       id: 3,
-      name: 'Room 3',
-      type: 'DOUBLE BEDROOM,DULUXE ROOM,ROYAL ROOM,EXE ROOM,CLASSIC ROOM',
-      imgSrc: './images/Room/r3.jpg',
+      categoryId: 7,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,ROYAL ROOM,EXE ROOM,CLASSIC ROOM',
+      img: './images/Room/r3.jpg',
     },
     {
       id: 4,
-      name: 'Room 4',
-      type: 'DULUXE ROOM,ROYAL ROOM,DOUBLE BEDROOM,EXE ROOM',
-      imgSrc: './images/Room/r4.jpg',
+      categoryId: 5,
+      title: 'DULUXE ROOM,ROYAL ROOM,DOUBLE BEDROOM,EXE ROOM',
+      img: './images/Room/r4.jpg',
     },
     {
       id: 5,
-      name: 'Room 5',
-      type: 'SINGLE BEDROOM,DULUXE ROOM,CLASSIC ROOM',
-      imgSrc: './images/Room/r5.jpg',
+      categoryId: 6,
+      title: 'SINGLE BEDROOM,DULUXE ROOM,CLASSIC ROOM',
+      img: './images/Room/r5.jpg',
     },
     {
       id: 6,
-      name: 'Room 6',
-      type: 'SINGLE BEDROOM,DULUXE ROOM',
-      imgSrc: './images/Room/r6.jpg',
+      categoryId: 7,
+      title: 'SINGLE BEDROOM,DULUXE ROOM',
+      img: './images/Room/r6.jpg',
     },
     {
       id: 7,
-      name: 'Room 7',
-      type: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM,CLASSIC ROOM',
-      imgSrc: './images/Room/r7.jpg',
+      categoryId: 4,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM,CLASSIC ROOM',
+      img: './images/Room/r7.jpg',
     },
     {
       id: 8,
-      name: 'Room 8',
-      type: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
-      imgSrc: './images/Room/r8.jpg',
+      categoryId: 5,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r8.jpg',
     },
-    // Thêm các phòng khác
-  ]);
-  const [filteredProducts, setFilteredProducts] = useState(products);
-  const [selectedType, setSelectedType] = useState('ALL');
+    {
+      id: 9,
+      categoryId: 2,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r5.jpg',
+    },
+    {
+      id: 10,
+      categoryId: 2,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r2.jpg',
+    },
+    {
+      id: 11,
+      categoryId: 2,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r4.jpg',
+    },
+    {
+      id: 12,
+      categoryId: 3,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r5.jpg',
+    },
+    {
+      id: 13,
+      categoryId: 3,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r6.jpg',
+    },
+    {
+      id: 14,
+      categoryId: 3,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r2.jpg',
+    },
+    {
+      id: 15,
+      categoryId: 4,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r3.jpg',
+    },
+    {
+      id: 16,
+      categoryId: 4,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r6.jpg',
+    },
+    {
+      id: 17,
+      categoryId: 4,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r4.jpg',
+    },
+    {
+      id: 18,
+      categoryId: 5,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r4.jpg',
+    },
+    {
+      id: 19,
+      categoryId: 5,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r8.jpg',
+    },
+    {
+      id: 20,
+      categoryId: 6,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r7.jpg',
+    },
+    {
+      id: 21,
+      categoryId: 6,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r6.jpg',
+    },
+    {
+      id: 22,
+      categoryId: 6,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r1.jpg',
+    },
+    {
+      id: 23,
+      categoryId: 7,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r2.jpg',
+    },
+    {
+      id: 24,
+      categoryId: 7,
+      title: 'DOUBLE BEDROOM,DULUXE ROOM,EXE ROOM',
+      img: './images/Room/r3.jpg',
+    },
+  ];
 
-  const filterProducts = (type: string) => {
-    if (type === 'ALL') {
-      setFilteredProducts(products);
-    } else {
-      setFilteredProducts(
-        products.filter(product => product.type.split(',').includes(type))
-      );
-    }
-    setSelectedType(type);
+  const [idCheck, setIdCheck] = useState<number>(2);
+  const [productId, setProductId] = useState<
+    { id: number; title: string; categoryId: number; img: string }[]
+  >(arrProducts.slice(0, 8));
+
+  const getProductId = (id: number) => {
+    const arrProductId = arrProducts.filter(item => item.categoryId == id);
+    setProductId(arrProductId);
+  };
+  console.log(productId);
+
+  const showAllProducts = () => {
+    setProductId(arrProducts.slice(0, 8)); // Chỉ hiển thị 4 sản phẩm
   };
 
   return (
@@ -152,26 +263,24 @@ const GalleryPage = () => {
         <div className="w-full h-[80px] flex justify-center">
           <div className="flex gap-4 w-[1140px] h-full justify-around items-center">
             <div className="w-[990px] flex justify-around items-center ">
-              {[
-                'ALL',
-                'DULUXE ROOM',
-                'SINGLE BEDROOM',
-                'DOUBLE BEDROOM',
-                'CLASSIC ROOM',
-                'EXE ROOM',
-                'ROYAL ROOM',
-              ].map(roomType => (
-                <a
-                  key={roomType}
-                  href="#"
-                  className="font-bold active:border-solid  focus:outline-slate-500 focus:ring"
-                  onClick={e => {
-                    e.preventDefault();
-                    filterProducts(roomType);
-                  }}
-                >
-                  {roomType}
-                </a>
+              <a
+                href="#"
+                className="font-bold active:border-solid  focus:outline-slate-500 focus:ring"
+                onClick={() => showAllProducts()}
+              >
+                All
+              </a>
+              {arrTitle.map(title => (
+                <>
+                  <a
+                    key={title.id}
+                    href="#"
+                    className="font-bold active:border-solid  focus:outline-slate-500 focus:ring"
+                    onClick={() => getProductId(title.id)}
+                  >
+                    {title.title}
+                  </a>
+                </>
               ))}
             </div>
           </div>
@@ -279,24 +388,28 @@ const GalleryPage = () => {
             </div>
 
             <div className="flex flex-wrap">
-              {filteredProducts.map(product => (
-                <div key={product.id} className="w-full md:w-1/4 p-2 ">
-                  <figure className="relative overflow-hidden">
-                    <img
-                      alt={product.name}
-                      src={product.imgSrc}
-                      className="w-full h-auto"
-                    />
-                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80 ">
-                      <div className="absolute inset-0 bg-red-400 flex items-center justify-center hover:text-black">
-                        <div className="bg-white rounded-full size-12 items-center justify-center flex ">
-                          <Search />
+              {productId.length > 0 ? (
+                productId.map(product => (
+                  <div key={product.id} className="w-full md:w-1/4 p-2">
+                    <figure className="relative overflow-hidden">
+                      <img
+                        src={product.img}
+                        className="w-full h-auto"
+                        alt={product.title}
+                      />
+                      <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80">
+                        <div className="absolute inset-0 bg-red-400 flex items-center justify-center hover:text-black">
+                          <div className="bg-white rounded-full size-12 items-center justify-center flex">
+                            <Search />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </figure>
-                </div>
-              ))}
+                    </figure>
+                  </div>
+                ))
+              ) : (
+                <p>Không tìm thấy sản phẩm</p>
+              )}
             </div>
           </div>
 
