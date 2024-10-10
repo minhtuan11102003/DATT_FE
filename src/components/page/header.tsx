@@ -59,10 +59,10 @@ const HeaderComponent = () => {
                                 <ChevronDownIcon />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
-                                <DropdownMenuItem className='hover:bg-white'><Link href="/Aboutus" className='hover:bg-white hover:text-black'>ABOUT US</Link></DropdownMenuItem>
+                                <DropdownMenuItem className='hover:bg-white'><Link href="/aboutus" className='hover:bg-white hover:text-black'>ABOUT US</Link></DropdownMenuItem>
                                 <DropdownMenuItem>BOOKING</DropdownMenuItem>
                                 <DropdownMenuItem>ROOM DETAILS</DropdownMenuItem>
-                                <DropdownMenuItem>OUR STAFF</DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/ourStaff" className='hover:bg-white hover:text-black'>OurStaff</Link></DropdownMenuItem>
                                 <DropdownMenuItem>404 Page</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
