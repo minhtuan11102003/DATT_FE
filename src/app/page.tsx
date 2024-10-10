@@ -95,15 +95,13 @@ export default function Home() {
       </div>
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel />
+          <Welcome_hotel/>
           <div className="w-1/2 h-[20px] "></div>
-
         </div>
       </div>
       <div className="sectionFacilities w-full">
         <Facilities />
       </div>
-
     </div>
   );
 }

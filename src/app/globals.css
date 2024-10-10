@@ -54,9 +54,15 @@ body {
     animation-fill-mode: both;
   }
 
+
+  .bg-contact{
+    background-color: rgb(117 193 222);
+  }
+
   .hotel_facilities::-webkit-scrollbar {
     display: none;
   }
+
 
 }
 

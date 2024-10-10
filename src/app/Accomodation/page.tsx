@@ -63,7 +63,7 @@ const AccomodationPage = () => {
                         <div className="room__details-right flex items-center">
                           <a
                             href="btn"
-                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] text-[14px] font-Lora border-2"
+                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] text-[14px] font-Lora border-2 hover:bg-[#777777] hover:text-white"
                           >
                             Book
                           </a>
@@ -103,7 +103,7 @@ const AccomodationPage = () => {
                         <div className="room__details-right flex items-center">
                           <a
                             href="btn"
-                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] font-Lora border-2 text-[14px]"
+                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] font-Lora border-2 text-[14px] hover:bg-[#777777] hover:text-white"
                           >
                             Book
                           </a>
@@ -143,7 +143,7 @@ const AccomodationPage = () => {
                         <div className="room__details-right flex items-center">
                           <a
                             href="btn"
-                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] font-Lora border-2 text-[14px] "
+                            className="px-[17px] py-[8px] border-[#777777] text-[#777777] font-Lora border-2 text-[14px] hover:bg-[#777777] hover:text-white"
                           >
                             Book
                           </a>
