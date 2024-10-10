@@ -2,6 +2,53 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { TiSocialGooglePlus } from "react-icons/ti";
 import React from 'react';
 
+const staffData = [
+    {
+        name: "JOHN DOE",
+        position: "Hotel Manager",
+        description: "Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.",
+        imgSrc: "./images/about-us-staff-one.jpg",
+        social: {
+            facebook: "#",
+            twitter: "#",
+            googlePlus: "#"
+        }
+    },
+    {
+        name: "JANE DOE",
+        position: "Receptionist",
+        description: "Cras ac justo et augue suscipit euismod vel eget lectus.",
+        imgSrc: "./images/about-us-staff-two.jpg",
+        social: {
+            facebook: "#",
+            twitter: "#",
+            googlePlus: "#"
+        }
+    },
+    {
+        name: "MARK DOE",
+        position: "Room Service Manager",
+        description: "Vivamus malesuada vitae sem ac pellentesque.",
+        imgSrc: "./images/about-us-staff-three.jpg",
+        social: {
+            facebook: "#",
+            twitter: "#",
+            googlePlus: "#"
+        }
+    },
+    {
+        name: "ANNA DOE",
+        position: "Chef",
+        description: "Phasellus accumsan rna vitae molestie interdum.",
+        imgSrc: "./images/about-us-staff-four.jpg",
+        social: {
+            facebook: "#",
+            twitter: "#",
+            googlePlus: "#"
+        }
+    }
+];
+
 const AboutusPage = () => {
     return (
         <div className='w-full h-[2000px]'>
@@ -88,134 +135,43 @@ const AboutusPage = () => {
                     <p className='mt-[45px]'>Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nuroin vehicula nunc arcu, pulvinarlla porta vel. Vivamus malesuada vitae sem ac pellentesque.</p>
                 </div>
                 <div className='w-[1140px] mt-20'>
-                    <h5 className='text-xl text-[#131e2a] mb-9'>OUR HOTEL STAFF</h5>
-                </div>
-                <div className='w-[1170px] grid grid-cols-4 gap-2 mb-7'>
-                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                <h5 className='text-xl text-[#131e2a] mb-9'>OUR HOTEL STAFF</h5>
+            </div>
+            <div className='w-[1170px] grid grid-cols-4 gap-2 mb-7'>
+                {staffData.map((staff, index) => (
+                    <figure className="figure-hover relative group" key={index}>
                         <div className="mb-[28px]">
                             <a>
                                 <img
-                                    src="./images/about-us-staff-one.jpg"
+                                    src={staff.imgSrc}
                                     width={"100%"}
-                                    alt="room-eight"
+                                    alt={staff.name}
                                 />
                             </a>
                         </div>
                         <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
                             <div className="p-[22px] text-[#FFF]">
-                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
-                                <span className='text-[14px]'>Hotel Manager</span>
+                                <h6 className="font-[18px] leading-5">{staff.name}</h6>
+                                <span className='text-[14px]'>{staff.position}</span>
                                 <p className="text-[19px] mt-[15px]">
-                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                    {staff.description}
                                 </p>
                                 <div className="social-icons mt-4 flex space-x-4">
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                    <a href={staff.social.facebook} className="text-[#FFF] hover:text-[#fe6d6d]">
                                         <FaFacebookF className="h-5 w-5" />
                                     </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                    <a href={staff.social.twitter} className="text-[#FFF] hover:text-[#fe6d6d]">
                                         <FaTwitter className="h-5 w-5" />
                                     </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                    <a href={staff.social.googlePlus} className="text-[#FFF] hover:text-[#fe6d6d]">
                                         <TiSocialGooglePlus className="h-6 w-6" />
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </figure>
-                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
-                        <div className="mb-[28px]">
-                            <a>
-                                <img
-                                    src="./images/about-us-staff-two.jpg"
-                                    width={"100%"}
-                                    alt="room-eight"
-                                />
-                            </a>
-                        </div>
-                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
-                            <div className="p-[22px] text-[#FFF]">
-                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
-                                <span className='text-[14px]'>Hotel Manager</span>
-                                <p className="text-[19px] mt-[15px]">
-                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
-                                </p>
-                                <div className="social-icons mt-4 flex space-x-4">
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaFacebookF className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaTwitter className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <TiSocialGooglePlus className="h-6 w-6" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
-                        <div className="mb-[28px]">
-                            <a>
-                                <img
-                                    src="./images/about-us-staff-three.jpg"
-                                    width={"100%"}
-                                    alt="room-eight"
-                                />
-                            </a>
-                        </div>
-                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
-                            <div className="p-[22px] text-[#FFF]">
-                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
-                                <span className='text-[14px]'>Hotel Manager</span>
-                                <p className="text-[19px] mt-[15px]">
-                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
-                                </p>
-                                <div className="social-icons mt-4 flex space-x-4">
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaFacebookF className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaTwitter className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <TiSocialGooglePlus className="h-6 w-6" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
-                        <div className="mb-[28px]">
-                            <a>
-                                <img
-                                    src="./images/about-us-staff-four.jpg"
-                                    width={"100%"}
-                                    alt="room-eight"
-                                />
-                            </a>
-                        </div>
-                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
-                            <div className="p-[22px] text-[#FFF]">
-                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
-                                <span className='text-[14px]'>Hotel Manager</span>
-                                <p className="text-[19px] mt-[15px]">
-                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
-                                </p>
-                                <div className="social-icons mt-4 flex space-x-4">
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaFacebookF className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <FaTwitter className="h-5 w-5" />
-                                    </a>
-                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
-                                        <TiSocialGooglePlus className="h-6 w-6" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                </div>
+                ))}
+            </div>
             </div>
         </div>
     );

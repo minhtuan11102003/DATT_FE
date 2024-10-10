@@ -4,6 +4,11 @@ import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google"
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
 
+import Contact_us from "@/components/page/contact_us";
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
@@ -39,14 +44,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" suppressHydrationWarning={true} className={`${karla.variable} ${PlayfairDisplay.variable} ${lora.variable}`}>
-      {/* <head>
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet"
         />
-      </head> */}
+        
+      </head>
       <body
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
@@ -54,6 +60,7 @@ export default function RootLayout({
         <div className="w-full">
           <HeaderComponent />
           {children}
+          <Contact_us/>
           <FooterComponent />
         </div>
       </body>
