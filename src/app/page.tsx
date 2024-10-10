@@ -15,6 +15,7 @@ import BannerComponent from "../components/page/banner";
 // import Contact from "@/components/page/contact";
 import { useState } from "react";
 
+<<<<<<< HEAD
 
   const images  = [
     "/images/cS-27.jpg",
@@ -32,6 +33,15 @@ import { useState } from "react";
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
+=======
+import Welcome_hotel from "@/app/Home/welcome_hotel";
+
+import Contact from "@/components/page/contact";
+import Facilities from "@/components/page/facilties";
+
+
+
+>>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
 export default function Home() {
   return (
     <div className="w-full ">
@@ -94,6 +104,7 @@ export default function Home() {
                 <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">
                   BOOK
                 </Button>
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
             </div>
             <div className="relative w-[223px] h-[276px] top-[26px] left-[907px]">
@@ -154,8 +165,14 @@ export default function Home() {
                 <p className="text-xs text-gray-400">17 May 2014</p>
               </div>
             </div>
+<<<<<<< HEAD
+=======
+            {/* </div> */}
+
+>>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
           </div>
         </div>
+<<<<<<< HEAD
           </div>
          
           <div className="grid grid-cols-3 h-[400px]">
@@ -180,6 +197,78 @@ export default function Home() {
       >
         &gt;
       </button>
+=======
+      </div>
+      <div className="sectionContact w-full ">
+        <div className="flex justify-center items-center">
+          <section className="w-[1070px] h-[95px]  justify-center py-7 px-9 bg-[#3AC4FA]">
+            <div className="w-full h-[95px] mx-auto ">
+              <div className="h-1/2 flex justify-center items-center gap-4">
+                {/*Section1 */}
+                <div className="w-[132.5px] px-4 lg:w-1/4 ">
+                  <div className=" text-left ">
+                    <h2 className="text-lg text-white">Call Us</h2>
+                    <p className="text-lg text-white">123 456 7890</p>
+                  </div>
+                </div>
+
+                {/*Section 2*/}
+                <div className="w-[132.5px] lg:w-1/4 px-4">
+                  <div className="text-left">
+                    <h6 className="text-lg text-white">Email Us</h6>
+                    <p className="text-lg text-white">info@hotelbooking.com</p>
+                  </div>
+                </div>
+
+                {/*Section 3*/}
+                <div className="w-full lg:w-1/4 px-4">
+                  <div className="text-left relative">
+                    <input
+                      type="text"
+                      placeholder="Enter ID for Newsletter"
+                      className=" bg-transparent outline-none border-b rounded p-2 w-full  "
+                    />
+                    <a
+                      href="#"
+                      className="absolute right-0 bottom-2 bg-[#2FB3E7] text-white py-2 px-4 rounded hover:bg-white hover:text-blue-500"
+                    >
+                      Go
+                    </a>
+                    <hr></hr>
+                  </div>
+                </div>
+
+                {/*Section 4*/}
+                <div className="w-[189px] h-full text-white flex items-center gap-4 px-4">
+                  <Facebook />
+                  <Instagram />
+                  <Twitter />
+                  <Linkedin />
+                  <Mail />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="sectionNew w-full flex justify-center ">
+        <div className="w-[1140px] flex flex-col items-center gap-52">
+
+
+          <Welcome_hotel/>
+          <div className="w-1/2 h-[400px] border"></div>
+          <div className="w-1/4 h-[400px] border"></div>
+
+          <div className="w-1/2 h-[20px] "></div>
+          
+          
+        </div>
+      </div>
+      <div className="sectionFacilities w-full">
+        <Facilities />
+      </div>
+
+>>>>>>> 668597af808ac8ca39f2ab6cd9fdba263289aab7
     </div>
   </div>
 

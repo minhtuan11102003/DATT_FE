@@ -1,0 +1,42 @@
+.chuyenDong {
+    transition: opacity 0.5s, transform 1s;
+}
+
+.animate-in {
+    animation: fadeIn 1s ease-in-out normal;
+}
+
+.animate-out {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
