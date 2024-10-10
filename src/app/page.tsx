@@ -11,7 +11,11 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
+
+import Welcome_hotel from "@/app/Home/welcome_hotel";
+
 import Contact from "@/components/page/contact";
+
 
 export default function Home() {
   return (
@@ -90,6 +94,11 @@ export default function Home() {
       </div>
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
+
+          <Welcome_hotel/>
+          <div className="w-1/2 h-[400px] border"></div>
+          <div className="w-1/4 h-[400px] border"></div>
+
           <div className="h-[400px] text-center">
             {/* <div> */}
             <div>
@@ -353,6 +362,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-1/2 h-[20px] "></div>
+
         </div>
       </div>
 

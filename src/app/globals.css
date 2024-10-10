@@ -52,6 +52,19 @@ body {
     animation-fill-mode: both;
   }
 
-  
-  
+
+
+}
+
+
+@layer components{
+  .pagination__link{
+    @apply font-karla text-[18px] font-bold uppercase no-underline hover:text-[#fe6d6d] inline-flex items-center
+  }
+
+  .pagiantion__link--active{
+    @apply text-[#fe6d6d]
+  }
+
+
 }
