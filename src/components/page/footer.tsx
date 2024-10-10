@@ -1,7 +1,8 @@
 import React from 'react';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../../css/footer.css';
 const FooterComponent = () => {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
     return (
         <footer className="footer_area text-white py-14">
             <div className="container mx-auto custom-padding ">
@@ -14,12 +15,16 @@ const FooterComponent = () => {
                                 </a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p><br />
-                            <div>
-                                <i className="fas fa-map-marker-alt mr-2"></i>
-                                ST Amsterdam, Finland,
-                                <br />
-                                <p className='pl-5'>United Stats of AKY16 8PN</p>
-                            </div>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <i className="fas fa-map-marker-alt mr-2"></i>
+                                        ST Amsterdam, Finland,
+                                        <br />
+                                        <div className="pl-5">United Stats of AKY16 8PN</div>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 mb-6">
