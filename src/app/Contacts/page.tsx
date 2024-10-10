@@ -26,19 +26,19 @@ const ContactsPage = () => {
                             <form action="contact_process.php" method="post">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <input type="text" placeholder="First Name" name="fname" required className="border border-gray-300 p-2 w-full h-16 pl-4" />
+                                        <input type="text" placeholder="First Name *" name="fname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Last Name" name="lname" required className="border border-gray-300 p-2 w-full h-16 pl-4" />
+                                        <input type="text" placeholder="Last Name *" name="lname" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
                                     </div>
                                     <div>
-                                        <input type="email" placeholder="Your Email Id" name="email" required className="border border-gray-300 p-2 w-full h-16 pl-4" />
+                                        <input type="email" placeholder="Your Email Id *" name="email" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Phone Number *" name="phone" required className="border border-gray-300 p-2 w-full h-16 pl-4" />
+                                        <input type="text" placeholder="Phone Number *" name="phone" required className="border border-gray-300 p-2 w-full h-16 pl-4 uppercase" />
                                     </div>
                                     <div className="col-span-2">
-                                        <textarea name="message" placeholder="Message" required className="border border-gray-300 p-2 w-full h-24 pl-4"></textarea>
+                                        <textarea name="message" placeholder="Message " required className="border border-gray-300 p-2 w-full h-24 pl-4 uppercase"></textarea>
                                     </div>
                                     <div className="mt-4">
                                         <input
@@ -70,29 +70,19 @@ const ContactsPage = () => {
                                         <span>info@hotelbooking.com</span>
                                     </li>
                                 </ul>
-                                <div className="social_icons mt-4 pt-2">
-                                    <ul className="flex space-x-4">
-                                        <li>
-                                            <a href="#">
-                                                <img src="./images/icon-section/facebook.png" alt="Facebook" className="w-5 h-5" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img src="./images/icon-section/twitter.png" alt="Twitter" className="w-5 h-5" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img src="./images/icon-section/google-plus.png" alt="Google Plus" className="w-5 h-5" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img src="./images/icon-section/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div className="flex space-x-4 mt-4 pt-2">
+                                    <a href="#" className="group">
+                                        <img src="./images/icon-section/facebook.png" alt="Facebook" className="w-5 h-5 filter grayscale transition duration-300 group-hover:brightness-50 group-hover:scale-110" />
+                                    </a>
+                                    <a href="#" className="group pl-4">
+                                        <img src="./images/icon-section/twitter.png" alt="Twitter" className=" w-5 h-5 filter grayscale transition duration-300 group-hover:brightness-50 group-hover:scale-110" />
+                                    </a>
+                                    <a href="#" className="group pl-4">
+                                        <img src="./images/icon-section/google-plus.png" alt="Google Plus" className="w-5 h-5 filter grayscale transition duration-300 group-hover:brightness-50 group-hover:scale-110" />
+                                    </a>
+                                    <a href="#" className="group pl-4">
+                                        <img src="./images/icon-section/linkedin.png" alt="LinkedIn" className="w-5 h-5 filter grayscale transition duration-300 group-hover:brightness-50 group-hover:scale-110" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
