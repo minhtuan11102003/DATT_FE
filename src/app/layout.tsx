@@ -3,7 +3,11 @@ import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import Contact_us from "@/components/page/contact_us";
+
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -41,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="vi" suppressHydrationWarning={true} className={`${karla.variable} ${PlayfairDisplay.variable} ${lora.variable}`}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -54,9 +59,10 @@ export default function RootLayout({
         className={`${nunito.className} text-primary !scroll-smooth`}
       >
         <div className="w-full">
-          <HeaderComponent />
+          {/* <HeaderComponent /> */}
           {children}
-          <FooterComponent />
+          <Contact_us/>
+          {/* <FooterComponent /> */}
         </div>
       </body>
     </html>
