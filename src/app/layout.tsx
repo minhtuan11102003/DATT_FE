@@ -56,7 +56,7 @@ export default function RootLayout({
         <div className="w-full">
           <HeaderComponent />
           {children}
-          <Contact_us/>
+          <Contact/>
           <FooterComponent />
         </div>
       </body>
