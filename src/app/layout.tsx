@@ -3,9 +3,8 @@ import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import Contact_us from "@/components/page/contact_us";
 import Contact from "@/components/page/contact";
-
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
