@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../css/footer.css';
 const FooterComponent = () => {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
     return (
         <footer className="footer_area text-white py-14">
             <div className="container mx-auto px-36">
@@ -21,6 +22,7 @@ const FooterComponent = () => {
                                 </div>
                                 <p className='pl-5'>United Stats of AKY16 8PN</p>
                             </div>
+
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 mb-6">
