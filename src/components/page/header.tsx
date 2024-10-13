@@ -29,10 +29,10 @@ const HeaderComponent = () => {
                     <div className='w-1/2 h-full'>
                         <ul className='flex justify-end items-center'>
                             <li>
-                                <Link href="/login" className="border-r border-[#7a7e84] pr-4 transition-colors duration-500 hover:text-[#16b4ef]">LOGIN</Link>
+                                <Link href="/Login" className="border-r border-[#7a7e84] pr-4 transition-colors duration-500 hover:text-[#16b4ef]">LOGIN</Link>
                             </li>
                             <li className='px-2'>
-                                <Link href="/register" className="transition-colors duration-500 hover:text-[#16b4ef]">REGISTER</Link>
+                                <Link href="/Register" className="transition-colors duration-500 hover:text-[#16b4ef]">REGISTER</Link>
                             </li>
                         </ul>
                     </div>
