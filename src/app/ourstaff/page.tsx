@@ -1,13 +1,7 @@
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { TiSocialGooglePlus } from "react-icons/ti";
 
-const staffMembers:{ name: string; img: string; position: string; description: string }[] = [
-    { name: 'John Doe', position: 'Hotel Manager', img: './images/staff.jpg', description: 'Semper ac dolor vitae.' },
-    { name: 'Jane Smith', position: 'Receptionist', img: './images/staff.jpg', description: 'Lorem ipsum dolor sit.' },
-    { name: 'Michael Lee', position: 'Chef', img: './images/staff.jpg', description: 'Cras interdum hendrerit.' },
-    { name: 'Sarah Connor', position: 'Head of Housekeeping', img: './images/staff.jpg', description: 'Phasellus accumsan.' },
-    { name: 'Tommy Shelby', position: 'Security Officer', img: './images/staff.jpg', description: 'Nulla accumsan urna.' },
-    { name: 'Emma Watson', position: 'Event Coordinator', img: './images/staff.jpg', description: 'Interdum et malesuada.' },
-    { name: 'Chris Evans', position: 'Marketing Manager', img: './images/staff.jpg', description: 'Ut ac massa volutpat.' },
-  ]
+
   
    function OurStaffComponent() {
     return (
@@ -26,36 +20,271 @@ const staffMembers:{ name: string; img: string; position: string; description: s
                     </div>
                 </div>
             </div>
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4 lg:px-24 xl:px-32 max-w-screen-xl">
-          <h2 className="text-3xl font-bold mb-8">Our Staff</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {staffMembers.map((staff, index) => (
-              <div
-                key={index}
-                className="relative group text-center bg-white rounded-lg shadow-md overflow-hidden h-96"
-              >
-                <img
-                  src={staff.img}
-                  alt={staff.name}
-                  width={300}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
+      
+      
+  <div className='w-full h-[1000px]'>
+
+  <div className='flex flex-col justify-center items-center w-full mt-20'>
   
-                <div className="absolute inset-0 bg-red-500 bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg"></div>
-  
-                <div className="absolute inset-0 bg-white bg-opacity-90 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-4">
-                  <h3 className="text-xl font-semibold mt-4">{staff.name}</h3>
-                  <p className="text-sm text-gray-500">{staff.position}</p>
-                  <p className="mt-4 text-gray-700">{staff.description}</p>
+  <div className='w-[1140px] mt-20'>
+                    <h5 className='text-xl text-[#131e2a] mb-9'>OUR STAFF</h5>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className='w-[1170px] grid grid-cols-4 gap-2 mb-7'>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-one.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-two.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-three.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-four.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-four.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-four.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-four.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure className="figure-hover relative group"> {/* Thêm lớp group */}
+                        <div className="mb-[28px]">
+                            <a>
+                                <img
+                                    src="./images/about-us-staff-four.jpg"
+                                    width={"100%"}
+                                    alt="room-eight"
+                                />
+                            </a>
+                        </div>
+                        <div className="bounch-hover p-[13px] opacity-0 group-hover:opacity-100 bg-repeat h-[287px] w-full text-left top-0 left-0 bottom-0 right-0 absolute transition-opacity duration-700" style={{ backgroundColor: 'rgba(254, 109, 109, 0.8)' }}>
+                            <div className="p-[22px] text-[#FFF]">
+                                <h6 className="font-[18px] leading-5">DOHN DOE</h6>
+                                <span className='text-[14px]'>Hotel Manager</span>
+                                <p className="text-[19px] mt-[15px]">
+                                    Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan rna.
+                                </p>
+                                <div className="social-icons mt-4 flex space-x-4">
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaFacebookF className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <FaTwitter className="h-5 w-5" />
+                                    </a>
+                                    <a href="#" className="text-[#FFF] hover:text-[#fe6d6d]">
+                                        <TiSocialGooglePlus className="h-6 w-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
       </div>
+      </div>
+      </div>
+
+
     );
   }
   export default OurStaffComponent

@@ -49,7 +49,7 @@ const FooterComponent = () => {
                         <div className="footer_widget">
                             <h5 className='uppercase font-serif text-xl'>We are global</h5><br />
                             <div className="footer_map">
-                                <img src="./images/footer-map-two.jpg" className="mt-5" />
+                                <img src="./images/footer-map-one.png" className="mt-5" />
                             </div>
                         </div>
                     </div>

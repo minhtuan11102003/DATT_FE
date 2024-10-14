@@ -7,7 +7,7 @@ import FooterComponent from "../components/page/footer";
 
 import Contact_us from "@/components/page/contact_us";
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const nunito = Nunito({
@@ -65,10 +65,10 @@ export default function RootLayout({
 
           <FooterComponent/>
 
-          <HeaderComponent />
+          {/* <HeaderComponent />
           {children}
           <Contact_us/>
-          <FooterComponent />
+          <FooterComponent /> */}
         </div>
       </body>
     </html>
