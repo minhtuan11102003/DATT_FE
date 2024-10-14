@@ -4,6 +4,7 @@ import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google"
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
 // import Newsection from "../components/page/newsection";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Contact_us from "@/components/page/contact_us";
 
@@ -65,10 +66,14 @@ export default function RootLayout({
 
           <FooterComponent/>
 
+<<<<<<< HEAD
           {/* <HeaderComponent />
           {children}
           <Contact_us/>
           <FooterComponent /> */}
+=======
+        
+>>>>>>> 1b79c1d36ec43762b6ca46adbff02ecc596d2a7d
         </div>
       </body>
     </html>
