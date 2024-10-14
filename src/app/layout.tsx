@@ -11,6 +11,9 @@ import Contact_us from "@/components/page/contact_us";
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
+
+import Contact_us from "@/components/page/contact_us";
+import Contact from "@/components/page/contact";
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
@@ -66,14 +69,13 @@ export default function RootLayout({
 
           <FooterComponent/>
 
-<<<<<<< HEAD
           {/* <HeaderComponent />
           {children}
           <Contact_us/>
           <FooterComponent /> */}
-=======
         
->>>>>>> 1b79c1d36ec43762b6ca46adbff02ecc596d2a7d
+          <Contact/>
+          <FooterComponent />
         </div>
       </body>
     </html>

@@ -15,8 +15,7 @@ import BannerComponent from "../components/page/banner";
 import Newsection from "../components/page/newsection";
 // import Contact from "@/components/page/contact";
 
-<<<<<<< HEAD
-=======
+
 
   const images  = [
     "/images/cS-27.jpg",
@@ -40,7 +39,6 @@ import Contact from "@/components/page/contact";
 import Facilities from "@/components/page/facilties";
 
 
->>>>>>> 1b79c1d36ec43762b6ca46adbff02ecc596d2a7d
 export default function Home() {
   return (
     <div className="w-full ">
@@ -119,10 +117,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       
       <Newsection/>
-=======
       <div className="sectionNew w-full h-[550px] border flex justify-center">
         <div className="w-[1140px] flex items-center">
           <div className="w-1/2 h-[400px] ">
@@ -253,13 +249,15 @@ export default function Home() {
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
           <Welcome_hotel/>
+      <div className="sectionNew w-full flex justify-center ">
+        <div className="w-[1140px] flex flex-col items-center gap-52">
+          <Welcome_hotel />
           <div className="w-1/2 h-[20px] "></div>
         </div>
       </div>
       <div className="sectionFacilities w-full">
         <Facilities />
       </div>
-
 
     </div>
   </div>
@@ -304,7 +302,6 @@ export default function Home() {
           </div>
         </div>
       </div>
->>>>>>> 1b79c1d36ec43762b6ca46adbff02ecc596d2a7d
       
 
               
