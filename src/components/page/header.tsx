@@ -37,7 +37,7 @@ const HeaderComponent = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div className='w-full h-[110px] flex justify-center pb-4'>
                 <div className='flex gap-4 w-[1140px] h-full justify-around items-center'>
                     <div className='w-[150px] h-full flex items-center'>

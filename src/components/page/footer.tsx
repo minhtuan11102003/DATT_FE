@@ -1,12 +1,13 @@
 import React from 'react';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import '../../css/footer.css';
 const FooterComponent = () => {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
     return (
         <footer className="footer_area text-white py-14">
-            <div className="container mx-auto custom-padding ">
+            <div className="container mx-auto px-36">
                 <div className="footer_top flex flex-wrap justify-between mb-10">
-                    <div className="w-33 md:w-1/3 mb-6">
+                    <div className="w-full md:w-1/3 mb-6">
                         <div className="pl-10 pr-10">
                             <div className="footer_logo mb-4">
                                 <a href="#">
@@ -15,11 +16,13 @@ const FooterComponent = () => {
                             </div>
                             <p>Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p><br />
                             <div>
-                                <i className="fas fa-map-marker-alt mr-2"></i>
-                                ST Amsterdam, Finland,
-                                <br />
+                                <div className='flex'>
+                                    <img className='w-5 pt-1 pb-1 pr-2' src="./images/icon-section/google-map2.png" alt="" />
+                                    ST Amsterdam, Finland,
+                                </div>
                                 <p className='pl-5'>United Stats of AKY16 8PN</p>
                             </div>
+
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 mb-6">
