@@ -63,7 +63,7 @@ const HeaderComponent = () => {
                         <Link href="/Contacts" className='transition-colors duration-500 hover:text-[#16b4ef]'> CONTACTS </Link>
                         <div className='relative w-1/6'>
                             <p className='flex gap-3 bg-[#fe5d5d] text-white p-2.5' ><Phone />1234567890</p>
-                            <span className='absolute bg-[#fe5d5d] w-96 h-[44px] top-0 left-[150px]'></span>
+                            <span className='absolute bg-[#fe5d5d] w-10/12 h-[44px] top-0 left-[150px]'></span>
                         </div>
                     </div>
                 </div>

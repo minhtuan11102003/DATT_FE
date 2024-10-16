@@ -101,6 +101,10 @@ const config: Config = {
 
 			},
 			
+		},
+		screens:{
+			'xs':'480px',
+			'md':'768px'
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
