@@ -66,14 +66,10 @@ export default function RootLayout({
 
           <FooterComponent/>
 
-<<<<<<< HEAD
           {/* <HeaderComponent />
           {children}
           <Contact_us/>
           <FooterComponent /> */}
-=======
-        
->>>>>>> 1b79c1d36ec43762b6ca46adbff02ecc596d2a7d
         </div>
       </body>
     </html>
