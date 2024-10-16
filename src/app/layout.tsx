@@ -13,7 +13,7 @@ import Contact_us from "@/components/page/contact_us";
 
 
 import Contact_us from "@/components/page/contact_us";
-import Contact from "@/components/page/contact";
+
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
@@ -72,9 +72,7 @@ export default function RootLayout({
           {/* <HeaderComponent />
           {children}
           <Contact_us/>
-          <FooterComponent /> */}
-        
-          <Contact/>
+
           <FooterComponent />
         </div>
       </body>
