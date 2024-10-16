@@ -3,6 +3,15 @@ import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
+// import Newsection from "../components/page/newsection";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import Contact_us from "@/components/page/contact_us";
+
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 import Contact_us from "@/components/page/contact_us";
 
 const nunito = Nunito({
@@ -54,9 +63,16 @@ export default function RootLayout({
         className={`${nunito.className} text-primary !scroll-smooth`}
       >
         <div className="w-full">
-          <HeaderComponent />
+          <HeaderComponent/>
+            {children}
+            {/* <Newsection/> */}
+
+          <FooterComponent/>
+
+          {/* <HeaderComponent />
           {children}
           <Contact_us/>
+
           <FooterComponent />
         </div>
       </body>

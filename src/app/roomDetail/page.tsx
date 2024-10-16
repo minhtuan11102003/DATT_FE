@@ -1,3 +1,11 @@
+import React from 'react';
+
+const RoomDetailPage = () => {
+    return (
+        <div className='w-full '>
+            <div className='section1 w-full h-[333px]'>
+
+
 'use client'
 import React, { useState } from 'react';
 
