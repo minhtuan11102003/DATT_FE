@@ -52,13 +52,13 @@ export default function BannerComponent() {
             <div className="w-full h-full">
                 <img src={`${mangImg[dem].img}`} alt="Lỗi ảnh" className={`chuyenDong ${isChuyenDong ? 'animate-in' : 'animate-out'}  w-full h-full object-cover`} />
             </div>
-            <div className="w-[800px] h-[150px] absolute top-[30%] left-[20%]">
-                <div className={`w-[755px] h-[80px] text-[42px] font-semibold mb-6 chuyenDong ${isChuyenDong ? 'animate-in' : 'animate-out'}  `}>
-                    <p className="w-full h-[40px]">{mangImg[dem].title.toUpperCase()}</p>
+            <div className="w-[400px] md:w-[800px] md:h-[150px] absolute top-[30%] left-4 md:left-[20%]">
+                <div className={`w-full text-[16px] xs:text-[22px] md:w-[755px] md:h-[80px] md:text-[42px] font-semibold md:mb-6 chuyenDong ${isChuyenDong ? 'animate-in' : 'animate-out'}  `}>
+                    <p className="w-full h-auto md:h-[40px]">{mangImg[dem].title.toUpperCase()}</p>
                     <p >{mangImg[dem].title2.toUpperCase()}</p>
                 </div>
-                <div className={`w-[196px] p-3 bg-[#f7c411] ${isChuyenDong ? 'animate-in' : 'animate-out'}`}>
-                    <Button className="w-[172px] h-[40px] py-[8px] px-[34px] border border-spacing-[2px] text-[18px] font-semibold">EXPLORE IT</Button>
+                <div className={`w-[90px] p-1 md:w-[196px] md:p-3 bg-[#f7c411] ${isChuyenDong ? 'animate-in' : 'animate-out'}`}>
+                    <Button className="w-[82px] h-[20px] px-2 py-2 md:w-[172px] md:h-[40px] text-[12px] md:py-[8px] md:px-[34px] border border-spacing-[2px] md:text-[18px] font-semibold">EXPLORE IT</Button>
                 </div>
             </div>
             <div className="absolute top-[80%] left-[50%] flex gap-4">
