@@ -1,7 +1,8 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 
 const config: Config = {
+
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -104,9 +105,14 @@ const config: Config = {
 		},
 		screens:{
 			'xs':'480px',
-			'md':'768px'
+			sm: '480px',
+      md: '768px',
+      lg: '991px',
+      xl: '1200px',
+      '2xl': '1536px',
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
+
 };
 export default config;

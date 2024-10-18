@@ -229,8 +229,8 @@ const GalleryPage = () => {
   };
 
   return (
-    <div>
-      <section className="mb-25">
+    <div className="block">
+      <section className="mb-25 ">
         <div className="relative w-full h-[313px]">
           <img
             src="./images/Room/bannerGallery.jpg"
@@ -249,7 +249,7 @@ const GalleryPage = () => {
               alt="Additional"
               className="mt-2 h-auto"
             />
-            <div className="absolute w-[215px] h-[272px] top-0 right-80">
+            <div className="absolute w-[215px] h-[272px] top-0 right-80 ">
               <img
                 src="./images/special-offer-yellow-main.png"
                 alt="Lỗi ảnh"
@@ -259,7 +259,7 @@ const GalleryPage = () => {
           </div>
         </div>
       </section>
-      <div className="menu-room">
+      <div className="menu-room ">
         <div className="w-full h-[80px] flex justify-center">
           <div className="flex gap-4 w-[1140px] h-full justify-around items-center">
             <div className="w-[990px] flex justify-around items-center ">
@@ -289,10 +289,10 @@ const GalleryPage = () => {
 
       <div className="section-room flex justify-center items-center">
         <div className="w-[1170px] h-auto  justify-center py-5 px-9 ">
-          <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row">
+          <div className="container ">
+            <div className="flex flex-col justify-center items-center lg:flex-row">
               {/* Main Slider */}
-              <div className="w-8/12 h-1/2 pl-2 mb-4 ">
+              <div className="w-12/12 h-1/2 pl-2 mb-4 ">
                 <div className="relative">
                   {/* Wrapper for slides */}
                   <div className="carousel-inner pr-8" role="listbox">
@@ -302,7 +302,7 @@ const GalleryPage = () => {
                         alt="Lỗi ảnh"
                         className={`chuyenDong ${
                           isChuyenDong ? 'animate-in' : 'animate-out'
-                        } w-full h-full object-cover`}
+                        }  w-full sm:h-64 md:h-80 lg:h-96 object-cover`}
                       />
                     </div>
                   </div>
@@ -314,6 +314,7 @@ const GalleryPage = () => {
                     data-slide="prev"
                   >
                     <ChevronLeft
+                      className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
                       onClick={() => {
                         setChuyenDong(true);
                         downSetDem();
@@ -337,10 +338,10 @@ const GalleryPage = () => {
               </div>
 
               {/* Thumbnails */}
-              <div className="w-96 ">
-                <div className="grid grid-cols-1 gap-4">
+              <div className="w-12/12  ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-1 gap-4">
                   <div className="mb-4">
-                    <div className="relative">
+                    <div className="relative ">
                       <a
                         href="./images/Room/r9.jpg"
                         data-uk-lightbox="{group:'group1'}"
@@ -349,7 +350,7 @@ const GalleryPage = () => {
                         <img
                           alt="img"
                           src="./images/Room/r9.jpg"
-                          className="w-full h-[201px]"
+                          className="w-auto h-auto"
                         />
                         <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80 ">
                           <div className="absolute inset-0 bg-red-400 flex items-center justify-center hover:text-black">
@@ -371,7 +372,7 @@ const GalleryPage = () => {
                         <img
                           alt="img"
                           src="./images/Room/r9.jpg"
-                          className="w-full h-[201px]"
+                          className="w-auto h-auto"
                         />
                         <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80 ">
                           <div className="absolute inset-0 bg-red-400 flex items-center justify-center hover:text-black">
@@ -387,10 +388,10 @@ const GalleryPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 md:gap-2 lg:grid-cols-4 gap-4">
               {productId.length > 0 ? (
                 productId.map(product => (
-                  <div key={product.id} className="w-full md:w-1/4 p-2">
+                  <div key={product.id} className="p-2">
                     <figure className="relative overflow-hidden">
                       <img
                         src={product.img}
