@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
@@ -13,6 +14,7 @@ const karla = Karla({
   subsets: ['latin'],
   variable: '--font-karla',
   display: 'swap',
+
 })
 
 const lora = Lora({
@@ -27,9 +29,10 @@ const PlayfairDisplay = Playfair_Display({
   display: 'swap',
 })
 
+
 export const metadata: Metadata = {
-  title: "Dự án thực tập",
-  description: "Admin app",
+  title: 'Dự án thực tập',
+  description: 'Admin app',
 };
 
 export default function RootLayout({
@@ -38,8 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="vi" suppressHydrationWarning={true} className={`${karla.variable} ${PlayfairDisplay.variable} ${lora.variable}`}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -48,6 +53,7 @@ export default function RootLayout({
         />
         
       </head>
+
       <body
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
@@ -55,6 +61,7 @@ export default function RootLayout({
         <div className="w-full">
           <HeaderComponent />
           {children}
+          <Contact_us/>
           <FooterComponent />
         </div>
       </body>
