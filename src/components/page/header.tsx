@@ -52,10 +52,12 @@ const HeaderComponent = () => {
                                 <ChevronDownIcon />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
+                                <DropdownMenuItem className='hover:bg-white'><Link href="/aboutus" className='hover:bg-white hover:text-black'>ABOUT US</Link></DropdownMenuItem>
+                                <DropdownMenuItem>BOOKING</DropdownMenuItem>
                                 <DropdownMenuItem><Link href="/Aboutus" className='hover:text-blue-400'>ABOUT US</Link></DropdownMenuItem>
                                 <DropdownMenuItem><Link href="/booking" className='hover:text-blue-400'>BOOKING</Link></DropdownMenuItem>
                                 <DropdownMenuItem>ROOM DETAILS</DropdownMenuItem>
-                                <DropdownMenuItem>OUR STAFF</DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/ourstaff" className='hover:bg-white hover:text-black'>OurStaff</Link></DropdownMenuItem>
                                 <DropdownMenuItem>404 Page</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>

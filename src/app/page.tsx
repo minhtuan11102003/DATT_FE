@@ -11,11 +11,8 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
-
-import Welcome_hotel from "@/app/Home/welcome_hotel";
-
+import Newsection from "../components/page/newsection";
 // import Contact from "@/components/page/contact";
-import Facilities from "@/components/page/facilties";
 
 
 export default function Home() {
@@ -76,6 +73,11 @@ export default function Home() {
                   </SelectContent>
                 </Select>
               </div>
+              <div className="w-[120px] ">
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">
+                  BOOK
+                </Button>
+                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Button className="bg-[#f7c411] w-full text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
@@ -93,16 +95,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[500px] md:h-0"></div>
-      <div className="sectionNew w-full flex justify-center ">
-        <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel />
-          <div className="w-1/2 h-[20px] "></div>
-        </div>
-      </div>
-      <div className="sectionFacilities w-full">
-        <Facilities />
-      </div>
-    </div>
+
+
+      <Newsection/>
+
+      
+
+              
+              </div>
+            
   );
 }
