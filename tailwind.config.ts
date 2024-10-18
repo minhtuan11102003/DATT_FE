@@ -1,7 +1,8 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 
 const config: Config = {
+
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +10,28 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		screens: {
+			'xs': '480px',
+			'sm': '480px',
+			// => @media (m:in-width 640px) { ... }
+
+			'md': '768px',
+			// => @media (min-width: 768px) { ... }
+
+			'lg': '991px',
+			// => @media (min-width: 1024px) { ... }
+
+			'xl': '1200px',
+			// => @media (min-width: 1280px) { ... }
+
+			'2xl': '1536px',
+			// => @media (min-width: 1536px) { ... }
+		},
+		container: {
+			center: true,
+			padding: '15px',
+
+		},
 		extend: {
 			colors: {
 				background: 'hsl(var(--background))',
@@ -90,7 +113,7 @@ const config: Config = {
 					},
 					'100%': { transform: 'translate3d(0, 0, 0)' }
 				}
-				
+
 			},
 			animation: {
 				bounceInDown: 'bounceInDown cubic-bezier(0.215, 0.610, 0.355, 1.000)',
@@ -100,13 +123,10 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
-			
+
 		},
-		screens:{
-			'xs':'480px',
-			'md':'768px'
-		}
 	},
 	plugins: [require("tailwindcss-animate")],
+
 };
 export default config;

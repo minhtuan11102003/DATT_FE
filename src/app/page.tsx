@@ -17,7 +17,7 @@ import Facilities from "@/components/page/facilties";
 
 export default function Home() {
   return (
-    <div className="w-full ">
+    <div className="w-full h-auto ">
       <div className="sectionDate w-[435px] h-[184px] xs:w-full xs:h-[241px] md:w-full md:h-[570px] mt-6 pb-[90px]">
         <div className="w-full h-[189px] xs:w-full xs:h-full md:w-full md:h-full flex justify-center ">
           <div className="w-[270px] h-[440px] xs:w-[420px] xs:h-[420px] md:w-[1140px] md:h-[100px] md:mt-0 mt-[40%] absolute text-[#aab8ca] z-10">
