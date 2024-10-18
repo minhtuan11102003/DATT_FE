@@ -124,6 +124,13 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
+			screens:{
+				'sm': '480px',
+				'md': '768px',
+				'lg': '991px',
+				'xl': '1200px',
+				'2x1': '1536px',
+			}
 			
 		},
 		screens:{
