@@ -1,12 +1,14 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nunito, Roboto, Karla,  Playfair_Display, Lora} from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
-
 import Contact_us from "@/components/page/contact_us";
 
+
 // import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 const nunito = Nunito({
@@ -18,6 +20,7 @@ const karla = Karla({
   subsets: ['latin'],
   variable: '--font-karla',
   display: 'swap',
+
 })
 
 const lora = Lora({
@@ -32,9 +35,10 @@ const PlayfairDisplay = Playfair_Display({
   display: 'swap',
 })
 
+
 export const metadata: Metadata = {
-  title: "Dự án thực tập",
-  description: "Admin app",
+  title: 'Dự án thực tập',
+  description: 'Admin app',
 };
 
 export default function RootLayout({
@@ -43,6 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="vi" suppressHydrationWarning={true} className={`${karla.variable} ${PlayfairDisplay.variable} ${lora.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -54,6 +59,7 @@ export default function RootLayout({
         />
         
       </head>
+
       <body
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
@@ -62,7 +68,7 @@ export default function RootLayout({
           {/* <HeaderComponent /> */}
           {children}
           <Contact_us/>
-          {/* <FooterComponent /> */}
+          <FooterComponent />
         </div>
       </body>
     </html>
