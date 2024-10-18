@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { ChevronDown } from 'lucide-react';
 import { Facebook, Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
@@ -93,7 +92,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <Newsection/>
       
 
