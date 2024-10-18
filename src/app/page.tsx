@@ -11,13 +11,13 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
-import Newsection from "../components/page/newsection";
-// import Contact from "@/components/page/contact";
+import Welcome_hotel from "@/app/Home/welcome_hotel";
+import Facilities from "@/components/page/facilties";
 
 
 export default function Home() {
   return (
-    <div className="w-full ">
+    <div className="w-full h-auto ">
       <div className="sectionDate w-[435px] h-[184px] xs:w-full xs:h-[241px] md:w-full md:h-[570px] mt-6 pb-[90px]">
         <div className="w-full h-[189px] xs:w-full xs:h-full md:w-full md:h-full flex justify-center ">
           <div className="w-[270px] h-[440px] xs:w-[420px] xs:h-[420px] md:w-[1140px] md:h-[100px] md:mt-0 mt-[40%] absolute text-[#aab8ca] z-10">
@@ -73,11 +73,6 @@ export default function Home() {
                   </SelectContent>
                 </Select>
               </div>
-              <div className="w-[120px] ">
-                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px]">
-                  BOOK
-                </Button>
-                <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Button className="bg-[#f7c411] w-full text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
@@ -95,14 +90,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-
-      <Newsection/>
-
-      
-
-              
-              </div>
-            
+      <div className="h-[500px] md:h-0"></div>
+      <div className="sectionNew w-full flex justify-center ">
+        <div className="w-[1140px] flex flex-col items-center gap-52">
+          <Welcome_hotel />
+          <div className="w-1/2 h-[20px] "></div>
+        </div>
+      </div>
+      <div className="sectionFacilities w-full">
+        <Facilities />
+      </div>
+    </div>
   );
 }
