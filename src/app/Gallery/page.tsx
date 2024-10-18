@@ -261,14 +261,14 @@ const GalleryPage = () => {
       </section>
       <div className="menu-room ">
         <div className="w-full h-[80px] flex justify-center">
-          <div className="flex gap-4 w-[1140px] h-full justify-around items-center">
-            <div className="w-[990px] flex justify-around items-center ">
+          <div className="flex gap-4 w-full max-w-[1140px] h-full justify-around sm:justify-start md:justify-start items-center px-4">
+            <div className="w-full md:w-[990px] flex flex-wrap  md:justify-around items-center sm:space-x-4">
               <a
                 href="#"
-                className="font-bold active:border-solid  focus:outline-slate-500 focus:ring"
+                className="font-bold active:border-solid  focus:outline-slate-500 focus:ring sm:ml-3"
                 onClick={() => showAllProducts()}
               >
-                All
+                ALL
               </a>
               {arrTitle.map(title => (
                 <>
