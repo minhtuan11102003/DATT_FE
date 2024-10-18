@@ -14,58 +14,32 @@ import BannerComponent from "../components/page/banner";
 import Newsection from "../components/page/newsection";
 // import Contact from "@/components/page/contact";
 
-<<<<<<< HEAD
-=======
 
-
-  const images  = [
-    "/images/cS-27.jpg",
-    "/images/cS-21.jpg",
-    "/images/cS-27.jpg",
-    "/images/cS-21.jpg",
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-import Welcome_hotel from "@/app/Home/welcome_hotel";
-
-import Contact from "@/components/page/contact";
-import Facilities from "@/components/page/facilties";
-
-
->>>>>>> c21560d1ac0babe0c5da955e674070747fe63337
 export default function Home() {
   return (
     <div className="w-full ">
-      <div className="sectionDate w-full h-[570px] relative mt-6 pb-[90px]">
-        <div className="w-full h-full flex justify-center ">
-          <div className="w-[1140px] h-[100px] py-[26px] px-[10px] absolute text-[#aab8ca] bg-[#313a45] z-10">
-            <div className="w-[1120px] h-full flex items-end gap-8 pl-2 ">
-              <div className="w-[135px] h-full flex flex-col">
-                <p className="text-[#fff] text-[15px] font-[600px] h-[15px]">
-                  BOOK YOUR
-                </p>
-                <span className="text-[#fff] text-[30px] font-[700px] h-[25px]">
-                  ROOMS
+      <div className="sectionDate w-[435px] h-[184px] xs:w-full xs:h-[241px] md:w-full md:h-[570px] mt-6 pb-[90px]">
+        <div className="w-full h-[189px] xs:w-full xs:h-full md:w-full md:h-full flex justify-center ">
+          <div className="w-[270px] h-[440px] xs:w-[420px] xs:h-[420px] md:w-[1140px] md:h-[100px] md:mt-0 mt-[40%] absolute text-[#aab8ca] z-10">
+            <div className="w-[270px] px-[10px] h-full flex flex-col items-center gap-4 text-[#aab8ca] bg-[#313a45]
+                xs:w-[420px] xs:h-[389px] 
+                md:w-full md:h-[80px] md:flex-row md:items-center md:gap-8">
+              <div className="xs:w-full md:w-[135px] md:h-[42px] w-full h-full font-karla flex items-center pl-2 text-white font-bold">
+                <span className="xs:w-[380px] w-[240px] text-[15px] md:w-full">
+                  <p className='h-[10px]'>CHOOSE</p>
+                  <p className="text-[28px]">Option</p>
                 </span>
+                <span className="border border-gray-600 w-0 h-full"></span>
               </div>
-              <span className="border h-[40px]"></span>
-              <div className="w-[160px] ">
+              <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
                 <DatePickerDemo />
               </div>
-              <div className="w-[160px] ">
+              <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
                 <DatePickerDemo />
               </div>
-              <div className="w-[120px] ">
+              <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Select>
-                  <SelectTrigger className="w-[120px]">
+                  <SelectTrigger className="w-full md:w-[120px]">
                     <SelectValue placeholder="1 ROOM" />
                   </SelectTrigger>
                   <SelectContent className="bg-[#313a45] text-[#aab8ca]">
@@ -75,9 +49,9 @@ export default function Home() {
                   </SelectContent>
                 </Select>
               </div>
-              <div className="w-[120px] ">
+              <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Select>
-                  <SelectTrigger className="w-[120px]">
+                  <SelectTrigger className="w-full md:w-[120px]">
                     <SelectValue placeholder="1 ADULT" />
                   </SelectTrigger>
                   <SelectContent className="bg-[#313a45] text-[#aab8ca]">
@@ -87,9 +61,9 @@ export default function Home() {
                   </SelectContent>
                 </Select>
               </div>
-              <div className="w-[120px] ">
+              <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Select>
-                  <SelectTrigger className="w-[120px]">
+                  <SelectTrigger className="w-full md:w-[120px]">
                     <SelectValue placeholder="0 CHILD" />
                   </SelectTrigger>
                   <SelectContent className="bg-[#313a45] text-[#aab8ca]">
@@ -104,211 +78,27 @@ export default function Home() {
                   BOOK
                 </Button>
                 <Button className="bg-[#f7c411] text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
+              <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
+                <Button className="bg-[#f7c411] w-full text-[#313a45] font-extrabold text-[16px] border hover:text-white hover:bg-[#313a45] hover: border-[#f7c411]">BOOK</Button>
               </div>
             </div>
-            <div className="relative w-[223px] h-[276px] top-[26px] left-[907px]">
+            <div className="relative hidden w-[150px] h-[80px] md:w-[223px] md:h-[276px] top-[0px] md:left-[907px] md:block">
               <img
                 src="./images/special-offer-main.png"
                 alt="Lỗi ảnh"
-                className="w-full h-full"
+                className="w-full h-full "
               />
             </div>
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-[189px] xs:w-full xs:h-[318px] md:w-full md:h-full">
             <BannerComponent />
           </div>
         </div>
       </div>
-<<<<<<< HEAD
+
 
       <Newsection/>
-=======
-      
-      <Newsection/>
-      <div className="sectionNew w-full h-[550px] border flex justify-center">
-        <div className="w-[1140px] flex items-center">
-          <div className="w-1/2 h-[400px] ">
-          <div>
-          <h2 className="text-xl font-semibold text-white-500 mb-6">News</h2>
-          <div className="space-y-6">
-            <div className="flex items-center">
-              <img
-                src="./images/news-one.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="mr-4"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">QUISQUE AT FELIS PORT TITORDGA</h3>
-                <p className="text-xs text-gray-400">14 May 2014</p>
-              </div>
-            </div>
-            <div className="flex items-center">
-            <img
-                src="./images/news-one.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="mr-4"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">DONEC SCELERISQUE VULPUTATE</h3>
-                <p className="text-xs text-gray-400">15 May 2014</p>
-              </div>
-            </div>
-            <div className="flex items-center">
-            <img
-                src="./images/news-one.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="mr-4"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">CURABITUR VARIUS QUAM LOREM</h3>
-                <p className="text-xs text-gray-400">17 May 2014</p>
-              </div>
-            </div>
 
-            {/* </div> */}
-
-          </div>
-        </div>
-          </div>
-         
-          <div className="grid grid-cols-3 h-[400px]">
-  {/* Hotel Showcase Section */}
-  <div className="col-span-2">
-    <h2 className="text-xl font-bold text-white-500 mb-4">Hotel Showcase</h2>
-    <div className="relative ">
-      <img
-        src={images[currentIndex]}
-        alt="Hotel showcase"
-        className="w-[] h-[300px] object-cover"
-      />
-      <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition"
-        onClick={prevImage}
-      >
-        &lt;
-      </button>
-      <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition"
-        onClick={nextImage}
-      >
-        &gt;
-      </button>
-      </div>
-      <div className="sectionContact w-full ">
-        <div className="flex justify-center items-center">
-          <section className="w-[1070px] h-[95px]  justify-center py-7 px-9 bg-[#3AC4FA]">
-            <div className="w-full h-[95px] mx-auto ">
-              <div className="h-1/2 flex justify-center items-center gap-4">
-                {/*Section1 */}
-                <div className="w-[132.5px] px-4 lg:w-1/4 ">
-                  <div className=" text-left ">
-                    <h2 className="text-lg text-white">Call Us</h2>
-                    <p className="text-lg text-white">123 456 7890</p>
-                  </div>
-                </div>
-
-                {/*Section 2*/}
-                <div className="w-[132.5px] lg:w-1/4 px-4">
-                  <div className="text-left">
-                    <h6 className="text-lg text-white">Email Us</h6>
-                    <p className="text-lg text-white">info@hotelbooking.com</p>
-                  </div>
-                </div>
-
-                {/*Section 3*/}
-                <div className="w-full lg:w-1/4 px-4">
-                  <div className="text-left relative">
-                    <input
-                      type="text"
-                      placeholder="Enter ID for Newsletter"
-                      className=" bg-transparent outline-none border-b rounded p-2 w-full  "
-                    />
-                    <a
-                      href="#"
-                      className="absolute right-0 bottom-2 bg-[#2FB3E7] text-white py-2 px-4 rounded hover:bg-white hover:text-blue-500"
-                    >
-                      Go
-                    </a>
-                    <hr></hr>
-                  </div>
-                </div>
-
-                {/*Section 4*/}
-                <div className="w-[189px] h-full text-white flex items-center gap-4 px-4">
-                  <Facebook />
-                  <Instagram />
-                  <Twitter />
-                  <Linkedin />
-                  <Mail />
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div className="sectionNew w-full flex justify-center ">
-        <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel/>
-      <div className="sectionNew w-full flex justify-center ">
-        <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel />
-          <div className="w-1/2 h-[20px] "></div>
-        </div>
-      </div>
-      <div className="sectionFacilities w-full">
-        <Facilities />
-      </div>
-
-    </div>
-  </div>
-
-  {/* Thumbnails */}
-  <div className="col-span-1 flex flex-col items-center space-y-0 justify-center"> 
-    {images.map((image, index) => (
-      <img
-        key={index}
-        src={image}
-        alt="Thumbnail"
-        className={`w-20 h-20 object-cover cursor-pointer mb-2 ${index === currentIndex ? 'border-2 border-yellow-500' : 'opacity-60'}`}
-        onClick={() => setCurrentIndex(index)}
-      />
-    ))}
-  </div>
-</div>
-
-          <div className="w-1/3 h-[400px] ">
-          <div>
-          <h2 className="text-xl font-semibold text-white-500 mb-6">Customer Says</h2>
-          <div className="bg-green-500 p-4 rounded-md text-sm">
-            <p>
-              Semper ac dolor vitae msan. Cras interdum hendrerit...
-              Nam sed placerat libero, non eleifend dolor.
-            </p>
-          </div>
-          <div className="flex items-center mt-4">
-          <img
-                src="./images/news-one.jpg"
-                alt="news"
-                width={50}
-                height={50}
-                className="mr-4"
-              />
-            <div>
-              <p>JOHN DOE</p>
-              <a href="http://www.john.com" className="text-blue-400">www.john.com</a>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
->>>>>>> c21560d1ac0babe0c5da955e674070747fe63337
       
 
               
