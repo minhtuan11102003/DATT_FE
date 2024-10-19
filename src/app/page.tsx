@@ -13,8 +13,6 @@ import { Button } from "@/components/ui/button";
 import BannerComponent from "../components/page/banner";
 
 import Welcome_hotel from "@/app/Home/welcome_hotel";
-
-import Contact from "@/components/page/contact";
 import Facilities from "@/components/page/facilties";
 
 
