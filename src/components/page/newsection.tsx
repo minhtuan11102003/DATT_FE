@@ -22,56 +22,55 @@ function newsection() {
   return (
 
 
-    <div className="sectionNew w-full h-[550px]  flex justify-center">
-        <div className="w-[1140px] flex items-center">
-          <div className="w-1/2 h-[400px] ">
-          <div>
+    <div className="sectionNew w-full h-auto  flex flex-col items-center md:flex-row md:justify-center ">
+        <div className="w-full md:w-[1140px] flex flex-col md:flex-row items-center ">
+          <div className="w-full md:w-1/2 h-auto mb-6">
           <h2 className="text-xl font-semibold text-white-500 mb-6">News</h2>
           <div className="space-y-6">
-            <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center">
               <img
                 src="./images/news-one.jpg"
                 alt="news"
                 width={80}
                 height={80}
-                className="mr-4"
+                className="w-20 h-20 object-cover mr-4 mb-4 md:mb-0"
               />
               <div>
                 <h3 className="text-sm font-semibold">QUISQUE AT FELIS PORT TITORDGA</h3>
                 <p className="text-xs text-gray-400">14 May 2014</p>
               </div>
             </div>
-            <div className="flex items-center">
-            <img
+            <div className="flex flex-col md:flex-row items-center">
+              <img
                 src="./images/news-one.jpg"
                 alt="news"
                 width={80}
                 height={80}
-                className="mr-4"
+                className="w-20 h-20 object-cover mr-4 mb-4 md:mb-0"
               />
               <div>
-                <h3 className="text-sm font-semibold">DONEC SCELERISQUE VULPUTATE</h3>
-                <p className="text-xs text-gray-400">15 May 2014</p>
+                <h3 className="text-sm font-semibold">QUISQUE AT FELIS PORT TITORDGA</h3>
+                <p className="text-xs text-gray-400">14 May 2014</p>
               </div>
             </div>
-            <div className="flex items-center">
-            <img
+            <div className="flex flex-col md:flex-row items-center">
+              <img
                 src="./images/news-one.jpg"
                 alt="news"
                 width={80}
                 height={80}
-                className="mr-4"
+                className="w-50 h-20 object-cover mr-4 mb-4 md:mb-0"
               />
               <div>
-                <h3 className="text-sm font-semibold">CURABITUR VARIUS QUAM LOREM</h3>
-                <p className="text-xs text-gray-400">17 May 2014</p>
+                <h3 className="text-sm font-semibold">QUISQUE AT FELIS PORT TITORDGA</h3>
+                <p className="text-xs text-gray-400">14 May 2014</p>
               </div>
             </div>
-          </div>
+            
         </div>
           </div>
          
-          <div className="grid grid-cols-3 h-[400px]">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-2 h-auto">
         {/* Hotel Showcase Section */}
         <div className="col-span-2">
           <h2 className="text-xl font-bold text-white-500 mb-4">Hotel Showcase</h2>
@@ -106,9 +105,9 @@ function newsection() {
         </div>
         </div>
 
-          <div className="w-1/3 h-[400px] ">
+          <div className="h-[400px] w-full md:w-1/3  mt-6 md:mt-0">
           <div>
-          <h2 className="text-xl font-semibold text-white-500 mb-6">Customer Says</h2>
+          <h2 className="text-xl font-semibold text-white mb-6">Customer Says</h2>
           <div className="bg-green-500 p-4 rounded-md text-sm">
             <p>
               Semper ac dolor vitae msan. Cras interdum hendrerit...
@@ -121,7 +120,7 @@ function newsection() {
                 alt="news"
                 width={50}
                 height={50}
-                className="mr-4"
+                className="w-12 h-12 object-cover mr-4"
               />
             <div>
               <p>JOHN DOE</p>
