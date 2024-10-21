@@ -12,7 +12,7 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { Menu, Phone } from 'lucide-react';
 
 const HeaderComponent = () => {
-    const [isCheck,setIsCheck] = useState<boolean>(false);
+    const [isCheck,setIsCheck] = useState<boolean>(true);
 
     function setChecked(check:boolean){
         setIsCheck(!check);
@@ -89,8 +89,8 @@ const HeaderComponent = () => {
                             <Menu className='w-[40px] h-[40px] rounded border' onClick={() => setChecked(isCheck)} />
                         </div>
                     </div>
-                    <div className={`w-full px-[15px] h-[352px] ${isCheck ? 'hidden' : 'block'}`}>
-                        <div className='w-[240px] xs:w-[390px] h-full flex flex-col gap-4' >
+                    <div className={`w-full px-[15px] h-[362px] ${isCheck ? 'hidden' : 'block'}`}>
+                        <div className='w-[240px] xs:w-[390px] flex flex-col gap-4' >
                             <Link href="/" className=' w-full transition-colors duration-500 hover:text-[#16b4ef]'>HOME</Link>
                             <Link href="/Accomodation" className='transition-colors duration-500 hover:text-[#16b4ef] '> ACCOMMODATION </Link>
                             <Link href="/Gallery" className='transition-colors duration-500 hover:text-[#16b4ef]'> GALLERY </Link>
@@ -108,6 +108,7 @@ const HeaderComponent = () => {
                             </DropdownMenu>
                             <Link href="/News" className='transition-colors duration-500 hover:text-[#16b4ef]'> NEWS </Link>
                             <Link href="/Contacts" className='transition-colors duration-500 hover:text-[#16b4ef]'> CONTACTS </Link>
+                            {/* <span>0123456789</span> */}
                         </div>
                     </div>
                 </div>
