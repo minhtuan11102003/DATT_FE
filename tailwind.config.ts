@@ -1,7 +1,8 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 
 const config: Config = {
+
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +10,29 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		screens: {
+			'sm': '480px',
+			// => @media (m:in-width 640px) { ... }
+	  
+			'md': '768px',
+			// => @media (min-width: 768px) { ... }
+	  
+			'lg': '991px',
+			// => @media (min-width: 1024px) { ... }
+	  
+			'xl': '1200px',
+			// => @media (min-width: 1280px) { ... }
+	  
+			'2xl': '1536px',
+			// => @media (min-width: 1536px) { ... }
+		  },
+		container: {
+			center: true,
+			padding: '15px',
+			screens: {
+			  '2xl': '1170px'
+			}
+		},
 		extend: {
 			colors: {
 				background: 'hsl(var(--background))',
@@ -108,8 +132,17 @@ const config: Config = {
 				'2x1': '1536px',
 			}
 			
+		},
+		screens:{
+			'xs':'480px',
+			sm: '480px',
+      md: '768px',
+      lg: '991px',
+      xl: '1200px',
+      '2xl': '1536px',
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
+
 };
 export default config;
