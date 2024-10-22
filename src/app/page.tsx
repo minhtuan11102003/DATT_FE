@@ -32,11 +32,14 @@ export default function Home() {
                 </span>
                 <span className="border border-gray-600 w-0 h-full"></span>
               </div>
-              <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                <DatePickerDemo />
+
+              <span className="border h-[40px]"></span>
+              <div className="w-[160px] ">
+                <DatePickerDemo/>
               </div>
-              <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                <DatePickerDemo />
+              <div className="w-[160px] ">
+                <DatePickerDemo/>
+
               </div>
               <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                 <Select>
@@ -94,8 +97,17 @@ export default function Home() {
       <div className="h-[500px] md:h-0"></div>
       <div className="sectionNew w-full flex justify-center ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
-          <Welcome_hotel />
-          <div className="w-1/2 h-[20px] "></div>
+
+
+
+          <Welcome_hotel/>
+          <div className="w-1/2 h-[400px]"></div>
+          <div className="w-1/4 h-[400px]"></div>
+
+          <div className="w-1/2 h-[20px]"></div>
+          
+          
+
         </div>
       </div>
       <div className="sectionFacilities w-full">

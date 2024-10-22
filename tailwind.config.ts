@@ -1,5 +1,7 @@
+
 import type { Config } from 'tailwindcss';
 
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
 
@@ -8,6 +10,7 @@ const config: Config = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
 	],
 	theme: {
 		screens: {
@@ -30,6 +33,10 @@ const config: Config = {
 		container: {
 			center: true,
 			padding: '15px',
+
+			screens: {
+				'2xl': '1170px'
+			}
 
 		},
 		extend: {
@@ -123,9 +130,20 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
+
+
+		}
+	},
+	plugins: [nextui()],
+	
+}
+
+
+
 		},
 	},
 	plugins: [require("tailwindcss-animate")],
 
 };
+
 export default config;
