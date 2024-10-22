@@ -1,3 +1,4 @@
+
 "use client"
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIos } from "react-icons/md";
@@ -76,6 +77,10 @@ const IMAGES = [
 
 
 
+
+import React from "react";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+
 const AccomodationPage = () => {
   return (
     <div className="room-details">
@@ -102,7 +107,9 @@ const AccomodationPage = () => {
       </section>
 
       <section className="room-details-container mb-[55px] relative">
+
         <div className="container flex gap-12">
+
           <div className="room-details__main basis-3/4">
             <div className="room-details__main--title mb-[5px]">
               <h5 className="text-[20px] text-[#131e2a] font-PlayfairDisplay font-normal uppercase leading-[20px]">
@@ -120,6 +127,7 @@ const AccomodationPage = () => {
               <p className="text-[#666666]">Checkout the latest deal</p>
               <div className="room-details__description">
                 <div className="row">
+
                  <Slider_detail_room sliders={IMAGES}/>
                 </div>
                 <div className="row">
@@ -210,14 +218,17 @@ const AccomodationPage = () => {
                               Wi-fi service
                             </p>
                           </li>
+
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
+
                   <div className="mt-[50px] text-[16px] text-justify text-[#131e2a] border-b-[1px] pb-[70px] border-[#e5e5e5]">
                     <p className="mb-[20px]">
+
                       Semper ac dolor vitae accumsan. Cras interdum hendrerit
                       lacinia. Phasellus accumsan urna vitae molestie interdum.
                       Nam sed placerat libero, non eleifend dolor. Cras ac justo
@@ -239,7 +250,9 @@ const AccomodationPage = () => {
                         You may Also like
                       </h5>
                     </div>
+
                     <div className="grid grid-cols-3 gap-8">
+
                       <div className="col-1">
                         <div className="overflow-hidden">
                           <figure className="figure-hover relative">
@@ -337,6 +350,7 @@ const AccomodationPage = () => {
             </div>
           </div>
           <div className="room-dettails__nav basis-1/4">
+
             <aside>
               <div className="form-room__details bg-[#313a45] mb-8 w-[230px]">
                 <form action="" className="flex flex-col gap-4 pt-[30px] pl-[30px] pr-[30px] text-[#90a4bb]">
@@ -399,6 +413,7 @@ const AccomodationPage = () => {
 
               </div>
             </aside>
+
           </div>
         </div>
       </section>

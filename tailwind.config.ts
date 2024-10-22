@@ -1,8 +1,10 @@
 
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
+
 import { nextui } from "@nextui-org/react";
 
 const config: Config = {
+
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +14,7 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
+			'xs': '480px',
 			'sm': '480px',
 			// => @media (m:in-width 640px) { ... }
 
@@ -30,9 +33,11 @@ const config: Config = {
 		container: {
 			center: true,
 			padding: '15px',
+
 			screens: {
 				'2xl': '1170px'
 			}
+
 		},
 		extend: {
 			colors: {
@@ -126,11 +131,19 @@ const config: Config = {
 
 			},
 
+
 		}
 	},
 	plugins: [nextui()],
 	
 }
 
+
+
+		},
+	},
+	plugins: [require("tailwindcss-animate")],
+
+};
 
 export default config;
