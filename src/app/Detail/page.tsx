@@ -1,6 +1,17 @@
+
 "use client"
-import { DatePickerDetail } from "@/components/ui/date-picker-detail";
+
 import React from "react";
+
+import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIos } from "react-icons/md";
+import { DatePickerDetail } from "@/components/ui/date-picker-detail";
+import { Button } from "@nextui-org/react";
+import { CalendarDate, DateInput } from "@nextui-org/react";
+import { CalendarIcon } from "lucide-react";
+
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+
 import Carousel_comment from "@/app/Detail/components/carousel_comment";
 import Slider_detail_room from "@/app/Detail/components/slider_detail_room";
 
@@ -70,10 +81,16 @@ const IMAGES = [
 
 
 
+
+
+
+
+
 const AccomodationPage = () => {
   return (
     <div className="room-details">
       {/* Accomodation */}
+
       <section className="accomodation__breadcrumb mb-[80px]">
         <div className="accomodation__banner bg-[url('/images/banner-item/accomodation-breadcrumb-one.jpg')] bg-no-repeat relative bg-center min-h-[333px] bg-cover text-center">
           <div className="accomodation__banner-title pt-[170px] pb-[58px]">
@@ -83,11 +100,14 @@ const AccomodationPage = () => {
           </div>
           <div className="absolute top-0 md:left-0 w-full left-[-11%]">
             <div className="accomodation__banner-img container relative xl:w-[1170px] lg:w-[992px] md:w-[760px] w-[300px]">
+
               <div className="w-full">
                 <img
                   src="/images/icon-section/special-offer-yellow-main.png"
                   alt=""
+
                   className="md:max-w-full w-[150px] md:w-auto h-auto object-cover absolute top-0 md:right-0 special_offer_sub"
+
                 />
               </div>
             </div>
@@ -96,12 +116,14 @@ const AccomodationPage = () => {
       </section>
 
       <section className="room-details-container mb-[55px] relative">
+
         <div className="container w-[300px] md:w-[750px] sm:w-[450px] lg:w-[970px] xl:w-[1170px] flex flex-col md:flex gap-12">
           <div className="room-details__main md:basis-3/4">
             <div className="room-details__main--title mb-[5px]">
               <h5 className="text-[20px] text-[#131e2a] font-PlayfairDisplay font-normal uppercase leading-[20px]">
                 Deluxe Room Detail
                 <span className="font-Lora text-[#131e2a] text-[16px] float-right">
+
                   $ 130
                 </span>
                 <br />
@@ -111,9 +133,11 @@ const AccomodationPage = () => {
               </h5>
             </div>
             <div className="room-details__main--content">
+
               <p className="text-[#666666] text-[16px] mb-[15px]">Checkout the latest deal</p>
               <div className="room-details__description">
                 <div className="row">
+
                  <Slider_detail_room sliders={IMAGES}/>
                 </div>
                 <div className="row">
@@ -204,14 +228,17 @@ const AccomodationPage = () => {
                               Wi-fi service
                             </p>
                           </li>
+
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
+
                   <div className="mt-[50px] text-[16px] text-justify text-[#131e2a] border-b-[1px] pb-[70px] border-[#e5e5e5]">
                     <p className="mb-[20px]">
+
                       Semper ac dolor vitae accumsan. Cras interdum hendrerit
                       lacinia. Phasellus accumsan urna vitae molestie interdum.
                       Nam sed placerat libero, non eleifend dolor. Cras ac justo
@@ -233,7 +260,9 @@ const AccomodationPage = () => {
                         You may Also like
                       </h5>
                     </div>
+
                     <div className="grid grid-cols-3 gap-8">
+
                       <div className="col-1">
                         <div className="overflow-hidden">
                           <figure className="figure-hover relative">
@@ -330,7 +359,9 @@ const AccomodationPage = () => {
               </div>
             </div>
           </div>
+
           <div className="room-dettails__nav md:basis-1/4">
+
             <aside>
               <div className="form-room__details bg-[#313a45] mb-8 w-[230px]">
                 <form action="" className="flex flex-col gap-4 pt-[30px] pl-[30px] pr-[30px] text-[#90a4bb]">
@@ -393,6 +424,7 @@ const AccomodationPage = () => {
 
               </div>
             </aside>
+
           </div>
         </div>
       </section>

@@ -76,7 +76,9 @@ const AccomodationPage = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="md:col-span-1 col-span-3">
+
                   <div className="relative">
                     <div className="SpecialRoms__main-img relative">
                       <a href="">
@@ -88,15 +90,19 @@ const AccomodationPage = () => {
                       </a>
                     </div>
                     <div className="SpecialRoms__main-title">
+
                       <div className="room__details absolute bottom-[5%] p-[11px] left-[1%] md:left-[0.5%] md:p-[5px] xl:p-[11px] xl:left-[-1%] bg-white w-[94%] flex justify-between ml-[5px] mx-[5px] md:mx-[15px]">
                         <div className="room__details-left flex items-center  md:mt-0 mt-[4px]">
+
                           <div className="room__details-title border-r-[1px] border-[#e9e5df]">
                             <h5 className="font-Lora text-[11px] xl:pr-[18px] xl:text-[16px] pr-[3px] md:text-[11px] text-[#444444] uppercase">
                               Deluxe Room
                             </h5>
                           </div>
                           <div className="room__details-quantity">
+
                             <p className="font-Lora text-[16px] pl-[3px] md:text-[9px] text-[#131e2a] xl:text-[16px] leading-[20px]">
+
                               $180
                               <span className="text-[#6c737a] text-[11px]">
                                 /night
@@ -128,15 +134,19 @@ const AccomodationPage = () => {
                       </a>
                     </div>
                     <div className="SpecialRoms__main-title">
+
                       <div className="room__details absolute bottom-[5%] p-[11px] left-[1%] md:left-[0.5%] md:p-[5px] xl:p-[11px] xl:left-[-1%] bg-white w-[94%] flex justify-between ml-[5px] mx-[5px] md:mx-[15px]">
                         <div className="room__details-left flex items-center  md:mt-0 mt-[4px]">
                           <div className="room__details-title border-r-[1px] border-[#e9e5df]">
                             <h5 className="font-Lora text-[11px] xl:pr-[18px] xl:text-[16px] pr-[3px] md:text-[11px] text-[#444444] uppercase">
+
                               Deluxe Room
                             </h5>
                           </div>
                           <div className="room__details-quantity">
+
                             <p className="font-Lora text-[16px] pl-[3px] md:text-[9px] text-[#131e2a] xl:text-[16px] leading-[20px]">
+
                               $180
                               <span className="text-[#6c737a] text-[11px]">
                                 /night
@@ -232,7 +242,9 @@ const AccomodationPage = () => {
                           </div>
                         </div>
                       </div>
+
                       <div className="px-[15px] uppercase leading-[23px]">
+
                         <span className="md:text-[10px] text-[13px] lg:text-[13px] text-[#aab8ca]">
                           Price:{" "}
                         </span>
@@ -308,6 +320,7 @@ const AccomodationPage = () => {
                           </div>
                         </div>
                         <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
+
                           <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
                             <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
                               Deluxe Room
@@ -317,19 +330,24 @@ const AccomodationPage = () => {
                               lacinia.
                             </p>
                             <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
                               Phasellus accumsan urna vitae molestie interdum.
                             </p>
                             <div className="flex justify-between">
                               <div className="left">
+
                                 <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
                                   $200/{" "}
                                   <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
                                     night
                                   </span>
                                 </p>
                               </div>
                               <div className="right flex items-end ">
+
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
                                   Book
                                 </a>
                               </div>
@@ -341,7 +359,9 @@ const AccomodationPage = () => {
                   </div>
                   <div className="col-1">
                     <div className="overflow-hidden pb-[30px] sm:text-center">
+
                       <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
                         <div className="mb-[28px]">
                           <a>
                             <img
@@ -353,10 +373,12 @@ const AccomodationPage = () => {
                         </div>
                         <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
                           <div className="left">
+
                             <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
                               Deluxe Room
                             </h6>
                             <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
                               $200/{" "}
                               <span className="text-[11px] text-[#666666]">
                                 night
@@ -364,7 +386,302 @@ const AccomodationPage = () => {
                             </p>
                           </div>
                           <div className="right">
+
                             <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
+                              Book
+                            </a>
+                          </div>
+                        </div>
+
+                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
+                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
+                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
+                              Deluxe Room
+                            </h5>
+                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
+                              Semper ac dolor vitae accumsan. interdum hendrerit
+                              lacinia.
+                            </p>
+                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
+                              Phasellus accumsan urna vitae molestie interdum.
+                            </p>
+                            <div className="flex justify-between">
+                              <div className="left">
+
+                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
+                                  $200/{" "}
+                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
+                                    night
+                                  </span>
+                                </p>
+                              </div>
+                              <div className="right flex items-end ">
+                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
+                                  Book
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <div className="overflow-hidden pb-[30px] sm:text-center">
+
+                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
+                        <div className="mb-[28px]">
+                          <a>
+                            <img
+                              src="./images/room-section/room-image-five.png"
+                              width={"100%"}
+                              alt="room-eight"
+                            />
+                          </a>
+                        </div>
+                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
+                          <div className="left">
+
+                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
+                              Deluxe Room
+                            </h6>
+                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
+                              $200/{" "}
+                              <span className="text-[11px] text-[#666666]">
+                                night
+                              </span>
+                            </p>
+                          </div>
+                          <div className="right">
+
+                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
+                              Book
+                            </a>
+                          </div>
+                        </div>
+
+                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
+                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
+                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
+                              Deluxe Room
+                            </h5>
+                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
+                              Semper ac dolor vitae accumsan. interdum hendrerit
+                              lacinia.
+                            </p>
+                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
+                              Phasellus accumsan urna vitae molestie interdum.
+                            </p>
+                            <div className="flex justify-between">
+                              <div className="left">
+
+                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
+                                  $200/{" "}
+                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
+                                    night
+                                  </span>
+                                </p>
+                              </div>
+                              <div className="right flex items-end ">
+
+                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
+                                  Book
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <div className="overflow-hidden pb-[30px] sm:text-center">
+
+                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
+                        <div className="mb-[28px]">
+                          <a>
+                            <img
+                              src="./images/room-section/room-image-five.png"
+                              width={"100%"}
+                              alt="room-eight"
+                            />
+                          </a>
+                        </div>
+                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
+                          <div className="left">
+
+                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
+                              Deluxe Room
+                            </h6>
+                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
+                              $200/{" "}
+                              <span className="text-[11px] text-[#666666]">
+                                night
+                              </span>
+                            </p>
+                          </div>
+                          <div className="right">
+
+                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
+                              Book
+                            </a>
+                          </div>
+                        </div>
+
+                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
+                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
+                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
+                              Deluxe Room
+                            </h5>
+                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
+                              Semper ac dolor vitae accumsan. interdum hendrerit
+                              lacinia.
+                            </p>
+                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
+                              Phasellus accumsan urna vitae molestie interdum.
+                            </p>
+                            <div className="flex justify-between">
+                              <div className="left">
+                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
+                                  $200/{" "}
+                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
+                                    night
+                                  </span>
+                                </p>
+                              </div>
+                              <div className="right flex items-end ">
+                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
+                                  Book
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <div className="overflow-hidden pb-[30px] sm:text-center">
+
+                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
+                        <div className="mb-[28px]">
+                          <a>
+                            <img
+                              src="./images/room-section/room-image-five.png"
+                              width={"100%"}
+                              alt="room-eight"
+                            />
+                          </a>
+                        </div>
+                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
+                          <div className="left">
+
+                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
+                              Deluxe Room
+                            </h6>
+                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
+                              $200/{" "}
+                              <span className="text-[11px] text-[#666666]">
+                                night
+                              </span>
+                            </p>
+                          </div>
+                          <div className="right">
+
+                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
+                              Book
+                            </a>
+                          </div>
+                        </div>
+
+                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
+                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
+                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
+                              Deluxe Room
+                            </h5>
+                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
+                              Semper ac dolor vitae accumsan. interdum hendrerit
+                              lacinia.
+                            </p>
+                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
+                              Phasellus accumsan urna vitae molestie interdum.
+                            </p>
+                            <div className="flex justify-between">
+                              <div className="left">
+
+                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
+                                  $200/{" "}
+                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
+                                    night
+                                  </span>
+                                </p>
+                              </div>
+                              <div className="right flex items-end ">
+
+                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
+                                  Book
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="col-1">
+                    <div className="overflow-hidden pb-[30px] sm:text-center">
+
+                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
+                        <div className="mb-[28px]">
+                          <a>
+                            <img
+                              src="./images/room-section/room-image-five.png"
+                              width={"100%"}
+                              alt="room-eight"
+                            />
+                          </a>
+                        </div>
+                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
+                          <div className="left">
+
+                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
+                              Deluxe Room
+                            </h6>
+                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
+                              $200/{" "}
+                              <span className="text-[11px] text-[#666666]">
+                                night
+                              </span>
+                            </p>
+                          </div>
+                          <div className="right">
+
+                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
                               Book
                             </a>
                           </div>
@@ -379,19 +696,24 @@ const AccomodationPage = () => {
                               lacinia.
                             </p>
                             <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
                               Phasellus accumsan urna vitae molestie interdum.
                             </p>
                             <div className="flex justify-between">
                               <div className="left">
+
                                 <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
                                   $200/{" "}
                                   <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
                                     night
                                   </span>
                                 </p>
                               </div>
                               <div className="right flex items-end ">
+
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
                                   Book
                                 </a>
                               </div>
@@ -403,7 +725,9 @@ const AccomodationPage = () => {
                   </div>
                   <div className="col-1">
                     <div className="overflow-hidden pb-[30px] sm:text-center">
+
                       <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
                         <div className="mb-[28px]">
                           <a>
                             <img
@@ -415,10 +739,12 @@ const AccomodationPage = () => {
                         </div>
                         <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
                           <div className="left">
+
                             <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
                               Deluxe Room
                             </h6>
                             <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
                               $200/{" "}
                               <span className="text-[11px] text-[#666666]">
                                 night
@@ -426,11 +752,14 @@ const AccomodationPage = () => {
                             </p>
                           </div>
                           <div className="right">
+
                             <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
                               Book
                             </a>
                           </div>
                         </div>
+
                         <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
                           <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
                             <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
@@ -441,19 +770,23 @@ const AccomodationPage = () => {
                               lacinia.
                             </p>
                             <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
                               Phasellus accumsan urna vitae molestie interdum.
                             </p>
                             <div className="flex justify-between">
                               <div className="left">
+
                                 <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
                                   $200/{" "}
                                   <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
                                     night
                                   </span>
                                 </p>
                               </div>
                               <div className="right flex items-end ">
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
                                   Book
                                 </a>
                               </div>
@@ -465,7 +798,9 @@ const AccomodationPage = () => {
                   </div>
                   <div className="col-1">
                     <div className="overflow-hidden pb-[30px] sm:text-center">
+
                       <figure className="figure-hover relative sm:text-center sm:inline-block ">
+
                         <div className="mb-[28px]">
                           <a>
                             <img
@@ -477,10 +812,12 @@ const AccomodationPage = () => {
                         </div>
                         <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
                           <div className="left">
+
                             <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
                               Deluxe Room
                             </h6>
                             <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
+
                               $200/{" "}
                               <span className="text-[11px] text-[#666666]">
                                 night
@@ -488,11 +825,14 @@ const AccomodationPage = () => {
                             </p>
                           </div>
                           <div className="right">
+
                             <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
+
                               Book
                             </a>
                           </div>
                         </div>
+
                         <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
                           <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
                             <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
@@ -503,19 +843,23 @@ const AccomodationPage = () => {
                               lacinia.
                             </p>
                             <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
+
                               Phasellus accumsan urna vitae molestie interdum.
                             </p>
                             <div className="flex justify-between">
                               <div className="left">
+
                                 <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
                                   $200/{" "}
                                   <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
+
                                     night
                                   </span>
                                 </p>
                               </div>
-                              <div className="right flex items-end ">
+
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
                                   Book
                                 </a>
                               </div>
@@ -525,256 +869,7 @@ const AccomodationPage = () => {
                       </figure>
                     </div>
                   </div>
-                  <div className="col-1">
-                    <div className="overflow-hidden pb-[30px] sm:text-center">
-                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
-                        <div className="mb-[28px]">
-                          <a>
-                            <img
-                              src="./images/room-section/room-image-five.png"
-                              width={"100%"}
-                              alt="room-eight"
-                            />
-                          </a>
-                        </div>
-                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
-                          <div className="left">
-                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
-                              Deluxe Room
-                            </h6>
-                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
-                              $200/{" "}
-                              <span className="text-[11px] text-[#666666]">
-                                night
-                              </span>
-                            </p>
-                          </div>
-                          <div className="right">
-                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
-                              Book
-                            </a>
-                          </div>
-                        </div>
-                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
-                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
-                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
-                              Deluxe Room
-                            </h5>
-                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
-                              Semper ac dolor vitae accumsan. interdum hendrerit
-                              lacinia.
-                            </p>
-                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
-                              Phasellus accumsan urna vitae molestie interdum.
-                            </p>
-                            <div className="flex justify-between">
-                              <div className="left">
-                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
-                                  $200/{" "}
-                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
-                                    night
-                                  </span>
-                                </p>
-                              </div>
-                              <div className="right flex items-end ">
-                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
-                                  Book
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-1">
-                    <div className="overflow-hidden pb-[30px] sm:text-center">
-                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
-                        <div className="mb-[28px]">
-                          <a>
-                            <img
-                              src="./images/room-section/room-image-five.png"
-                              width={"100%"}
-                              alt="room-eight"
-                            />
-                          </a>
-                        </div>
-                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
-                          <div className="left">
-                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
-                              Deluxe Room
-                            </h6>
-                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
-                              $200/{" "}
-                              <span className="text-[11px] text-[#666666]">
-                                night
-                              </span>
-                            </p>
-                          </div>
-                          <div className="right">
-                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
-                              Book
-                            </a>
-                          </div>
-                        </div>
-                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
-                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
-                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
-                              Deluxe Room
-                            </h5>
-                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
-                              Semper ac dolor vitae accumsan. interdum hendrerit
-                              lacinia.
-                            </p>
-                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
-                              Phasellus accumsan urna vitae molestie interdum.
-                            </p>
-                            <div className="flex justify-between">
-                              <div className="left">
-                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
-                                  $200/{" "}
-                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
-                                    night
-                                  </span>
-                                </p>
-                              </div>
-                              <div className="right flex items-end ">
-                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
-                                  Book
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-1">
-                    <div className="overflow-hidden pb-[30px] sm:text-center">
-                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
-                        <div className="mb-[28px]">
-                          <a>
-                            <img
-                              src="./images/room-section/room-image-five.png"
-                              width={"100%"}
-                              alt="room-eight"
-                            />
-                          </a>
-                        </div>
-                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
-                          <div className="left">
-                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
-                              Deluxe Room
-                            </h6>
-                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
-                              $200/{" "}
-                              <span className="text-[11px] text-[#666666]">
-                                night
-                              </span>
-                            </p>
-                          </div>
-                          <div className="right">
-                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
-                              Book
-                            </a>
-                          </div>
-                        </div>
-                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
-                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
-                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
-                              Deluxe Room
-                            </h5>
-                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
-                              Semper ac dolor vitae accumsan. interdum hendrerit
-                              lacinia.
-                            </p>
-                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
-                              Phasellus accumsan urna vitae molestie interdum.
-                            </p>
-                            <div className="flex justify-between">
-                              <div className="left">
-                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
-                                  $200/{" "}
-                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
-                                    night
-                                  </span>
-                                </p>
-                              </div>
-                              <div className="right flex items-end ">
-                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
-                                  Book
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-1">
-                    <div className="overflow-hidden pb-[30px] sm:text-center">
-                      <figure className="figure-hover relative sm:text-center sm:inline-block ">
-                        <div className="mb-[28px]">
-                          <a>
-                            <img
-                              src="./images/room-section/room-image-five.png"
-                              width={"100%"}
-                              alt="room-eight"
-                            />
-                          </a>
-                        </div>
-                        <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
-                          <div className="left">
-                            <h6 className="text-[#424c55] text-[18px] font-Lora md:text-[14px] md:leading-[18px] lg:text-[18px]">
-                              Deluxe Room
-                            </h6>
-                            <p className="my-[15px] text-[18px] font-Lora text-[#666666] md:text-[13px] lg:text-[18px]">
-                              $200/{" "}
-                              <span className="text-[11px] text-[#666666]">
-                                night
-                              </span>
-                            </p>
-                          </div>
-                          <div className="right">
-                            <a className="cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal btn-welcome text-[14px] md:text-[13px] md:px-[14px] md:py-[7px] xl:py-[8px] xl:px-[17px] inline-block align-middle">
-                              Book
-                            </a>
-                          </div>
-                        </div>
-                        <div className="bounch-hover p-[13px] bg-[#f7c411] hidden bg-repeat h-full w-full text-left top-0 left-0 bottom-0 right-0 animate-bounceInDown animate-mode absolute duration-700 sm:text-center md:text-left ">
-                          <div className="border-[1px] border-[#475362] md:p-[13px] p-[22px] lg:p-[22px] lg:h-full">
-                            <h5 className="text-[18px] md:text-[12px] lg:text-[16px] xl:text-[18px] text-[#000] font-Lora leading-5 font-normal">
-                              Deluxe Room
-                            </h5>
-                            <p className="text-[15px] xl:text-[15px] my-[15px] md:text-[9px] md:my-[6px] xl:my-[15px] text-[#444] font-medium lg:text-[13px] lg:my-[5px]">
-                              Semper ac dolor vitae accumsan. interdum hendrerit
-                              lacinia.
-                            </p>
-                            <p className="text-[15px] xl:text-[15px] mb-[10px] md:text-[9px] md:my-[6px] text-[#444] xl:my-[15px] font-medium lg:text-[13px] lg:my-[5px]">
-                              Phasellus accumsan urna vitae molestie interdum.
-                            </p>
-                            <div className="flex justify-between">
-                              <div className="left">
-                                <p className="my-[15px] md:text-[11px] mt-[18px] text-[15px] font-Lora text-[#444] sm:text-[18px] xl:text-[18px] md:mb-0 lg:text-[15px]">
-                                  $200/{" "}
-                                  <span className="text-[11px] xl:text-[11px] md:text-[9px] font-Lora text-[#444] lg:text-[11px]">
-                                    night
-                                  </span>
-                                </p>
-                              </div>
-                              <div className="right flex items-end ">
-                                <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
-                                  Book
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                  
-                  
+
                  
                 </div>
               </div>

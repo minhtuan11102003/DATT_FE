@@ -9,12 +9,16 @@ import {
 } from "next/font/google";
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
-
 import Contact_us from "@/components/page/contact_us";
 import { NextUIProvider } from "@nextui-org/react";
 
 
+
+
 // import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -22,10 +26,12 @@ const nunito = Nunito({
 });
 
 const karla = Karla({
+
   subsets: ["latin"],
   variable: "--font-karla",
   display: "swap",
 });
+
 
 const lora = Lora({
   subsets: ["latin"],
@@ -39,9 +45,10 @@ const PlayfairDisplay = Playfair_Display({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
-  title: "Dự án thực tập",
-  description: "Admin app",
+  title: 'Dự án thực tập',
+  description: 'Admin app',
 };
 
 export default function RootLayout({
@@ -50,6 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html
       lang="vi"
       suppressHydrationWarning={true}
@@ -57,6 +65,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -64,6 +73,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+
       <body
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
