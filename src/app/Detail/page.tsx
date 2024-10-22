@@ -1,13 +1,17 @@
 
 "use client"
+
+import React from "react";
+
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIos } from "react-icons/md";
 import { DatePickerDetail } from "@/components/ui/date-picker-detail";
 import { Button } from "@nextui-org/react";
 import { CalendarDate, DateInput } from "@nextui-org/react";
 import { CalendarIcon } from "lucide-react";
-import React from "react";
+
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+
 import Carousel_comment from "@/app/Detail/components/carousel_comment";
 import Slider_detail_room from "@/app/Detail/components/slider_detail_room";
 
@@ -78,27 +82,32 @@ const IMAGES = [
 
 
 
-import React from "react";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+
+
+
 
 const AccomodationPage = () => {
   return (
     <div className="room-details">
       {/* Accomodation */}
-      <section className="accomodation__breadcrumb ">
-        <div className="accomodation__banner bg-[url('/images/banner-item/accomodation-breadcrumb-one.jpg')] bg-no-repeat relative bg-center min-h-[333px] bg-cover text-center mb-[80px]">
+
+      <section className="accomodation__breadcrumb mb-[80px]">
+        <div className="accomodation__banner bg-[url('/images/banner-item/accomodation-breadcrumb-one.jpg')] bg-no-repeat relative bg-center min-h-[333px] bg-cover text-center">
           <div className="accomodation__banner-title pt-[170px] pb-[58px]">
-            <h2 className="uppercase text-[#fff] font-normal text-[44px] leading-[25px] pb-[40px] font-PlayfairDisplay relative after:absolute after:bg-[url('/images/icon-section/nice-title-breadcrumb.png')] bg-no-repeat after:bottom-[-30px] after:h-[50%] after:w-[103px] nice-title after:bg-no-repeat drop-shadow-[0_20px_20px_rgb(0,0,0)]">
-              Deluxe Room
+            <h2 className="uppercase text-[#fff] font-normal text-[35px] leading-[25px] pb-[40px] font-PlayfairDisplay relative after:absolute after:bg-[url('/images/icon-section/nice-title-breadcrumb.png')] bg-no-repeat after:bottom-[-30px] after:h-[50%] after:w-[103px] nice-title after:bg-no-repeat drop-shadow-[0_20px_20px_rgb(0,0,0)] md:text-[22px] lg:text-[44px] md:text-center">
+              Accomodation
             </h2>
           </div>
-          <div className="absolute top-0 left-0 w-full">
-            <div className="accomodation__banner-img container relative">
+          <div className="absolute top-0 md:left-0 w-full left-[-11%]">
+            <div className="accomodation__banner-img container relative xl:w-[1170px] lg:w-[992px] md:w-[760px] w-[300px]">
+
               <div className="w-full">
                 <img
                   src="/images/icon-section/special-offer-yellow-main.png"
                   alt=""
-                  className="max-w-full h-auto object-cover absolute top-0 right-0"
+
+                  className="md:max-w-full w-[150px] md:w-auto h-auto object-cover absolute top-0 md:right-0 special_offer_sub"
+
                 />
               </div>
             </div>
@@ -108,13 +117,13 @@ const AccomodationPage = () => {
 
       <section className="room-details-container mb-[55px] relative">
 
-        <div className="container flex gap-12">
-
-          <div className="room-details__main basis-3/4">
+        <div className="container w-[300px] md:w-[750px] sm:w-[450px] lg:w-[970px] xl:w-[1170px] flex flex-col md:flex gap-12">
+          <div className="room-details__main md:basis-3/4">
             <div className="room-details__main--title mb-[5px]">
               <h5 className="text-[20px] text-[#131e2a] font-PlayfairDisplay font-normal uppercase leading-[20px]">
                 Deluxe Room Detail
-                <span className="font-Lora text-[#131e2a] text-[25px] float-right">
+                <span className="font-Lora text-[#131e2a] text-[16px] float-right">
+
                   $ 130
                 </span>
                 <br />
@@ -124,7 +133,8 @@ const AccomodationPage = () => {
               </h5>
             </div>
             <div className="room-details__main--content">
-              <p className="text-[#666666]">Checkout the latest deal</p>
+
+              <p className="text-[#666666] text-[16px] mb-[15px]">Checkout the latest deal</p>
               <div className="room-details__description">
                 <div className="row">
 
@@ -349,7 +359,8 @@ const AccomodationPage = () => {
               </div>
             </div>
           </div>
-          <div className="room-dettails__nav basis-1/4">
+
+          <div className="room-dettails__nav md:basis-1/4">
 
             <aside>
               <div className="form-room__details bg-[#313a45] mb-8 w-[230px]">

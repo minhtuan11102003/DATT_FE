@@ -27,8 +27,10 @@ const Slider_detail_room = ({sliders}: ImageSliderprops) => {
     return (
         <div className="slide-container">
             <div className="slider-show relative">
-                <div className="slides overflow-hidden w-[848px]">
-                    <ul className="w-[8480px] h-[471px] flex relative list-none">
+
+                <div className="slides overflow-hidden w-[270px]">
+                    <ul className="w-[2700px] h-[471px] flex relative list-none">
+
                         {sliders.map((slider, index) => {
                             return (
                                 <li key={index}>

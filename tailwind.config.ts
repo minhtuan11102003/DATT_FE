@@ -1,4 +1,5 @@
 
+
 import type { Config } from 'tailwindcss';
 
 import { nextui } from "@nextui-org/react";
@@ -14,7 +15,9 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
+
 			'xs': '480px',
+
 			'sm': '480px',
 			// => @media (m:in-width 640px) { ... }
 
@@ -134,7 +137,7 @@ const config: Config = {
 
 		}
 	},
-	plugins: [nextui()],
+	
 	
 }
 
@@ -145,5 +148,6 @@ const config: Config = {
 	plugins: [require("tailwindcss-animate")],
 
 };
+
 
 export default config;
