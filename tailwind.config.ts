@@ -1,5 +1,3 @@
-
-
 import type { Config } from 'tailwindcss';
 
 import { nextui } from "@nextui-org/react";
@@ -36,13 +34,13 @@ const config: Config = {
 		container: {
 			center: true,
 			padding: '15px',
-
 			screens: {
 				'2xl': '1170px'
 			}
 
 		},
 		extend: {
+			
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -123,7 +121,6 @@ const config: Config = {
 					},
 					'100%': { transform: 'translate3d(0, 0, 0)' }
 				}
-
 			},
 			animation: {
 				bounceInDown: 'bounceInDown cubic-bezier(0.215, 0.610, 0.355, 1.000)',
@@ -133,21 +130,11 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
-
-
 		}
-	},
-	
-	
+	},	
 }
 
 
-
-		},
-	},
-	plugins: [require("tailwindcss-animate")],
-
-};
 
 
 export default config;

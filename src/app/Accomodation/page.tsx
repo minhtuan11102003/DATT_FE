@@ -259,16 +259,16 @@ const AccomodationPage = () => {
                           <span className="md:text-[10px] text-[13px] lg:text-[13px] text-[#aab8ca] md:inline-block">
                             50$
                           </span>
-                         
-                            <input
-                              className="md:w-[40%] md:mx-[3px] inline-block w-[53%] xl:w-[53%] ml-[-15%]"
-                              type="range"
-                              min={0}
-                              max={1000}
-                              value={200}
-                              width={40}
-                            />
-                          
+
+                          <input
+                            className="md:w-[40%] md:mx-[3px] inline-block w-[53%] xl:w-[53%] ml-[-15%]"
+                            type="range"
+                            min={0}
+                            max={1000}
+                            value={200}
+                            width={40}
+                          />
+
                           <span className="md:text-[10px] text-[13px] text-[#aab8ca] md:inline-block lg:text-[13px]">
                             5000$
                           </span>
@@ -727,7 +727,6 @@ const AccomodationPage = () => {
                     <div className="overflow-hidden pb-[30px] sm:text-center">
 
                       <figure className="figure-hover relative sm:text-center sm:inline-block ">
-
                         <div className="mb-[28px]">
                           <a>
                             <img
@@ -800,7 +799,6 @@ const AccomodationPage = () => {
                     <div className="overflow-hidden pb-[30px] sm:text-center">
 
                       <figure className="figure-hover relative sm:text-center sm:inline-block ">
-
                         <div className="mb-[28px]">
                           <a>
                             <img
@@ -857,7 +855,7 @@ const AccomodationPage = () => {
                                   </span>
                                 </p>
                               </div>
-
+                              <div className="right flex items-end ">
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
 
                                   Book
@@ -869,80 +867,78 @@ const AccomodationPage = () => {
                       </figure>
                     </div>
                   </div>
-
-                 
+                  
                 </div>
-              </div>
-
-              <div className="other_decent_room_pagination">
-                <nav className="text-center mt-[65px] mb-[75px] w-[95%] mx-auto">
-                  <ul className="pagination flex justify-center items-center">
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        <IoIosArrowBack className="my-[3px] mx-[9px] inline-block font-bold" />
-                        prev
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link  pagiantion__link--active text-[10px] p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        1
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        2
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        3
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        4
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                        href=""
-                      >
-                        5
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="pagination__link text-[12px] p-[10px] font-bold md:text-[16px] uppercase"
-                        href=""
-                      >
-                        {" "}
-                        next{" "}
-                        <IoIosArrowForward className="my-[3px] mx-[9px] inline-block" />
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
               </div>
             </div>
           </div>
+          <div className="other_decent_room_pagination">
+            <nav className="text-center mt-[65px] mb-[75px] w-[95%] mx-auto">
+              <ul className="pagination flex justify-center items-center">
+                <li>
+                  <a
+                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    <IoIosArrowBack className="my-[3px] mx-[9px] inline-block font-bold" />
+                    prev
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link  pagiantion__link--active text-[10px] p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    1
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    2
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    3
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    4
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
+                    href=""
+                  >
+                    5
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="pagination__link text-[12px] p-[10px] font-bold md:text-[16px] uppercase"
+                    href=""
+                  >
+                    {" "}
+                    next{" "}
+                    <IoIosArrowForward className="my-[3px] mx-[9px] inline-block" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </section>
+      </section >
     </div>
   );
 };
