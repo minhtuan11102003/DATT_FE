@@ -66,7 +66,7 @@ const HeaderComponent = () => {
                             <DropdownMenuContent className='bg-[#313a45] text-[#aab8ca]'>
                                 <DropdownMenuItem><Link href="/Aboutus" className='hover:text-blue-400'>ABOUT US</Link></DropdownMenuItem>
                                 <DropdownMenuItem><Link href="/booking" className='hover:text-blue-400'>BOOKING</Link></DropdownMenuItem>
-                                <DropdownMenuItem>ROOM DETAILS</DropdownMenuItem>
+                                <DropdownMenuItem><Link href="/Detail" className='hover:text-blue-400'>ROOM DETAIL</Link></DropdownMenuItem>
                                 <DropdownMenuItem><Link href="/OurStaff" className='transition-colors duration-500 hover:text-[#16b4ef]'> OURSTAFF </Link></DropdownMenuItem>
                                 <DropdownMenuItem>404 Page</DropdownMenuItem>
                             </DropdownMenuContent>
