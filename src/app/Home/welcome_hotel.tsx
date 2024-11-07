@@ -2,7 +2,7 @@ import React from "react";
 
 const Welcome_hotel = () => {
   return (
-    <div className="container w-[300px] sm:w-[450px] md:w-[750px] lg:w-[970px] xl:w-[1170px]">
+    <div className="container w-[300px] h-[1200px] sm:w-[450px] md:w-[750px] md:h-[300px] lg:w-[970px] xl:w-[1170px]">
       <div className="h-[400px] text-center">
         <div>
           <h3 className="inline-block text-[30px] text-[#131e2a] leading-[25px] relative pb-[33px] mb-[55px] uppercase font-PlayfairDisplay after:bg-[url('/images/icon-section/nice-title.png')] after:bg-no-repeat after:absolute after:w-[103px] after:h-[50%] after:bottom-[-30%] nice-title md:text-[20px] lg:text-[30px]">

@@ -101,10 +101,10 @@ export default function Home() {
 
 
           <Welcome_hotel/>
-          <div className="w-1/2 h-[400px]"></div>
-          <div className="w-1/4 h-[400px]"></div>
+          <div className="w-1/2 h-[100px]"></div>
+          {/* <div className="w-1/4 h-[400px]"></div> */}
 
-          <div className="w-1/2 h-[20px]"></div>
+          {/* <div className="w-1/2 h-[20px]"></div> */}
           
           
 

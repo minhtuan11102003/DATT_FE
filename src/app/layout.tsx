@@ -80,12 +80,12 @@ export default function RootLayout({
       >
        {/* <NextUIProvider> */}
           <div className="w-full">
-            {/* <HeaderComponent /> */}
+            <HeaderComponent />
             
             {children}
             
             <Contact_us />
-            {/* <FooterComponent /> */}
+            <FooterComponent />
           </div>
         {/* </NextUIProvider> */}
       </body>
