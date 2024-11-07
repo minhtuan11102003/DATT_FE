@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from "react";
@@ -6,8 +5,8 @@ import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIos } from "react-icons/md";
 import { DatePickerDetail } from "@/components/ui/date-picker-detail";
-import { Button } from "@nextui-org/react";
-import { CalendarDate, DateInput } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
+// import { CalendarDate, DateInput } from "@nextui-org/react";
 import { CalendarIcon } from "lucide-react";
 
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
@@ -128,7 +127,6 @@ const DetailPage = () => {
               <p className="text-[#666666] text-[16px] mb-[15px] md:text-[12px]">Checkout the latest deal</p>
               <div className="room-details__description">
                 <div className="row">
-
                  <Slider_detail_room sliders={IMAGES}/>
                 </div>
                 <div className="row">

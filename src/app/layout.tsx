@@ -78,16 +78,12 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
       >
-       {/* <NextUIProvider> */}
           <div className="w-full">
-            <HeaderComponent />
-            
+            <HeaderComponent />     
             {children}
-            
             <Contact_us />
             <FooterComponent />
           </div>
-        {/* </NextUIProvider> */}
       </body>
     </html>
   );

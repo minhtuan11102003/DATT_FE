@@ -32,7 +32,7 @@ export default function Home() {
                   <p className='h-[10px]'>BOOK YOUR </p>
                   <p className="text-[28px]">ROOMS</p>
                 </span>
-              <span className="border h-[40px]"></span>
+              <span className="border h-[40px] border-[#475362]"></span>
               </div>
               <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
                 <DatePickerDemo title="ARRIVAL"/>
