@@ -61,7 +61,7 @@ export default function BannerComponent() {
                     <Button className="w-[82px] h-[20px] px-2 py-2 md:w-[172px] md:h-[40px] text-[12px] md:py-[8px] md:px-[34px] border border-spacing-[2px] md:text-[18px] font-semibold">EXPLORE IT</Button>
                 </div>
             </div>
-            <div className="absolute top-[80%] left-[50%] flex gap-4">
+            {/* <div className="absolute top-[80%] left-[50%] flex gap-4">
                 <div className="w-[30px] h-[31px] bg-[#313a45] text-white flex items-center justify-center cursor-pointer">
                     <ArrowLeft onClick={() => {
                         downSetDem()
@@ -72,7 +72,7 @@ export default function BannerComponent() {
                         upSetDem()
                     }} />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

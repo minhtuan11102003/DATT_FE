@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
 	darkMode: ["class"],
@@ -7,9 +8,38 @@ const config: Config = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
 	],
 	theme: {
+		screens: {
+
+			'xs': '480px',
+
+			'sm': '480px',
+			// => @media (m:in-width 640px) { ... }
+
+			'md': '768px',
+			// => @media (min-width: 768px) { ... }
+
+			'lg': '991px',
+			// => @media (min-width: 1024px) { ... }
+
+			'xl': '1200px',
+			// => @media (min-width: 1280px) { ... }
+
+			'2xl': '1536px',
+			// => @media (min-width: 1536px) { ... }
+		},
+		container: {
+			center: true,
+			padding: '15px',
+			screens: {
+				'2xl': '1170px'
+			}
+
+		},
 		extend: {
+			
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -90,7 +120,6 @@ const config: Config = {
 					},
 					'100%': { transform: 'translate3d(0, 0, 0)' }
 				}
-				
 			},
 			animation: {
 				bounceInDown: 'bounceInDown cubic-bezier(0.215, 0.610, 0.355, 1.000)',
