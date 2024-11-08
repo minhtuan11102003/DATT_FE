@@ -1,0 +1,18 @@
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rep {
+        width: 450px;
+    }
+    .grid {
+        display: table;
+    }
+    .mb {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .rep {
+        width: 1170px;
+    }
+}
