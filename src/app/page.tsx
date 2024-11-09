@@ -110,6 +110,7 @@ export default function Home() {
 
         </div>
       </div>
+      <div className="h-[150px] xs:h-[100px] md:h-0"></div>
       <div className="sectionFacilities w-full">
         <Facilities />
       </div>
