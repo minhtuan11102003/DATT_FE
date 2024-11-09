@@ -36,7 +36,7 @@ const ContactsPage = () => {
                                     <h4 className="text-xl uppercase font-serif">Send Us An Email</h4>
                                 </div>
                                 <form action="contact_process.php" method="post">
-                                    <div className="grid w-[100%] gap-7">
+                                    <div className="grid1 md:grid w-[100%] gap-7 ">
                                         <div className='mb'>
                                             <input type="text" placeholder="First Name *" name="fname" required className=" border border-gray-300 p-2 w-full h-12 sm:h-16 pl-4 uppercase relative" />
                                         </div>

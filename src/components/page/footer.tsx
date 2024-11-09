@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../css/contact.css';
 const FooterComponent = () => {
     return (
         <footer className="text-white pt-14 bg-[#313a45]">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-[1170px]">
+            <div className=" mx-auto px-4 sm:px-6 lg:px-8 rep">
                 <div className="footer_top flex flex-wrap justify-between ">
                     {/* Logo Section */}
                     <div className="w-full md:w-1/3">

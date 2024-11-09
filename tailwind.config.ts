@@ -1,7 +1,4 @@
 import type { Config } from "tailwindcss";
-
-import { nextui } from "@nextui-org/react";
-
 const config: Config = {
 	darkMode: ["class"],
 	content: [
@@ -36,7 +33,6 @@ const config: Config = {
 			screens: {
 				'2xl': '1170px'
 			}
-
 		},
 		extend: {
 			
