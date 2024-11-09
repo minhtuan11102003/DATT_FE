@@ -30,7 +30,7 @@ const ContactsPage = () => {
                 <div className="rep mx-auto px-4 ">
                     <div className="flex flex-col md:flex-row">
                         {/* Form Section */}
-                        <div className="md:w-1/2 relative min-h-[1px] px-4">
+                        <div className="md:w-1/2 relative min-h-[1px] px-4 ">
                             <div className="send_mail">
                                 <div className="section_title mb-10">
                                     <h4 className="text-xl uppercase font-serif">Send Us An Email</h4>
