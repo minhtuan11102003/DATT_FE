@@ -281,8 +281,8 @@ const BookingInfoComponent = () => {
                                     <br />
                                     <p className='text-[#666666]'>RATE</p>
                                 </td>
-                                <td className='w-[74PX] h-[73px] p-[15px] text-left font-karla hidden xs:table-cell md:table-cell xs:text-[14px]' >
-                                    <span className='font-semibold'>5 </span>
+                                <td className='w-[74PX] h-[73px] p-[15px] text-center font-karla hidden xs:table-cell md:table-cell xs:text-[14px]' >
+                                    <span className='font-semibold text-[#666666]'>5 </span>
                                     <br />
                                     <p className='text-[#666666]'>NIGHT</p>
                                 </td>

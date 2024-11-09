@@ -1,13 +1,28 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const BannerSection2 = () => {
+    const [banners, setBanners] = useState<any>([]);
+    useEffect(() => {
+        const getBanners = async () => {
+            try {
+                const apiBanners = await fetch('/api/proxy');
+                const data = await apiBanners.json();
+                setBanners(data);
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching banners:', error);
+            }
+        };
+        getBanners();
+    }, []);
+
     let mangImg: { id: number; img: string; title: string; title2: string }[] = [
         { id: 1, img: "./images/slider-one.jpg", title: "Book Your Summer Holidays ", title2: "With HOTEL BOOKING Template 1" },
         { id: 2, img: "./images/banner2.jpg", title: "A brand New Hotel ", title2: "Beyond Ordinary 2" },
@@ -20,9 +35,10 @@ const BannerSection2 = () => {
     return (
         <div className="w-full h-full relative z-0 mt-0">
             <Swiper
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay, Pagination, Navigation]}
                 spaceBetween={0}
                 slidesPerView={1}
+                navigation
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 1500, disableOnInteraction: false }}
                 loop={true}

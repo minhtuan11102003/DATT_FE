@@ -10,7 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import BannerComponent from "../components/page/banner";
 import Welcome_hotel from "@/app/Home/welcome_hotel";
 import Facilities from "@/components/page/facilties";
 import Newsection from "@/components/page/newsection";

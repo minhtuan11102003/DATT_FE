@@ -2,17 +2,33 @@
     .rep {
         width: 450px;
     }
-    .grid {
+
+    .grid1 {
         display: table;
     }
+
     .mb {
         margin-bottom: 30px;
     }
-    
+
 }
 
 @media (min-width: 1200px) {
     .rep {
         width: 1170px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .rep {
+        width: 300px;
+    }
+
+    .grid1 {
+        display: table;
+    }
+
+    .mb {
+        margin-bottom: 30px;
     }
 }

@@ -26,7 +26,7 @@ export function DatePickerDemo({ title } : { title: string }) {
                         !date && "text-muted-foreground"
                     )}
                 >
-                    {date ? format(date, "PPP") : <span>{title}</span>}
+                    {date ? format(date, "PPP") : <span className="">{title}</span>}
                     <CalendarIcon className=" h-4 w-8 " />
                 </Button>
             </PopoverTrigger>
