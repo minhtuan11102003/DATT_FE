@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
 import React from 'react';
-import { DatePickerDemo } from "@/components/ui/date-picker";
+// import { DatePickerDemo } from "@/components/ui/date-picker";
 import {
     Select,
     SelectContent,
@@ -10,6 +10,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import "../../../css/table.css";
+import { DatePickerDemo } from '@/components/ui/date-picker';
 
 
 const BookingInfoComponent = () => {
@@ -206,10 +207,10 @@ const BookingInfoComponent = () => {
                         <span className="border border-gray-600 w-0 h-full"></span>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                        <DatePickerDemo />
+                        <DatePickerDemo title="ARRIVAL"/>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                        <DatePickerDemo />
+                        <DatePickerDemo title="DEPARTURE"/>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                         <Select>
