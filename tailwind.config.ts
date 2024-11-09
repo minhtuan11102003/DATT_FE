@@ -1,9 +1,5 @@
-import type { Config } from 'tailwindcss';
-
-import { nextui } from "@nextui-org/react";
-
+import type { Config } from "tailwindcss";
 const config: Config = {
-
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,7 +33,6 @@ const config: Config = {
 			screens: {
 				'2xl': '1170px'
 			}
-
 		},
 		extend: {
 			
@@ -130,11 +125,16 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
+			screens:{
+				'sm': '480px',
+				'md': '768px',
+				'lg': '991px',
+				'xl': '1276px',
+				'2x1': '1536px',
+			}
+			
 		}
-	},	
-}
-
-
-
-
+	},
+	plugins: [require("tailwindcss-animate")],
+};
 export default config;

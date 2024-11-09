@@ -10,7 +10,6 @@ import {
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
 import Contact_us from "@/components/page/contact_us";
-import { NextUIProvider } from "@nextui-org/react";
 
 
 
