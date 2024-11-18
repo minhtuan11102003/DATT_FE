@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from "react";
@@ -6,8 +5,8 @@ import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIos } from "react-icons/md";
 import { DatePickerDetail } from "@/components/ui/date-picker-detail";
-import { Button } from "@nextui-org/react";
-import { CalendarDate, DateInput } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
+// import { CalendarDate, DateInput } from "@nextui-org/react";
 import { CalendarIcon } from "lucide-react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosArrowDropleft, IoIosArrowDropright,  } from "react-icons/io";

@@ -1,9 +1,10 @@
+
 import type { Config } from 'tailwindcss';
 
 import { nextui } from "@nextui-org/react";
 
-const config: Config = {
 
+const config: Config = {
 	darkMode: ["class"],
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,7 +38,6 @@ const config: Config = {
 			screens: {
 				'2xl': '1170px'
 			}
-
 		},
 		extend: {
 			
@@ -130,9 +130,11 @@ const config: Config = {
 				'in-expo': 'cubic-bezier(0.22, 0.61, 0.36, 1)',
 
 			},
+
 		}
 	},	
 }
+
 
 
 

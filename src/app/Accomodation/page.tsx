@@ -855,8 +855,10 @@ const AccomodationPage = () => {
                                   </span>
                                 </p>
                               </div>
+
                               <div className="right flex items-end ">
                                 <a className="block mb-[-23px] mr-[-23px] md:mr-[-13px] md:mb-[-5px]  xl:mr-[-23px] cursor-pointer border-t-[1px] border-l-[1px] text-[#444] md:text-[10px] py-[8px] px-[17px] font-normal font-Lora lg:text-[14px] md:py-[7px] md:px-[14px] xl:text-[14px] xl:py-[8px] xl:px-[17px]  hover:bg-[#444] hover:text-[#fff] hover:border-none lg:py-[8px] lg:px-[17px] lg:mr-[-23px] lg:mb-[-13px] xl:mb-[-18px] leading-[20px]">
+
                                   Book
                                 </a>
                               </div>
@@ -867,7 +869,9 @@ const AccomodationPage = () => {
                     </div>
                   </div>
 
+
                 </div>
+
               </div>
             </div>
 
