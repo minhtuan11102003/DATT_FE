@@ -27,7 +27,7 @@ export function DatePickerDetail({title}: {title: string}) {
           )}
         >
           
-          {date ? format(date, "PPP") : <span className="uppercase">{title}</span>}
+          {date ? format(date, "PPP") : <span className="uppercase lg:text-[11px] xl:text-[13px]">{title}</span>}
           
         <CalendarIcon className="h-4 w-4 mr-0" />
         </Button>

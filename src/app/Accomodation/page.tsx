@@ -937,71 +937,7 @@ const AccomodationPage = () => {
               </nav>
             </div>
           </div>
-          <div className="other_decent_room_pagination">
-            <nav className="text-center mt-[65px] mb-[75px] w-[95%] mx-auto">
-              <ul className="pagination flex justify-center items-center">
-                <li>
-                  <a
-                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    <IoIosArrowBack className="my-[3px] mx-[9px] inline-block font-bold" />
-                    prev
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link  pagiantion__link--active text-[10px] p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    1
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    2
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    3
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    4
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link text-[12px] font-bold p-[10px] md:text-[16px] uppercase"
-                    href=""
-                  >
-                    5
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="pagination__link text-[12px] p-[10px] font-bold md:text-[16px] uppercase"
-                    href=""
-                  >
-                    {" "}
-                    next{" "}
-                    <IoIosArrowForward className="my-[3px] mx-[9px] inline-block" />
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          
         </div>
       </section >
     </div>

@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from "react";
@@ -244,7 +243,7 @@ const DetailPage = () => {
                 <div className="row">
                   <div className="accomodation_room">
                     <div className="mt-[50px] mb-[30px]">
-                      <h5 className="font-PlayfairDisplay font-normal text-[20px] text[#131e2a] uppercase leading-[20px] md:text-[15px]">
+                      <h5 className="font-PlayfairDisplay font-normal text-[20px] text[#131e2a] uppercase leading-[20px] md:text-[15px] lg:text-[20px]">
                         You may Also like
                       </h5>
                     </div>
@@ -291,15 +290,15 @@ const DetailPage = () => {
                             </div>
                             <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
                               <div className="left">
-                                <h6 className="text-[#424c55] text-[14px] leading-[18px] md:text-[13px] font-PlayfairDisplay uppercase font-normal">
+                                <h6 className="text-[#424c55] text-[14px] leading-[18px] md:text-[13px] font-PlayfairDisplay uppercase font-normal lg:text-[14px]">
                                   Deluxe Room
                                 </h6>
-                                <p className="my-[15px] md:text-[12px] text-[16px] font-karla text-[#666666] sm:float-left">
+                                <p className="my-[15px] md:text-[12px] text-[16px] font-karla text-[#666666] sm:float-left lg:text-[16px]">
                                   $200/ <span className="">night</span>
                                 </p>
                               </div>
                               <div className="right">
-                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora  md:text-[13px] md:px-[14px] md:my-[7px]">
+                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora md:text-[13px] md:px-[14px] md:my-[7px] lg:text-[14px]">
                                   Book
                                 </a>
                               </div>
@@ -320,22 +319,23 @@ const DetailPage = () => {
                             </div>
                             <div className="flex justify-between border-[#e1e1e1] border-b-[1px]">
                               <div className="left">
-                                <h6 className="text-[#424c55] text-[14px] leading-[18px] md:text-[13px] font-PlayfairDisplay uppercase font-normal">
+                                <h6 className="text-[#424c55] text-[14px] leading-[18px] md:text-[13px] font-PlayfairDisplay uppercase font-normal lg:text-[14px]">
                                   Deluxe Room
                                 </h6>
-                                <p className="my-[15px] md:text-[12px] text-[16px] font-karla text-[#666666] sm:float-left">
+                                <p className="my-[15px] md:text-[12px] text-[16px] font-karla text-[#666666] sm:float-left lg:text-[16px]">
                                   $200/ <span className="">night</span>
                                 </p>
                               </div>
                               <div className="right">
-                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora md:text-[13px] md:px-[14px] md:my-[7px]">
+                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora md:text-[13px] md:px-[14px] md:my-[7px] lg:text-[14px]">
                                   Book
                                 </a>
                               </div>
                             </div>
                           </figure>
                         </div>
-                      </div>                   
+                      </div>
+                             
                     </div>
                   </div>
                 </div>
@@ -345,21 +345,21 @@ const DetailPage = () => {
           <div className="room-dettails__nav lg:basis-1/4">
             <aside className="px-[15px] md:flex md:gap-[30px] lg:flex-col">
               <div className="form-room__details bg-[#313a45] mb-8 md:basis-1/3 ">
-                <form action="" className="flex flex-col gap-4 pt-[30px] pl-[30px] pr-[30px] text-[#90a4bb]">
+                <form action="" className="flex flex-col gap-4 pt-[30px] pl-[30px] pr-[30px] text-[#90a4bb] lg:pl-[15px] lg:pr-[15px]">
                   <div className="form-room__details--title text-white">
                     <p className="text-[15px] font-semibold uppercase leading-[18px]">Book Your</p>
                     <h3 className="text-[30px] font-bold leading-[25px]">
                       Rooms
                     </h3>
                   </div>
-                  <div className="form-room__details--arival my-[10px]">
-                    <DatePickerDetail title="Arrival" />
+                  <div className="form-room__details--arival my-[10px] lg:text-[11px]">
+                    <DatePickerDetail title="Arrival"/>
                   </div>
-                  <div className="form-room__details--departure">
-                    <DatePickerDetail title="Departure" />
+                  <div className="form-room__details--departure ">
+                    <DatePickerDetail title="Departure"/>
                   </div>
                   <div className="flex flex-col lg:flex-row lg:mb-[20px] gap-[20px] mt-[20px]">
-                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px] after:content-['\f107'] after:text-[#aab8ca] after:leading-[42px] after:absolute after:right-[9%] after:top-[-6%]" name="" id="">
+                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px] lg:pr-[15px] lg:text-[11px] xl:text-[13px]" name="" id="">
                       <option selected value="1">
                         1 ROOM
                       </option>
@@ -367,7 +367,7 @@ const DetailPage = () => {
                       <option className="p-0" value="4">3 ROOM</option>
                       <option className="p-0" value="4">4 ROOM</option>
                     </select>
-                    <select className="bg-[#313a45]  border-[#48525e] border-b-[2px] h-[37px]" name="" id="">
+                    <select className="bg-[#313a45]  border-[#48525e] border-b-[2px] h-[37px] lg:pr-[15px] lg:text-[11px] xl:text-[13px]" name="" id="">
                       <option selected value="1">
                         BEDS
                       </option>
@@ -377,7 +377,7 @@ const DetailPage = () => {
                     </select>
                   </div>
                   <div className="flex flex-col lg:flex-row lg:mb-[20px] gap-[20px] mb-[20px]">
-                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px]" name="" id="">
+                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px] lg:pr-[15px] lg:text-[11px] xl:text-[13px]" name="" id="">
                       <option selected value="1">
                         1 ADULT
                       </option>
@@ -385,7 +385,7 @@ const DetailPage = () => {
                       <option className="p-0" value="4">3 ROOM</option>
                       <option className="p-0" value="4">4 ROOM</option>
                     </select>
-                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px]" name="" id="">
+                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px] lg:pr-[15px] lg:text-[11px] xl:text-[13px]" name="" id="">
                       <option selected value="1">
                         1 CHILD
                       </option>
@@ -402,10 +402,8 @@ const DetailPage = () => {
               <div className="comment__details md:mt-0 mt-[70px] md:basis-1/3  md:overflow-hidden lg:overflow-auto lg:max-w-[200px]">
                 <h2 className="text-[20px] text-[#131e2a] font-PlayfairDisplay uppercase mb-[30px]">Customer Review</h2>
                 <Carousel_comment comments={data_comment} />
-
               </div>
             </aside>
-
           </div>
         </div>
       </section>
