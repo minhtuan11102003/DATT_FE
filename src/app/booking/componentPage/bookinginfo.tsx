@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
 import React from 'react';
-import { DatePickerDemo } from "@/components/ui/date-picker";
+// import { DatePickerDemo } from "@/components/ui/date-picker";
 import {
     Select,
     SelectContent,
@@ -10,6 +10,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import "../../../css/table.css";
+import { DatePickerDemo } from '@/components/ui/date-picker';
 
 
 const BookingInfoComponent = () => {
@@ -206,10 +207,10 @@ const BookingInfoComponent = () => {
                         <span className="border border-gray-600 w-0 h-full"></span>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                        <DatePickerDemo />
+                        <DatePickerDemo title="ARRIVAL"/>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[160px] ">
-                        <DatePickerDemo />
+                        <DatePickerDemo title="DEPARTURE"/>
                     </div>
                     <div className="w-[240px] xs:w-[380px] md:w-[120px] ">
                         <Select>
@@ -280,8 +281,8 @@ const BookingInfoComponent = () => {
                                     <br />
                                     <p className='text-[#666666]'>RATE</p>
                                 </td>
-                                <td className='w-[74PX] h-[73px] p-[15px] text-left font-karla hidden xs:table-cell md:table-cell xs:text-[14px]' >
-                                    <span className='font-semibold'>5 </span>
+                                <td className='w-[74PX] h-[73px] p-[15px] text-center font-karla hidden xs:table-cell md:table-cell xs:text-[14px]' >
+                                    <span className='font-semibold text-[#666666]'>5 </span>
                                     <br />
                                     <p className='text-[#666666]'>NIGHT</p>
                                 </td>

@@ -1,143 +1,151 @@
 /* Animation mặc định */
 
 .animate-in {
-  animation: fadeIn 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate;
+    animation: fadeIn 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate;
 }
 
 .animate-out {
-  animation: fadeOut 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) backwards;
+    animation: fadeOut 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) backwards;
 }
 
 @keyframes fadeIn {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes fadeOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 }
+
 
 /* Responsive cho màn hình nhỏ hơn 768px (ví dụ: tablet) */
 
 @media (max-width: 767px) {
-  .section-room .grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 cột cho thumbnail */
-  }
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 cột cho sản phẩm */
-  }
-  .animate-in {
-    animation: fadeInMobile 1s ease-in-out;
-  }
-  .animate-out {
-    animation: fadeOutMobile 0.6s ease-in-out;
-  }
-  @keyframes fadeInMobile {
-    0% {
-      transform: translateX(-50px);
-      /* Dịch chuyển ít hơn trên màn hình nhỏ */
-      opacity: 0;
+    .section-room .grid {
+        grid-template-columns: 1fr;
+        /* 1 cột cho thumbnail từ 480px - 767px */
     }
-    50% {
-      opacity: 0.5;
-      transform: translateX(-25px);
-      /* Dịch chuyển giữa */
+    .product .grid {
+        grid-template-columns: 1fr;
+        /* 1 cột cho sản phẩm từ 480px - 767px */
     }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
+    .animate-in {
+        animation: fadeInMobile 1s ease-in-out;
     }
-  }
-  @keyframes fadeOutMobile {
-    0% {
-      opacity: 1;
-      transform: translateX(0);
+    .animate-out {
+        animation: fadeOutMobile 0.6s ease-in-out;
     }
-    50% {
-      opacity: 0.5;
-      transform: translateX(-25px);
+    @keyframes fadeInMobile {
+        0% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateX(-25px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
-    100% {
-      opacity: 0;
-      transform: translateX(-50px);
+    @keyframes fadeOutMobile {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateX(-25px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
     }
-  }
 }
+
+@media (min-width: 768px) {
+    /* 2 cột cho thumbnail từ 768px trở lên */
+    .Thumbnails .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Giữ 4 cột cho sản phẩm từ 768px trở lên */
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    /* 2 cột cho thumbnail từ 768px - 990px */
+    .Thumbnails .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 /* Responsive cho màn hình nhỏ hơn 480px (ví dụ: mobile) */
 
 @media (max-width: 480px) {
-  .section-room .grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 1 cột cho thumbnail */
-  }
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 cột cho sản phẩm */
-  }
-  .animate-in {
-    animation: fadeInSmallMobile 0.8s ease-in-out;
-  }
-  .animate-out {
-    animation: fadeOutSmallMobile 0.5s ease-in-out;
-  }
-  @keyframes fadeInSmallMobile {
-    0% {
-      transform: translateX(-30px);
-      /* Dịch chuyển ít hơn cho màn hình rất nhỏ */
-      opacity: 0;
+    .section-room .grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 cột cho thumbnail */
     }
-    50% {
-      opacity: 0.5;
-      transform: translateX(-15px);
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* 2 cột cho sản phẩm */
     }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
+    .animate-in {
+        animation: fadeInSmallMobile 0.8s ease-in-out;
     }
-  }
-  @keyframes fadeOutSmallMobile {
-    0% {
-      opacity: 1;
-      transform: translateX(0);
+    .animate-out {
+        animation: fadeOutSmallMobile 0.5s ease-in-out;
     }
-    50% {
-      opacity: 0.5;
-      transform: translateX(-15px);
+    @keyframes fadeInSmallMobile {
+        0% {
+            transform: translateX(-30px);
+            /* Dịch chuyển ít hơn cho màn hình rất nhỏ */
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateX(-15px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
-    100% {
-      opacity: 0;
-      transform: translateX(-30px);
+    @keyframes fadeOutSmallMobile {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        50% {
+            opacity: 0.5;
+            transform: translateX(-15px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 cột cho sản phẩm */
-  }
 }

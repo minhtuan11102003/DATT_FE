@@ -10,7 +10,6 @@ import {
 import HeaderComponent from "../components/page/header";
 import FooterComponent from "../components/page/footer";
 import Contact_us from "@/components/page/contact_us";
-import { NextUIProvider } from "@nextui-org/react";
 
 
 
@@ -74,16 +73,12 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className={`${nunito.className} text-primary !scroll-smooth`}
       >
-       {/* <NextUIProvider> */}
           <div className="w-full">
-            <HeaderComponent />
-            
+            <HeaderComponent />     
             {children}
-            
             <Contact_us />
             <FooterComponent />
           </div>
-        {/* </NextUIProvider> */}
       </body>
     </html>
   );
