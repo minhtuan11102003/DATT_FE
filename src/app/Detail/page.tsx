@@ -9,8 +9,8 @@ import { DatePickerDetail } from "@/components/ui/date-picker-detail";
 import { Button } from "@nextui-org/react";
 import { CalendarDate, DateInput } from "@nextui-org/react";
 import { CalendarIcon } from "lucide-react";
-
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import { FaCalendarAlt } from "react-icons/fa";
+import { IoIosArrowDropleft, IoIosArrowDropright,  } from "react-icons/io";
 
 import Carousel_comment from "@/app/Detail/components/carousel_comment";
 import Slider_detail_room from "@/app/Detail/components/slider_detail_room";
@@ -113,22 +113,21 @@ const DetailPage = () => {
         <div className="container w-[300px] md:w-[750px] sm:w-[450px] lg:w-[970px] xl:w-[1170px] flex flex-col lg:flex-row lg:gap-[30px]">
           <div className="room-details__main lg:basis-3/4 lg:w-[698px] w-full">
             <div className="room-details__main--title mb-[5px] ">
-              <h5 className="text-[20px] text-[#131e2a] font-PlayfairDisplay font-normal uppercase leading-[20px] md:text-[15px]">
+              <h5 className="text-[20px] text-[#131e2a] font-PlayfairDisplay font-normal uppercase leading-[20px] md:text-[15px] lg:text-[20px]">
                 Deluxe Room Detail
                 <span className="font-Lora text-[#131e2a] text-[16px] md:text-[25px] float-right">
                   $ 130
                 </span>
                 <br />
-                <span className="text-[#8b8d90] text-[15px] mt-[7px] float-right normal-case">
+                <span className="font-karla text-[#8b8d90] text-[15px] mt-[7px] float-right normal-case">
                   / night
                 </span>
               </h5>
             </div>
             <div className="room-details__main--content">
-              <p className="text-[#666666] text-[16px] mb-[15px] md:text-[12px]">Checkout the latest deal</p>
+              <p className="text-[#666666] text-[16px] mb-[15px] md:text-[12px] lg:text-[16px]">Checkout the latest deal</p>
               <div className="room-details__description">
                 <div className="row">
-
                  <Slider_detail_room sliders={IMAGES}/>
                 </div>
                 <div className="row">
@@ -300,7 +299,7 @@ const DetailPage = () => {
                                 </p>
                               </div>
                               <div className="right">
-                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora md:text-[13px] md:px-[14px] md:my-[7px]">
+                                <a className="inline-block cursor-pointer border-[#63c2ea] border-2 text-[#63c2ea] py-[8px] px-[17px] font-normal hover:bg-[#63c2ea] hover:text-[#ffffff] transition-colors duration-500 select-none font-Lora  md:text-[13px] md:px-[14px] md:my-[7px]">
                                   Book
                                 </a>
                               </div>
@@ -336,10 +335,7 @@ const DetailPage = () => {
                             </div>
                           </figure>
                         </div>
-                      </div>
-                      
-                     
-                     
+                      </div>                   
                     </div>
                   </div>
                 </div>
@@ -362,8 +358,8 @@ const DetailPage = () => {
                   <div className="form-room__details--departure">
                     <DatePickerDetail title="Departure" />
                   </div>
-                  <div className="flex flex-col gap-[20px] mt-[20px]">
-                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px]" name="" id="">
+                  <div className="flex flex-col lg:flex-row lg:mb-[20px] gap-[20px] mt-[20px]">
+                    <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px] after:content-['\f107'] after:text-[#aab8ca] after:leading-[42px] after:absolute after:right-[9%] after:top-[-6%]" name="" id="">
                       <option selected value="1">
                         1 ROOM
                       </option>
@@ -371,19 +367,19 @@ const DetailPage = () => {
                       <option className="p-0" value="4">3 ROOM</option>
                       <option className="p-0" value="4">4 ROOM</option>
                     </select>
-                    <select className="bg-[#313a45] border-[#48525e] border-b-[2px] h-[37px]" name="" id="">
+                    <select className="bg-[#313a45]  border-[#48525e] border-b-[2px] h-[37px]" name="" id="">
                       <option selected value="1">
-                        1 BED
+                        BEDS
                       </option>
                       <option className="p-0" value="2">2 BED</option>
                       <option className="p-0" value="4">3 BED</option>
                       <option className="p-0" value="4">4 BED</option>
                     </select>
                   </div>
-                  <div className="flex flex-col  gap-[20px] mb-[20px]">
+                  <div className="flex flex-col lg:flex-row lg:mb-[20px] gap-[20px] mb-[20px]">
                     <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px]" name="" id="">
                       <option selected value="1">
-                        1 ROOM
+                        1 ADULT
                       </option>
                       <option className="p-0" value="2">2 ROOM</option>
                       <option className="p-0" value="4">3 ROOM</option>
@@ -391,7 +387,7 @@ const DetailPage = () => {
                     </select>
                     <select className="bg-[#313a45] border-b-[2px] border-[#48525e] h-[37px]" name="" id="">
                       <option selected value="1">
-                        1 BED
+                        1 CHILD
                       </option>
                       <option className="p-0" value="2">2 BED</option>
                       <option className="p-0" value="4">3 BED</option>
@@ -399,12 +395,12 @@ const DetailPage = () => {
                     </select>
                   </div>
                   <div className="form-room__details--btn flex h-[70px] relative">
-                    <button className="px-[22px] py-[9px] bg-[#fe5d5d]  absolute font-semibold  translate-y-[50%] translate-x-[-50%] left-[50%] text-[#fff] font-Lora leading-[20px]" type="submit">Book</button>
+                    <button className="px-[22px] py-[9px] bg-[#fe5d5d]  absolute font-semibold lg:bottom-0  translate-y-[50%] translate-x-[-50%] left-[50%] text-[#fff] font-Lora leading-[20px] hover:bg-[#fff] hover:text-[#fe5d5d] border-[1px] border-[#fe5d5d] transition duration-300" type="submit">Book</button>
                   </div>
                 </form>
               </div>
               <div className="comment__details md:mt-0 mt-[70px] md:basis-1/3  md:overflow-hidden lg:overflow-auto lg:max-w-[200px]">
-                <h2 className="text-[20px] font-PlayfairDisplay uppercase mb-[30px]">Customer Review</h2>
+                <h2 className="text-[20px] text-[#131e2a] font-PlayfairDisplay uppercase mb-[30px]">Customer Review</h2>
                 <Carousel_comment comments={data_comment} />
 
               </div>

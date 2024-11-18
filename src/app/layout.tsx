@@ -18,31 +18,27 @@ import { NextUIProvider } from "@nextui-org/react";
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-
-
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
 });
 
 const karla = Karla({
-
   subsets: ["latin"],
   variable: "--font-karla",
   display: "swap",
 });
 
-
 const lora = Lora({
   subsets: ["latin"],
   variable: "--font-Lora",
-  display: "swap",
+  // display: "swap",
 });
 
 const PlayfairDisplay = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-PlayfairDisplay",
-  display: "swap",
+  // display: "swap",
 });
 
 
