@@ -90,7 +90,7 @@ const CarouselComment = ({ comments }: { comments: Comment[] }) => {
       <div className="review__comment flex" ref={carouselRow}>
         <div className="carousel__comment md:flex md:flex-col flex-shrink-0 w-full" id="lastImageDuplicate">
           <div className="carousel__comment--content md:p-[10px] px-[34px] py-[25px] lg:px-[34px] lg:py-[25px] bg-[#e1efcc] text-[#666666] ">
-            <p className=" text-[16px] leading-[25px] line-clamp-4 sm:line-clamp-3 md:text-[12px] lg:text-[16px] md:line-clamp-4 hover:line-clamp-none">{comments[0]?.comment}</p>
+            <p className="text-[16px] leading-[25px] line-clamp-4 sm:line-clamp-3 md:text-[12px] lg:text-[16px] md:line-clamp-4 hover:line-clamp-none">{comments[0]?.comment}</p>
             <p className="text-[16px] md:text-[12px] leading-[25px] pt-[30px] lg:pt-[30px] md:pt-0 sm:pb-[20px] line-clamp-3 sm:line-clamp-2 md:line-clamp-3 hover:line-clamp-none lg:text-[16px]">{comments[0]?.sub_commnet}</p>
           </div>
           <div className="carousel__comment--user flex justify-end gap-[20px] py-[15px] sm:py-0 ">
