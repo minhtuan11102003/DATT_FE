@@ -29,7 +29,7 @@ function newsection() {
       img: "./images/about-us-staff-four.jpg",
     },
     {
-      content: "Although this is not the first time I have stayed at the hotel, this time was quite disappointing. The room I stayed in had a lot of mosquitoes, making it difficult for me to sleep. Not only is household water a bit sticky, but it's also not hot enough to use comfortably.",
+      content: "Although this is not the first time I have stayed at the hotel, this time was quite disappointing. The room I stayed in had a lot of mosquitoes, making it difficult for me to sleep. Not only is household water a bit sticky, but it's also not hot enough to use comfortably...............",
       author: "JANE SMITH",
       link: "http://www.jane.com",
       img: "./images/about-us-staff-two.jpg",
@@ -52,12 +52,12 @@ function newsection() {
   return (
 
 
-    <div className="sectionNew w-full h-auto  flex flex-col items-center md:flex-row md:justify-center ">
+    <div className="sectionNew xl:w-full h-auto  flex flex-col items-center md:flex-row md:justify-center sm:w-[450px] p-4 ">
         <div className="w-full md:w-[1140px] flex flex-col md:flex-row items-center ">
-          <div className="w-full md:w-1/2 h-auto mb-6">
-          <h2 className="text-xl font-semibold text-white-500 mb-6">NEWS</h2>
+          {/* <div className="w-full md:w-1/2 h-auto mb-6 ">
+          <h2 className="text-xl font-semibold text-white-500 mb-4">NEWS</h2>
           <div className="space-y-6">
-            <div className="flex flex-col md:flex-row items-center">
+            <div className="flex flex-col md:flex-row items-center ">
               <img
                 src="./images/NEWS1.jpg"
                 alt="news"
@@ -99,13 +99,67 @@ function newsection() {
             </div>
             
         </div>
-          </div>
+          </div> */}
+
+<div className="w-full md:w-1/2 h-auto mb-6 xl:px-2 px-8">
+  <h2 className="text-xl font-semibold text-gray-800 mb-4">NEWS</h2>
+  <div className="space-y-6">
+  <br />
+    {/* Item 1 */}
+    <div className="flex items-center space-x-4">
+      <img
+        src="./images/NEWS1.jpg"
+        alt="news"
+        className="w-20 h-20 object-cover rounded-md"
+      />
+      <div>
+        <h3 className="text-sm font-semibold">
+          HANDLE INSECTS THAT FLY INTO THE ROOM
+        </h3>
+        <p className="text-xs text-gray-400">14 May 2014</p>
+      </div>
+    </div>
+
+    {/* Item 2 */}
+    <div className="flex items-center space-x-4">
+      <img
+        src="./images/NEWS2.jpg"
+        alt="news"
+        className="w-20 h-20 object-cover rounded-md"
+      />
+      <div>
+        <h3 className="text-sm font-semibold">
+          HANDLING BEDDING AND PILLOWS WHEN GUESTS CHECK OUT
+        </h3>
+        <p className="text-xs text-gray-400">14 May 2014</p>
+      </div>
+    </div>
+
+    {/* Item 3 */}
+    <div className="flex items-center space-x-4">
+      <img
+        src="./images/NEWS3.jpg"
+        alt="news"
+        className="w-20 h-20 object-cover rounded-md"
+      />
+      <div>
+        <h3 className="text-sm font-semibold">
+          HANDLING PROBLEMS OF HYGIENE IN HOTEL
+        </h3>
+        <p className="text-xs text-gray-400">14 May 2014</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+
          
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-2 h-auto">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-2 h-auto xl:px-2 px-8">
         {/* Hotel Showcase Section */}
         <div className="col-span-2">
           <h2 className="text-xl font-bold text-white-500 mb-4">HOTEL SHOWCASE</h2>
           <div className="relative ">
+          
             <img
               src={images[currentIndex]}
               alt="Hotel showcase"
@@ -135,6 +189,7 @@ function newsection() {
           ))}
         </div>
         </div>
+        <br /><br />
 
           {/* <div className="h-[400px] w-full md:w-1/3  mt-6 md:mt-0 ">
           <div>
@@ -160,8 +215,9 @@ function newsection() {
           </div>
         </div>
           </div> */}
-          <div className="h-[400px] w-full md:w-1/3 mt-6 md:mt-0">
+          <div className="h-auto w-full md:w-1/3 mt-6 md:mt-0 xl:px-2 px-8">
       <h2 className="text-xl font-semibold text-white mb-6">CUSTOMER SAYS</h2>
+      <br />
       <div className="bg-green-800 p-6 rounded-md text-sm text-white relative">
         <p>{reviews[current].content}</p>
         <div className="absolute bottom-4 right-4 flex space-x-2">
@@ -213,11 +269,13 @@ function newsection() {
           </a>
         </div>
       </div>
-    </div>
+    </div><br /><br />
 
 
         </div>
+        
       </div>
+      
       
     )
 }
