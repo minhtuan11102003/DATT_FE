@@ -942,7 +942,7 @@ const AccomodationPage = () => {
               </nav>
             </div>
           </div>
-          <div className="other_decent_room_pagination">
+          {/* <div className="other_decent_room_pagination">
             <nav className="text-center mt-[65px] mb-[75px] w-[95%] mx-auto">
               <ul className="pagination flex justify-center items-center">
                 <li>
@@ -1006,7 +1006,7 @@ const AccomodationPage = () => {
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> */}
         </div>
       </section >
     </div>
