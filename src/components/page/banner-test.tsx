@@ -44,16 +44,16 @@ const BannerSection2 = () => {
                 {mangImg.map((item: any) => (
                     <SwiperSlide key={item.id}>
                         <div className="w-full h-full">
-                            <img src={`${item.img}`} alt="Lỗi ảnh" className={`w-full h-[380px] md:h-[600px] object-cover`} />
+                            <img src={`${item.img}`} alt="Lỗi ảnh" className={`w-full h-[380px] md:h-[400px] lg:h-[600px] object-cover`} />
                             {/* <div className={`bg-[${item.background_color}] w-full h-[500px] `}></div> */}
                         </div>
-                        <div className=" md:w-[800px] md:h-[150px] absolute top-[30%] left-4 md:left-[20%]">
-                            <div className={`w-full text-[16px] xs:text-[22px] md:w-[755px] md:h-[80px] md:text-[42px] font-semibold md:mb-6 chuyenDong  `}>
+                        <div className=" md:w-[500px] lg:w-[800px] md:h-[150px] absolute top-[30%] left-10 md:left-[10%] lg:left-[15%]">
+                            <div className={`w-full text-[16px] xs:text-[22px] md:w-[450px] lg:w-[755px] md:h-[80px] md:text-[36px] lg:text-[42px] font-semibold md:mb-6`}>
                                 {/* <p className="w-full h-auto md:h-[40px]">{item.title.toUpperCase()}</p> */}
                                 <p>{item.title.toUpperCase()}</p>
                             </div>
-                            <div className={`w-[90px] p-1 md:w-[196px] md:p-3 bg-[#f7c411]`}>
-                                <Button className="w-[82px] h-[20px] px-2 py-2 md:w-[172px] md:h-[40px] text-[12px] md:py-[8px] md:px-[34px] border border-spacing-[2px] md:text-[18px] font-semibold">EXPLORE IT</Button>
+                            <div className={`w-[90px] p-1 md:w-[150px] lg:w-[196px] md:p-3 bg-[#f7c411]`}>
+                                <Button className="w-[82px] h-[20px] md:w-[122px] md:h-[40px] lg:w-[172px] text-[12px] md:py-[6px] lg:py-[8px] md:px-[34px] border border-spacing-[2px] md:text-[16px] lg:text-[18px] font-semibold">EXPLORE IT</Button>
                             </div>
                         </div>
                     </SwiperSlide>

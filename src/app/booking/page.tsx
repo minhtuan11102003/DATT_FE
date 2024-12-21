@@ -49,8 +49,8 @@ const BookingPage = () => {
                     <img src="./images/nice-title-breadcrumb.png" alt="" />
                 </div>
             </section>
-            <section className='inforBooking w-full flex justify-center mt-[20px] md:w-full xs:w-full'>
-                <div className='w-[270px] xs:w-[420px] md:w-[1172px] md:px-4'>
+            <section className='inforBooking w-full flex justify-center mt-[20px] md:w-full xs:w-full lg:w-full'>
+                <div className='xs:w-[420px] md:w-[800px] lg:w-[1172px] md:px-4'>
                     <div className='headInfo w-full h-[154px] flex'>
                         {
                             arrayTitle.map((item, index) => (
@@ -66,7 +66,7 @@ const BookingPage = () => {
                             arrayTitle[isCheckId - 1].component
                         }
                     </div>
-                    <div className='section4 w-[270px] h-[100px] border-t-[1px] border-[#cdcdcde3] mt-4 flex justify-between items-center xs:w-[420px] xs:h-[40px] xs:mb-4 md:w-full '>
+                    <div className='section4 h-[100px] border-t-[1px] border-[#cdcdcde3] mt-4 flex justify-between items-center xs:w-[420px] xs:h-[40px] xs:mb-4 md:w-full '>
                         <div className="w-1/2 h-[50px] mt-6">
                             <Button onClick={() => setIsCheckId((prevDem) => (isCheckId - 1))} className={`${isCheckId > 1 ? 'block' : 'hidden'} w-[100px] h-[38px] py-[8px] px-[30px] text-[18px] text-white bg-[#6666] font-semibold hover:bg-[#3a3a3a] `}>Back</Button>
                         </div>
