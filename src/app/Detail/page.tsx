@@ -85,7 +85,7 @@ const DetailPage = () => {
     <div className="room-details">
       {/* Accomodation */}
 
-      <section className="accomodation__breadcrumb mb-[80px]">
+      <section className="accomodation__breadcrumb banner mb-[80px]">
         <div className="accomodation__banner bg-[url('/images/banner-item/accomodation-breadcrumb-one.jpg')] bg-no-repeat relative bg-center min-h-[333px] bg-cover text-center">
           <div className="accomodation__banner-title pt-[170px] pb-[58px]">
             <h2 className="uppercase text-[#fff] font-normal text-[35px] leading-[25px] pb-[40px] font-PlayfairDisplay relative after:absolute after:bg-[url('/images/icon-section/nice-title-breadcrumb.png')] bg-no-repeat after:bottom-[-30px] after:h-[50%] after:w-[103px] nice-title after:bg-no-repeat drop-shadow-[0_20px_20px_rgb(0,0,0)] md:text-[22px] lg:text-[44px] md:text-center sm:text-[44px] sm:leading-[40px]">

@@ -16,7 +16,7 @@ const HeaderComponent = () => {
     return (
         <div className={`w-full ${isCheck ? 'h-auto' : 'h-auto'} `}>
             <div className='w-full h-auto md:h-[90px] flex gap-4 justify-center pt-4'>
-                <div className='hidden md:flex-row gap-2 w-[270px] xs:w-[470px] md:w-[1140px] h-full md:justify-around md:flex flex-col justify-center items-center'>
+                <div className='hidden md:flex-row gap-2 w-[270px] xs:w-[470px] md:[880px] lg:w-[1140px] h-full md:justify-around md:flex flex-col justify-center items-center'>
                     <div className='w-[220px] flex gap-6'>
                         <div className='w-[140px] h-full flex items-center'>
                             <Link href="/"><img src="./images/site-logo.png" alt="site-logo" className='w-[143px] h-[43px] object-contain' /></Link>

@@ -61,7 +61,7 @@ const BookingPage = () => {
                             ))
                         }
                     </div>
-                    <div className="w-[300px] mt-[70px] mb-[50px] xs:w-[450px] md:w-full">
+                    <div className="w-[300px] mt-[70px] mb-[50px] xs:w-[450px] md:w-full lg:w-full">
                         {
                             arrayTitle[isCheckId - 1].component
                         }
