@@ -5,7 +5,7 @@ const BookingDoneComponent = () => {
     return (
         <div className='w-full '>
             <div className='section3 w-[270px] xs:w-[420px] md:w-full h-[221ox] mt-4 flex flex-col md:flex-row gap-5'>
-                <div className=' md:w-[642px] md:h-[157px] flex flex-col gap-4 text-[#666666] font-karla md:text-justify'>
+                <div className=' md:w-[642px] md:h-[157px] flex flex-col gap-4 text-[#666666] font-karla lg:text-justify'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil atque modi velit molestiae, repellendus iure sint possimus cumque, provident, dolorum unde laboriosam ut eius ex maiores quod repudiandae aut asperiores?</p>
                     <div className='w-[270px] h-[130px] xs:w-[420px] xs:h-[100px]  md:w-full md:h-[70px] flex items-center gap-4 bg-[#88d54f] font-bold font-karla text-[20px] text-white pl-4'>
                         <div className='size-[21px] rounded-full flex items-center justify-center bg-white'>
