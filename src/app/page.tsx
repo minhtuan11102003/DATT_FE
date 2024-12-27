@@ -30,7 +30,7 @@ export default function Home() {
               <div className="xs:w-full md:w-[120px] lg:w-[135px] lg:h-[42px] w-full h-full font-karla flex items-center pl-2 text-white font-bold">
                 <span className="w-[240px] xs:w-[380px]  text-[15px] lg:w-full">
                   <p className='h-[10px]'>BOOK YOUR </p>
-                  <p className="text-[28px]">ROOMS</p>
+                  <p className="text-[26px]">ROOMS</p>
                 </span>
               <span className="border h-[40px] border-[#475362]"></span>
               </div>
