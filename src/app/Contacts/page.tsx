@@ -26,33 +26,33 @@ const ContactsPage = () => {
             </section>
 
             {/* Contact Section */}
-            <section className="contact_mail_area mb-[94px]">
+            <section className="contact_mail_area mb-[94px] p-12 ">
                 <div className="rep mx-auto px-4 ">
                     <div className="flex flex-col md:flex-row">
                         {/* Form Section */}
-                        <div className="md:w-1/2 relative min-h-[1px] px-4 ">
+                        <div className="md:w-1/2 relative min-h-[1px] px-4 mr-10">
                             <div className="send_mail">
                                 <div className="section_title mb-10">
                                     <h4 className="text-xl uppercase font-serif">Send Us An Email</h4>
                                 </div>
                                 <form action="contact_process.php" method="post">
-                                    <div className="grid1 md:grid w-[100%] gap-7 ">
-                                        <div className='mb'>
+                                    <div className="grid1 md:grid1 w-[100%] gap7 ">
+                                        <div className='mb md:mb-7'>
                                             <input type="text" placeholder="First Name *" name="fname" required className=" border border-gray-300 p-2 w-full h-12 sm:h-16 pl-4 uppercase relative" />
                                         </div>
-                                        <div className='mb'>
+                                        <div className='mb md:mb-7'>
                                             <input type="text" placeholder="Last Name *" name="lname" required className="border border-gray-300 p-2 w-full h-12 sm:h-16 pl-4 uppercase relative" />
                                         </div>
-                                        <div className='mb'>
+                                        <div className='mb md:mb-7'>
                                             <input type="email" placeholder="Your Email Id *" name="email" required className="border border-gray-300 p-2 w-full h-12 sm:h-16 pl-4 uppercase relative" />
                                         </div>
-                                        <div className='mb'>
+                                        <div className='mb md:mb-7'>
                                             <input type="text" placeholder="Phone Number *" name="phone" required className="border border-gray-300 p-2 w-full h-12 sm:h-16 pl-4 uppercase relative" />
                                         </div >
-                                        <div className="mb col-span-2">
+                                        <div className="mb col-span-2 md:mb-7">
                                             <textarea name="message" placeholder="Message" required className="border border-gray-300 p-2 w-full h-24 pl-4 uppercase"></textarea>
                                         </div>
-                                        <div className=" col-span-2 w-full">
+                                        <div className=" col-span-2 w-full md:mb-7">
                                             <input
                                                 className="bg-red-400 text-white font-bold py-2 px-4 rounded border-2 border-transparent hover:bg-transparent hover:text-red-500 hover:border-red-400 transition duration-300 w-full md:w-auto"
                                                 type="submit"
@@ -105,6 +105,9 @@ const ContactsPage = () => {
                 </div>
             </section>
         </div>
+
+        
+
     );
 };
 
