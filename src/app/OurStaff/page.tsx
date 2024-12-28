@@ -279,7 +279,7 @@ import { TiSocialGooglePlus } from "react-icons/ti";
                         </div>
                     </figure>
                 </div> */}
-                <div className="w-[290px] md:w-full px-4  lg:w-[1140px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 mb-7 sm:px-4">
+                <div className="w-[290px] md:w-full lg:px-4  lg:w-[1140px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 mb-7 px-4 md:px-14">
   {staffList.map((staff, index) => (
     <figure key={index} className="relative group">
       <div className="mb-[28px]">
@@ -288,7 +288,7 @@ import { TiSocialGooglePlus } from "react-icons/ti";
         </a>
       </div>
       <div
-        className="absolute inset-0 p-[10px] opacity-0 group-hover:opacity-100 bg-repeat transition-opacity duration-700"
+        className="absolute inset-0 p-[13px] opacity-0 group-hover:opacity-100 bg-repeat transition-opacity duration-700 h-[258px] md:h-[160px] lg:h-[272px]"
         style={{ backgroundColor: "rgba(254, 109, 109, 0.8)" }}
       >
         <div className="p-[10px] text-[#FFF]">
