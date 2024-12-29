@@ -17,7 +17,7 @@ const HeaderComponent = () => {
         <div className={`w-full ${isCheck ? 'h-auto' : 'h-auto'} `}>
             <div className='w-full flex justify-center'>
                 {/* desktop */}
-                <div className='hidden md:hidden mt-5 lg:flex lg:flex-row lg:w-[1140px] h-full  flex-col  items-center'>
+                <div className='hidden h-[120px] md:hidden lg:flex lg:flex-row lg:w-[1140px]  flex-col  items-center'>
                     <div className='flex gap-6'>
                         <div className='w-[140px] h-full flex items-center'>
                             <Link href="/"><img src="./images/site-logo.png" alt="site-logo" className='w-[143px] h-[43px] object-contain' /></Link>
@@ -67,7 +67,7 @@ const HeaderComponent = () => {
                 </div>
 
                 {/* tablet */}
-                <div className='hidden w-full  h-[90px] lg:hidden md:flex justify-center mt-6 '>
+                <div className='hidden w-full  h-[120px] lg:hidden md:flex justify-center mt-6 '>
                     <div className='w-[calc((100%-720px)/2)]'></div>
                     <div className='w-[720px] flex gap-2'>
                         <div className='w-[220px] h-[45px] flex gap-2'>
