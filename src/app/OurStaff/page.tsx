@@ -230,8 +230,6 @@ function OurStaffComponent() {
                     </figure>
                 </div>
             </div>
-
-
         </div>
     );
 }
