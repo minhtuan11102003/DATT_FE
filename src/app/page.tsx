@@ -97,9 +97,6 @@ export default function Home() {
       <div className="h-[200px] xs:h-[250px] md:h-[20px] "></div>
       <div className="sectionNew w-full flex justify-center md:mt-14 ">
         <div className="w-[1140px] flex flex-col items-center gap-52">
-
-
-
           <Welcome_hotel/>
           <div className="w-1/2 h-[100px]"></div>
           {/* <div className="w-1/4 h-[400px]"></div> */}
