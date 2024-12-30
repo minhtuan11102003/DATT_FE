@@ -53,54 +53,7 @@ function newsection() {
 
 
     <div className="sectionNew xl:w-full h-auto  flex flex-col items-center md:flex-row md:justify-center sm:w-[450px] p-4 ">
-      <div className="w-full md:w-[1140px] flex flex-col md:flex-row items-center ">
-        {/* <div className="w-full md:w-1/2 h-auto mb-6 ">
-          <h2 className="text-xl font-semibold text-white-500 mb-4">NEWS</h2>
-          <div className="space-y-6">
-            <div className="flex flex-col md:flex-row items-center ">
-              <img
-                src="./images/NEWS1.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-cover mr-4 mb-4 md:mb-0"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">HANDLE INSECTS THAT FLY INTO THE ROOM</h3>
-                <p className="text-xs text-gray-400">14 May 2014</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center">
-              <img
-                src="./images/NEWS2.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-cover mr-4 mb-4 md:mb-0"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">HANDLING BEDDING AND PILLOWS WHEN GUESTS CHECK OUT</h3>
-                <p className="text-xs text-gray-400">14 May 2014</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center">
-              <img
-                src="./images/NEWS3.jpg"
-                alt="news"
-                width={80}
-                height={80}
-                className="w-50 h-20 object-cover mr-4 mb-4 md:mb-0"
-              />
-              <div>
-                <h3 className="text-sm font-semibold">HANDLING PROBLEMS OF HYGIENE IN HOTEL
-                </h3>
-                <p className="text-xs text-gray-400">14 May 2014</p>
-              </div>
-            </div>
-            
-        </div>
-          </div> */}
-
+      <div className="w-full md: lg:w-[1140px] flex flex-col md:flex-row items-center ">
         <div className="w-full md:w-1/2 h-auto mb-6 xl:px-2 px-8">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">NEWS</h2>
           <div className="space-y-6">
@@ -269,7 +222,6 @@ function newsection() {
 
 
       </div>
-
     </div>
 
 

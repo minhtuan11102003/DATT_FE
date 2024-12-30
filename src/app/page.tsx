@@ -10,18 +10,18 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import BannerComponent from "../components/page/banner";
 import Welcome_hotel from "@/app/Home/welcome_hotel";
 import Facilities from "@/components/page/facilties";
 import Newsection from "@/components/page/newsection";
 import BannerSectionTest from "@/components/page/banner-test";
 import BannerSection2 from "@/components/page/banner-test";
+import NewSection2 from "@/components/page/newSection2";
 
 
 export default function Home() {
   return (
     <div className="w-full h-auto ">
-      <div className="sectionDate w-full xs:w-full md:w-full lg:w-full mt-6 pb-[90px]">
+      <div className="sectionDate w-full xs:w-full md:w-full lg:w-full  pb-[90px]">
         <div className="w-full xs:w-full xs:h-full md:w-full lg:w-full lg:h-full flex justify-center ">
           <div className="w-full xs:w-[420px] md:w-[720px] md:h-[100px] md:mt-0 lg:w-[1140px] lg:h-[100px] lg:mt-0 mt-[40%] absolute text-[#aab8ca] z-10">
             <div className="mt-10 ml-[15%] w-[70%] px-5 h-full flex flex-col items-center gap-4 py-4 text-[#aab8ca] bg-[#313a45]
@@ -112,7 +112,8 @@ export default function Home() {
         <Facilities />
       </div>
       <div className="sectionFacilities w-full">
-        <Newsection />
+        {/* <Newsection /> */}
+        <NewSection2/>
       </div>
     </div>
   );

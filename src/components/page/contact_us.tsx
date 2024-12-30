@@ -10,8 +10,8 @@ import '../../app/css/contact_us.css';
 const Contact_us = () => {
   return (
     <section className="contact_us_area w-full">
-      <div className="contact_us w-full px-8 md:px-0 md:max-w-[1140px] mx-auto">
-        <div className="contact_us__row grid grid-cols-1 md:grid-cols-4 gap-6 bg-[#39c5fa] text-white px-[20px] md:px-[50px] py-6 md:h-auto items-center font-Lora text-[15px] font-thin">
+      <div className="contact_us max-w-[270px] md:px-0 sm:max-w-[420px] md:max-w-[720px] lg:max-w-[1200px] mx-auto">
+        <div className="contact_us__row grid grid-cols-1 md:grid-cols-4 gap-6 bg-[#39c5fa] text-white px-[20px] md:px-[50px] sm:justify-center py-6 md:h-auto items-center font-Lora text-[15px] font-thin">
           <div className="contact_us__col">
             <p className="uppercase">Call Us</p>
             <span>123 456 7890</span>
