@@ -1,11 +1,10 @@
-'use client';
+'use client'
 import React, { useEffect, useState } from 'react';
 import CardProducts from './card_products';
 import axios from 'axios';
 
 const ListProduct = () => {
     const [products, setProducts] = useState<any>([]);
-
     useEffect(() => {
         const getProductsApi = async () => {
             try {
@@ -18,16 +17,19 @@ const ListProduct = () => {
             } catch (error) {
                 console.error("Lỗi khi gọi API:", error);
             }
-        };
+        }
         getProductsApi();
-    }, []);
+    }, [])
+
 
     return (
         <div className="accomodation_room listProduct">
             <div className="md:grid md:grid-cols-4 gap-8">
-                {products.map((pr: any, index: number) => (
-                    <CardProducts data={pr} key={index} />
-                ))}
+                {
+                    products.map((pr: any, index: number) => (
+                        <CardProducts data={pr} key={index} />
+                    ))
+                }
             </div>
         </div>
     );
