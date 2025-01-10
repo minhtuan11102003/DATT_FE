@@ -1,14 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import CardProducts from './card_products';
-import { error } from 'console';
 
 const ListProduct = () => {
     const [products, setProducts] = useState<any>([]);
     useEffect(() => {
         const getProductsApi = async () => {
             try {
-                const payProdcuts = await fetch('http://api-core.dsp.one/api/client/product');
+                const payProdcuts = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/product`);
                 if (!payProdcuts.ok) {
                     throw new Error('Lỗi rồi kìa');
                 } else {
