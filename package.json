@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start-pm2":"next start -p 6777"
+    "start-pm2": "next start -p 6777"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -31,6 +31,7 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@reduxjs/toolkit": "^2.2.6",
     "@tanstack/react-table": "^8.19.3",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.6.0",
@@ -38,6 +39,7 @@
     "embla-carousel-react": "^8.0.2",
     "formik": "^2.4.6",
     "framer-motion": "^11.11.9",
+    "http-proxy-middleware": "^3.0.3",
     "lodash": "^4.17.21",
     "lucide-react": "^0.370.0",
     "next": "^14.2.15",
