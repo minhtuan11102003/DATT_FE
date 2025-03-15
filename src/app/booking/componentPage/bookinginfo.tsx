@@ -62,8 +62,8 @@ const BookingInfoComponent = () => {
                 lg:w-full lg:h-[80px] lg:flex-row lg:items-center lg:gap-8 lg:mt-0">
                         <div className="xs:w-full md:w-[120px] lg:w-[135px] lg:h-[42px] w-full h-full font-karla flex items-center pl-2 text-white font-bold">
                             <span className="w-[240px] xs:w-[380px]  text-[15px] lg:w-full">
-                                <p className='h-[10px]'>BOOK YOUR </p>
-                                <p className="text-[28px]">ROOMS</p>
+                                <p className='h-[10px]'>Choose </p>
+                                <p className="text-[28px]">Option</p>
                             </span>
                             <span className="border h-[40px] border-[#475362]"></span>
                         </div>
@@ -144,7 +144,7 @@ const BookingInfoComponent = () => {
                                     <p className='text-[#666666]'>RATE</p>
                                 </td>
                                 <td className='w-[74PX] h-[73px] p-[15px] text-left font-karla hidden xs:table-cell md:table-cell xs:text-[14px] xs:text-center' >
-                                    <span className='font-semibold'>5 </span>
+                                    <span className='font-semibold text-[#666666]'>5 </span>
                                     <br />
                                     <p className='text-[#666666]'>NIGHT</p>
                                 </td>

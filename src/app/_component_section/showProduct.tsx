@@ -1,23 +1,21 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import CardProducts from './card_products';
-import { error } from 'console';
+import axios from 'axios';
 
 const ListProduct = () => {
     const [products, setProducts] = useState<any>([]);
     useEffect(() => {
         const getProductsApi = async () => {
             try {
-                const payProdcuts = await fetch('http://api-core.dsp.one/api/client/product');
-                if (!payProdcuts.ok) {
-                    throw new Error('Lỗi rồi kìa');
-                } else {
-                    const resProduct = await payProdcuts.json();
-                    setProducts([...resProduct.data.data]);
+                const payProdcuts = await axios.get(`http://api-core.dsp.one/api/client/product`);
+                console.log(payProdcuts.data);
+                if (payProdcuts.status === 200) {
+                    const data = payProdcuts.data?.data.data;
+                    setProducts([...data]);
                 }
-
             } catch (error) {
-                console.log(error);
+                console.error("Lỗi khi gọi API:", error);
             }
         }
         getProductsApi();

@@ -53,8 +53,11 @@ const BookingDoneComponent = () => {
                                     <span>TOTAL</span>
                                 </th>
 
-                                <td className='p-[15px] text-right font-karla' colSpan={3}>
-                                    <span className='font-semibold'>400$</span>
+                                <td className='p-[15px] text-right font-karla ' colSpan={3}>
+                                    <div className='flex flex-col'>
+                                        <span className='font-semibold'>400$</span>
+                                        <span className='font-bold text-[#88d54f] text-[18px]'>(PAID)</span>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
